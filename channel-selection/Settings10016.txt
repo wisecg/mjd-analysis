@@ -1,0 +1,2239 @@
+checking quality of run = 10016
+/ORCV830Model/1/20/Card: (integer) 20
+/ORCV830Model/1/20/Class Name: (string) ORCV830Model
+/ORCV830Model/1/20/baseAddress: (integer) 807403520
+/ORCV830Model/1/20/count0Offset: (integer) -5050
+/ORCV830Model/1/20/dwellTime: (integer) 0
+/ORCV830Model/1/20/enabledMask: (integer) 3
+/ORCV830Model/1/20/thresholds[0]: (integer) 0
+/ORCV830Model/1/20/thresholds[1]: (integer) 0
+/ORCV830Model/1/20/thresholds[2]: (integer) 0
+/ORCV830Model/1/20/thresholds[3]: (integer) 0
+/ORCV830Model/1/20/thresholds[4]: (integer) 0
+/ORCV830Model/1/20/thresholds[5]: (integer) 0
+/ORCV830Model/1/20/thresholds[6]: (integer) 0
+/ORCV830Model/1/20/thresholds[7]: (integer) 0
+/ORCV830Model/1/20/thresholds[8]: (integer) 0
+/ORCV830Model/1/20/thresholds[9]: (integer) 0
+/ORCV830Model/1/20/thresholds[10]: (integer) 0
+/ORCV830Model/1/20/thresholds[11]: (integer) 0
+/ORCV830Model/1/20/thresholds[12]: (integer) 0
+/ORCV830Model/1/20/thresholds[13]: (integer) 0
+/ORCV830Model/1/20/thresholds[14]: (integer) 0
+/ORCV830Model/1/20/thresholds[15]: (integer) 0
+/ORCV830Model/1/20/thresholds[16]: (integer) 0
+/ORCV830Model/1/20/thresholds[17]: (integer) 0
+/ORCV830Model/1/20/thresholds[18]: (integer) 0
+/ORCV830Model/1/20/thresholds[19]: (integer) 0
+/ORCV830Model/1/20/thresholds[20]: (integer) 0
+/ORCV830Model/1/20/thresholds[21]: (integer) 0
+/ORCV830Model/1/20/thresholds[22]: (integer) 0
+/ORCV830Model/1/20/thresholds[23]: (integer) 0
+/ORCV830Model/1/20/thresholds[24]: (integer) 0
+/ORCV830Model/1/20/thresholds[25]: (integer) 0
+/ORCV830Model/1/20/thresholds[26]: (integer) 0
+/ORCV830Model/1/20/thresholds[27]: (integer) 0
+/ORCV830Model/1/20/thresholds[28]: (integer) 0
+/ORCV830Model/1/20/thresholds[29]: (integer) 0
+/ORCV830Model/1/20/thresholds[30]: (integer) 0
+/ORCV830Model/1/20/thresholds[31]: (integer) 0
+/ORCV977Model/1/14/Card: (integer) 14
+/ORCV977Model/1/14/Class Name: (string) ORCV977Model
+/ORCV977Model/1/14/baseAddress: (integer) 537919488
+/ORCV977Model/1/17/Card: (integer) 17
+/ORCV977Model/1/17/Class Name: (string) ORCV977Model
+/ORCV977Model/1/17/baseAddress: (integer) 1145307136
+/ORCaen792Model/1/13/Card: (integer) 13
+/ORCaen792Model/1/13/Class Name: (string) ORCaen792Model
+/ORCaen792Model/1/13/baseAddress: (integer) 270532608
+/ORCaen792Model/1/13/eventCounterInc: (bool) false
+/ORCaen792Model/1/13/overflowSuppressEnable: (bool) true
+/ORCaen792Model/1/13/shipTimeStamp: (bool) true
+/ORCaen792Model/1/13/slideConstant: (integer) 0
+/ORCaen792Model/1/13/slidingScaleEnable: (bool) false
+/ORCaen792Model/1/13/thresholds[0]: (integer) 250
+/ORCaen792Model/1/13/thresholds[1]: (integer) 250
+/ORCaen792Model/1/13/thresholds[2]: (integer) 250
+/ORCaen792Model/1/13/thresholds[3]: (integer) 250
+/ORCaen792Model/1/13/thresholds[4]: (integer) 250
+/ORCaen792Model/1/13/thresholds[5]: (integer) 250
+/ORCaen792Model/1/13/thresholds[6]: (integer) 250
+/ORCaen792Model/1/13/thresholds[7]: (integer) 250
+/ORCaen792Model/1/13/thresholds[8]: (integer) 250
+/ORCaen792Model/1/13/thresholds[9]: (integer) 250
+/ORCaen792Model/1/13/thresholds[10]: (integer) 250
+/ORCaen792Model/1/13/thresholds[11]: (integer) 250
+/ORCaen792Model/1/13/thresholds[12]: (integer) 250
+/ORCaen792Model/1/13/thresholds[13]: (integer) 250
+/ORCaen792Model/1/13/thresholds[14]: (integer) 250
+/ORCaen792Model/1/13/thresholds[15]: (integer) 250
+/ORCaen792Model/1/13/useHWReset: (bool) true
+/ORCaen792Model/1/13/zeroSuppressEnable: (bool) true
+/ORCaen792Model/1/18/Card: (integer) 18
+/ORCaen792Model/1/18/Class Name: (string) ORCaen792Model
+/ORCaen792Model/1/18/baseAddress: (integer) 538968064
+/ORCaen792Model/1/18/eventCounterInc: (bool) false
+/ORCaen792Model/1/18/overflowSuppressEnable: (bool) true
+/ORCaen792Model/1/18/shipTimeStamp: (bool) true
+/ORCaen792Model/1/18/slideConstant: (integer) 0
+/ORCaen792Model/1/18/slidingScaleEnable: (bool) false
+/ORCaen792Model/1/18/thresholds[0]: (integer) 250
+/ORCaen792Model/1/18/thresholds[1]: (integer) 250
+/ORCaen792Model/1/18/thresholds[2]: (integer) 250
+/ORCaen792Model/1/18/thresholds[3]: (integer) 250
+/ORCaen792Model/1/18/thresholds[4]: (integer) 250
+/ORCaen792Model/1/18/thresholds[5]: (integer) 250
+/ORCaen792Model/1/18/thresholds[6]: (integer) 250
+/ORCaen792Model/1/18/thresholds[7]: (integer) 250
+/ORCaen792Model/1/18/thresholds[8]: (integer) 250
+/ORCaen792Model/1/18/thresholds[9]: (integer) 250
+/ORCaen792Model/1/18/thresholds[10]: (integer) 250
+/ORCaen792Model/1/18/thresholds[11]: (integer) 250
+/ORCaen792Model/1/18/thresholds[12]: (integer) 250
+/ORCaen792Model/1/18/thresholds[13]: (integer) 250
+/ORCaen792Model/1/18/thresholds[14]: (integer) 250
+/ORCaen792Model/1/18/thresholds[15]: (integer) 250
+/ORCaen792Model/1/18/useHWReset: (bool) true
+/ORCaen792Model/1/18/zeroSuppressEnable: (bool) true
+/OREHS130nModel/0/2/Card: (integer) 2
+/OREHS130nModel/0/2/Class Name: (string) OREHS130nModel
+/OREHS130nModel/0/2/maxCurrents[0]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[1]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[2]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[3]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[4]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[5]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[6]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[7]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[8]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[9]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[10]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[11]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[12]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[13]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[14]: (real) 500
+/OREHS130nModel/0/2/maxCurrents[15]: (real) 500
+/OREHS130nModel/0/2/riseRate: (real) 20
+/OREHS130nModel/0/2/targets[0]: (integer) 800
+/OREHS130nModel/0/2/targets[1]: (integer) 900
+/OREHS130nModel/0/2/targets[2]: (integer) 850
+/OREHS130nModel/0/2/targets[3]: (integer) 750
+/OREHS130nModel/0/2/targets[4]: (integer) 800
+/OREHS130nModel/0/2/targets[5]: (integer) 870
+/OREHS130nModel/0/2/targets[6]: (integer) 900
+/OREHS130nModel/0/2/targets[7]: (integer) 830
+/OREHS130nModel/0/2/targets[8]: (integer) 800
+/OREHS130nModel/0/2/targets[9]: (integer) 800
+/OREHS130nModel/0/2/targets[10]: (integer) 800
+/OREHS130nModel/0/2/targets[11]: (integer) 750
+/OREHS130nModel/0/2/targets[12]: (integer) 750
+/OREHS130nModel/0/2/targets[13]: (integer) 710
+/OREHS130nModel/0/2/targets[14]: (integer) 840
+/OREHS130nModel/0/2/targets[15]: (integer) 830
+/OREHS130nModel/0/3/Card: (integer) 3
+/OREHS130nModel/0/3/Class Name: (string) OREHS130nModel
+/OREHS130nModel/0/3/maxCurrents[0]: (real) 1000
+/OREHS130nModel/0/3/maxCurrents[1]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[2]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[3]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[4]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[5]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[6]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[7]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[8]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[9]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[10]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[11]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[12]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[13]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[14]: (real) 0
+/OREHS130nModel/0/3/maxCurrents[15]: (real) 0
+/OREHS130nModel/0/3/riseRate: (real) 20
+/OREHS130nModel/0/3/targets[0]: (integer) 845
+/OREHS130nModel/0/3/targets[1]: (integer) 855
+/OREHS130nModel/0/3/targets[2]: (integer) 870
+/OREHS130nModel/0/3/targets[3]: (integer) 880
+/OREHS130nModel/0/3/targets[4]: (integer) 780
+/OREHS130nModel/0/3/targets[5]: (integer) 790
+/OREHS130nModel/0/3/targets[6]: (integer) 675
+/OREHS130nModel/0/3/targets[7]: (integer) 690
+/OREHS130nModel/0/3/targets[8]: (integer) 740
+/OREHS130nModel/0/3/targets[9]: (integer) 680
+/OREHS130nModel/0/3/targets[10]: (integer) 730
+/OREHS130nModel/0/3/targets[11]: (integer) 740
+/OREHS130nModel/0/3/targets[12]: (integer) 750
+/OREHS130nModel/0/3/targets[13]: (integer) 740
+/OREHS130nModel/0/3/targets[14]: (integer) 720
+/OREHS130nModel/0/3/targets[15]: (integer) 740
+/OREHS8260pModel/0/10/Card: (integer) 10
+/OREHS8260pModel/0/10/Class Name: (string) OREHS8260pModel
+/OREHS8260pModel/0/10/currentTripBehavior[0]: (integer) 0
+/OREHS8260pModel/0/10/currentTripBehavior[1]: (integer) 0
+/OREHS8260pModel/0/10/currentTripBehavior[2]: (integer) 0
+/OREHS8260pModel/0/10/currentTripBehavior[3]: (integer) 0
+/OREHS8260pModel/0/10/currentTripBehavior[4]: (integer) 0
+/OREHS8260pModel/0/10/currentTripBehavior[5]: (integer) 0
+/OREHS8260pModel/0/10/currentTripBehavior[6]: (integer) 0
+/OREHS8260pModel/0/10/currentTripBehavior[7]: (integer) 0
+/OREHS8260pModel/0/10/maxCurrents[0]: (real) 20
+/OREHS8260pModel/0/10/maxCurrents[1]: (real) 20
+/OREHS8260pModel/0/10/maxCurrents[2]: (real) 20
+/OREHS8260pModel/0/10/maxCurrents[3]: (real) 0
+/OREHS8260pModel/0/10/maxCurrents[4]: (real) 20
+/OREHS8260pModel/0/10/maxCurrents[5]: (real) 20
+/OREHS8260pModel/0/10/maxCurrents[6]: (real) 20
+/OREHS8260pModel/0/10/maxCurrents[7]: (real) 20
+/OREHS8260pModel/0/10/outputFailureBehavior[0]: (integer) 0
+/OREHS8260pModel/0/10/outputFailureBehavior[1]: (integer) 0
+/OREHS8260pModel/0/10/outputFailureBehavior[2]: (integer) 0
+/OREHS8260pModel/0/10/outputFailureBehavior[3]: (integer) 0
+/OREHS8260pModel/0/10/outputFailureBehavior[4]: (integer) 0
+/OREHS8260pModel/0/10/outputFailureBehavior[5]: (integer) 0
+/OREHS8260pModel/0/10/outputFailureBehavior[6]: (integer) 0
+/OREHS8260pModel/0/10/outputFailureBehavior[7]: (integer) 0
+/OREHS8260pModel/0/10/riseRate: (real) 5
+/OREHS8260pModel/0/10/targets[0]: (integer) 3500
+/OREHS8260pModel/0/10/targets[1]: (integer) 1900
+/OREHS8260pModel/0/10/targets[2]: (integer) 2900
+/OREHS8260pModel/0/10/targets[3]: (integer) 4500
+/OREHS8260pModel/0/10/targets[4]: (integer) 2000
+/OREHS8260pModel/0/10/targets[5]: (integer) 0
+/OREHS8260pModel/0/10/targets[6]: (integer) 3500
+/OREHS8260pModel/0/10/targets[7]: (integer) 2000
+/OREHS8260pModel/0/10/tripTime[0]: (integer) 16
+/OREHS8260pModel/0/10/tripTime[1]: (integer) 16
+/OREHS8260pModel/0/10/tripTime[2]: (integer) 16
+/OREHS8260pModel/0/10/tripTime[3]: (integer) 16
+/OREHS8260pModel/0/10/tripTime[4]: (integer) 16
+/OREHS8260pModel/0/10/tripTime[5]: (integer) 16
+/OREHS8260pModel/0/10/tripTime[6]: (integer) 16
+/OREHS8260pModel/0/10/tripTime[7]: (integer) 16
+/OREHS8260pModel/0/5/Card: (integer) 5
+/OREHS8260pModel/0/5/Class Name: (string) OREHS8260pModel
+/OREHS8260pModel/0/5/currentTripBehavior[0]: (integer) 0
+/OREHS8260pModel/0/5/currentTripBehavior[1]: (integer) 0
+/OREHS8260pModel/0/5/currentTripBehavior[2]: (integer) 0
+/OREHS8260pModel/0/5/currentTripBehavior[3]: (integer) 0
+/OREHS8260pModel/0/5/currentTripBehavior[4]: (integer) 0
+/OREHS8260pModel/0/5/currentTripBehavior[5]: (integer) 0
+/OREHS8260pModel/0/5/currentTripBehavior[6]: (integer) 0
+/OREHS8260pModel/0/5/currentTripBehavior[7]: (integer) 0
+/OREHS8260pModel/0/5/maxCurrents[0]: (real) 20
+/OREHS8260pModel/0/5/maxCurrents[1]: (real) 20
+/OREHS8260pModel/0/5/maxCurrents[2]: (real) 20
+/OREHS8260pModel/0/5/maxCurrents[3]: (real) 20
+/OREHS8260pModel/0/5/maxCurrents[4]: (real) 20
+/OREHS8260pModel/0/5/maxCurrents[5]: (real) 20
+/OREHS8260pModel/0/5/maxCurrents[6]: (real) 20
+/OREHS8260pModel/0/5/maxCurrents[7]: (real) 20
+/OREHS8260pModel/0/5/outputFailureBehavior[0]: (integer) 0
+/OREHS8260pModel/0/5/outputFailureBehavior[1]: (integer) 0
+/OREHS8260pModel/0/5/outputFailureBehavior[2]: (integer) 0
+/OREHS8260pModel/0/5/outputFailureBehavior[3]: (integer) 0
+/OREHS8260pModel/0/5/outputFailureBehavior[4]: (integer) 0
+/OREHS8260pModel/0/5/outputFailureBehavior[5]: (integer) 0
+/OREHS8260pModel/0/5/outputFailureBehavior[6]: (integer) 0
+/OREHS8260pModel/0/5/outputFailureBehavior[7]: (integer) 0
+/OREHS8260pModel/0/5/riseRate: (real) 5
+/OREHS8260pModel/0/5/targets[0]: (integer) 0
+/OREHS8260pModel/0/5/targets[1]: (integer) 4500
+/OREHS8260pModel/0/5/targets[2]: (integer) 0
+/OREHS8260pModel/0/5/targets[3]: (integer) 2300
+/OREHS8260pModel/0/5/targets[4]: (integer) 0
+/OREHS8260pModel/0/5/targets[5]: (integer) 2000
+/OREHS8260pModel/0/5/targets[6]: (integer) 4900
+/OREHS8260pModel/0/5/targets[7]: (integer) 1700
+/OREHS8260pModel/0/5/tripTime[0]: (integer) 16
+/OREHS8260pModel/0/5/tripTime[1]: (integer) 16
+/OREHS8260pModel/0/5/tripTime[2]: (integer) 16
+/OREHS8260pModel/0/5/tripTime[3]: (integer) 16
+/OREHS8260pModel/0/5/tripTime[4]: (integer) 16
+/OREHS8260pModel/0/5/tripTime[5]: (integer) 16
+/OREHS8260pModel/0/5/tripTime[6]: (integer) 16
+/OREHS8260pModel/0/5/tripTime[7]: (integer) 16
+/OREHS8260pModel/0/6/Card: (integer) 6
+/OREHS8260pModel/0/6/Class Name: (string) OREHS8260pModel
+/OREHS8260pModel/0/6/currentTripBehavior[0]: (integer) 0
+/OREHS8260pModel/0/6/currentTripBehavior[1]: (integer) 0
+/OREHS8260pModel/0/6/currentTripBehavior[2]: (integer) 0
+/OREHS8260pModel/0/6/currentTripBehavior[3]: (integer) 0
+/OREHS8260pModel/0/6/currentTripBehavior[4]: (integer) 0
+/OREHS8260pModel/0/6/currentTripBehavior[5]: (integer) 0
+/OREHS8260pModel/0/6/currentTripBehavior[6]: (integer) 0
+/OREHS8260pModel/0/6/currentTripBehavior[7]: (integer) 0
+/OREHS8260pModel/0/6/maxCurrents[0]: (real) 0
+/OREHS8260pModel/0/6/maxCurrents[1]: (real) 20
+/OREHS8260pModel/0/6/maxCurrents[2]: (real) 20
+/OREHS8260pModel/0/6/maxCurrents[3]: (real) 20
+/OREHS8260pModel/0/6/maxCurrents[4]: (real) 20
+/OREHS8260pModel/0/6/maxCurrents[5]: (real) 0
+/OREHS8260pModel/0/6/maxCurrents[6]: (real) 0
+/OREHS8260pModel/0/6/maxCurrents[7]: (real) 0
+/OREHS8260pModel/0/6/outputFailureBehavior[0]: (integer) 0
+/OREHS8260pModel/0/6/outputFailureBehavior[1]: (integer) 0
+/OREHS8260pModel/0/6/outputFailureBehavior[2]: (integer) 0
+/OREHS8260pModel/0/6/outputFailureBehavior[3]: (integer) 0
+/OREHS8260pModel/0/6/outputFailureBehavior[4]: (integer) 0
+/OREHS8260pModel/0/6/outputFailureBehavior[5]: (integer) 0
+/OREHS8260pModel/0/6/outputFailureBehavior[6]: (integer) 0
+/OREHS8260pModel/0/6/outputFailureBehavior[7]: (integer) 0
+/OREHS8260pModel/0/6/riseRate: (real) 10
+/OREHS8260pModel/0/6/targets[0]: (integer) 0
+/OREHS8260pModel/0/6/targets[1]: (integer) 2300
+/OREHS8260pModel/0/6/targets[2]: (integer) 2400
+/OREHS8260pModel/0/6/targets[3]: (integer) 2900
+/OREHS8260pModel/0/6/targets[4]: (integer) 0
+/OREHS8260pModel/0/6/targets[5]: (integer) 0
+/OREHS8260pModel/0/6/targets[6]: (integer) 0
+/OREHS8260pModel/0/6/targets[7]: (integer) 0
+/OREHS8260pModel/0/6/tripTime[0]: (integer) 16
+/OREHS8260pModel/0/6/tripTime[1]: (integer) 16
+/OREHS8260pModel/0/6/tripTime[2]: (integer) 16
+/OREHS8260pModel/0/6/tripTime[3]: (integer) 16
+/OREHS8260pModel/0/6/tripTime[4]: (integer) 16
+/OREHS8260pModel/0/6/tripTime[5]: (integer) 16
+/OREHS8260pModel/0/6/tripTime[6]: (integer) 16
+/OREHS8260pModel/0/6/tripTime[7]: (integer) 16
+/OREHS8260pModel/0/7/Card: (integer) 7
+/OREHS8260pModel/0/7/Class Name: (string) OREHS8260pModel
+/OREHS8260pModel/0/7/currentTripBehavior[0]: (integer) 0
+/OREHS8260pModel/0/7/currentTripBehavior[1]: (integer) 0
+/OREHS8260pModel/0/7/currentTripBehavior[2]: (integer) 0
+/OREHS8260pModel/0/7/currentTripBehavior[3]: (integer) 0
+/OREHS8260pModel/0/7/currentTripBehavior[4]: (integer) 0
+/OREHS8260pModel/0/7/currentTripBehavior[5]: (integer) 0
+/OREHS8260pModel/0/7/currentTripBehavior[6]: (integer) 0
+/OREHS8260pModel/0/7/currentTripBehavior[7]: (integer) 0
+/OREHS8260pModel/0/7/maxCurrents[0]: (real) 20
+/OREHS8260pModel/0/7/maxCurrents[1]: (real) 20
+/OREHS8260pModel/0/7/maxCurrents[2]: (real) 20
+/OREHS8260pModel/0/7/maxCurrents[3]: (real) 0
+/OREHS8260pModel/0/7/maxCurrents[4]: (real) 0
+/OREHS8260pModel/0/7/maxCurrents[5]: (real) 0
+/OREHS8260pModel/0/7/maxCurrents[6]: (real) 0
+/OREHS8260pModel/0/7/maxCurrents[7]: (real) 0
+/OREHS8260pModel/0/7/outputFailureBehavior[0]: (integer) 0
+/OREHS8260pModel/0/7/outputFailureBehavior[1]: (integer) 0
+/OREHS8260pModel/0/7/outputFailureBehavior[2]: (integer) 0
+/OREHS8260pModel/0/7/outputFailureBehavior[3]: (integer) 0
+/OREHS8260pModel/0/7/outputFailureBehavior[4]: (integer) 0
+/OREHS8260pModel/0/7/outputFailureBehavior[5]: (integer) 0
+/OREHS8260pModel/0/7/outputFailureBehavior[6]: (integer) 0
+/OREHS8260pModel/0/7/outputFailureBehavior[7]: (integer) 0
+/OREHS8260pModel/0/7/riseRate: (real) 10
+/OREHS8260pModel/0/7/targets[0]: (integer) 3500
+/OREHS8260pModel/0/7/targets[1]: (integer) 1500
+/OREHS8260pModel/0/7/targets[2]: (integer) 1500
+/OREHS8260pModel/0/7/targets[3]: (integer) 0
+/OREHS8260pModel/0/7/targets[4]: (integer) 0
+/OREHS8260pModel/0/7/targets[5]: (integer) 0
+/OREHS8260pModel/0/7/targets[6]: (integer) 0
+/OREHS8260pModel/0/7/targets[7]: (integer) 0
+/OREHS8260pModel/0/7/tripTime[0]: (integer) 16
+/OREHS8260pModel/0/7/tripTime[1]: (integer) 16
+/OREHS8260pModel/0/7/tripTime[2]: (integer) 16
+/OREHS8260pModel/0/7/tripTime[3]: (integer) 16
+/OREHS8260pModel/0/7/tripTime[4]: (integer) 16
+/OREHS8260pModel/0/7/tripTime[5]: (integer) 16
+/OREHS8260pModel/0/7/tripTime[6]: (integer) 16
+/OREHS8260pModel/0/7/tripTime[7]: (integer) 16
+/OREHS8260pModel/0/8/Card: (integer) 8
+/OREHS8260pModel/0/8/Class Name: (string) OREHS8260pModel
+/OREHS8260pModel/0/8/currentTripBehavior[0]: (integer) 0
+/OREHS8260pModel/0/8/currentTripBehavior[1]: (integer) 0
+/OREHS8260pModel/0/8/currentTripBehavior[2]: (integer) 0
+/OREHS8260pModel/0/8/currentTripBehavior[3]: (integer) 0
+/OREHS8260pModel/0/8/currentTripBehavior[4]: (integer) 0
+/OREHS8260pModel/0/8/currentTripBehavior[5]: (integer) 0
+/OREHS8260pModel/0/8/currentTripBehavior[6]: (integer) 0
+/OREHS8260pModel/0/8/currentTripBehavior[7]: (integer) 0
+/OREHS8260pModel/0/8/maxCurrents[0]: (real) 20
+/OREHS8260pModel/0/8/maxCurrents[1]: (real) 20
+/OREHS8260pModel/0/8/maxCurrents[2]: (real) 20
+/OREHS8260pModel/0/8/maxCurrents[3]: (real) 0
+/OREHS8260pModel/0/8/maxCurrents[4]: (real) 0
+/OREHS8260pModel/0/8/maxCurrents[5]: (real) 0
+/OREHS8260pModel/0/8/maxCurrents[6]: (real) 0
+/OREHS8260pModel/0/8/maxCurrents[7]: (real) 0
+/OREHS8260pModel/0/8/outputFailureBehavior[0]: (integer) 0
+/OREHS8260pModel/0/8/outputFailureBehavior[1]: (integer) 0
+/OREHS8260pModel/0/8/outputFailureBehavior[2]: (integer) 0
+/OREHS8260pModel/0/8/outputFailureBehavior[3]: (integer) 0
+/OREHS8260pModel/0/8/outputFailureBehavior[4]: (integer) 0
+/OREHS8260pModel/0/8/outputFailureBehavior[5]: (integer) 0
+/OREHS8260pModel/0/8/outputFailureBehavior[6]: (integer) 0
+/OREHS8260pModel/0/8/outputFailureBehavior[7]: (integer) 0
+/OREHS8260pModel/0/8/riseRate: (real) 10
+/OREHS8260pModel/0/8/targets[0]: (integer) 1500
+/OREHS8260pModel/0/8/targets[1]: (integer) 0
+/OREHS8260pModel/0/8/targets[2]: (integer) 0
+/OREHS8260pModel/0/8/targets[3]: (integer) 0
+/OREHS8260pModel/0/8/targets[4]: (integer) 4500
+/OREHS8260pModel/0/8/targets[5]: (integer) 0
+/OREHS8260pModel/0/8/targets[6]: (integer) 0
+/OREHS8260pModel/0/8/targets[7]: (integer) 0
+/OREHS8260pModel/0/8/tripTime[0]: (integer) 16
+/OREHS8260pModel/0/8/tripTime[1]: (integer) 16
+/OREHS8260pModel/0/8/tripTime[2]: (integer) 16
+/OREHS8260pModel/0/8/tripTime[3]: (integer) 16
+/OREHS8260pModel/0/8/tripTime[4]: (integer) 16
+/OREHS8260pModel/0/8/tripTime[5]: (integer) 16
+/OREHS8260pModel/0/8/tripTime[6]: (integer) 16
+/OREHS8260pModel/0/8/tripTime[7]: (integer) 16
+/OREHS8260pModel/0/9/Card: (integer) 9
+/OREHS8260pModel/0/9/Class Name: (string) OREHS8260pModel
+/OREHS8260pModel/0/9/currentTripBehavior[0]: (integer) 0
+/OREHS8260pModel/0/9/currentTripBehavior[1]: (integer) 0
+/OREHS8260pModel/0/9/currentTripBehavior[2]: (integer) 0
+/OREHS8260pModel/0/9/currentTripBehavior[3]: (integer) 0
+/OREHS8260pModel/0/9/currentTripBehavior[4]: (integer) 0
+/OREHS8260pModel/0/9/currentTripBehavior[5]: (integer) 0
+/OREHS8260pModel/0/9/currentTripBehavior[6]: (integer) 0
+/OREHS8260pModel/0/9/currentTripBehavior[7]: (integer) 0
+/OREHS8260pModel/0/9/maxCurrents[0]: (real) 20
+/OREHS8260pModel/0/9/maxCurrents[1]: (real) 0
+/OREHS8260pModel/0/9/maxCurrents[2]: (real) 0
+/OREHS8260pModel/0/9/maxCurrents[3]: (real) 20
+/OREHS8260pModel/0/9/maxCurrents[4]: (real) 20
+/OREHS8260pModel/0/9/maxCurrents[5]: (real) 0
+/OREHS8260pModel/0/9/maxCurrents[6]: (real) 0
+/OREHS8260pModel/0/9/maxCurrents[7]: (real) 0
+/OREHS8260pModel/0/9/outputFailureBehavior[0]: (integer) 0
+/OREHS8260pModel/0/9/outputFailureBehavior[1]: (integer) 0
+/OREHS8260pModel/0/9/outputFailureBehavior[2]: (integer) 0
+/OREHS8260pModel/0/9/outputFailureBehavior[3]: (integer) 0
+/OREHS8260pModel/0/9/outputFailureBehavior[4]: (integer) 0
+/OREHS8260pModel/0/9/outputFailureBehavior[5]: (integer) 0
+/OREHS8260pModel/0/9/outputFailureBehavior[6]: (integer) 0
+/OREHS8260pModel/0/9/outputFailureBehavior[7]: (integer) 0
+/OREHS8260pModel/0/9/riseRate: (real) 10
+/OREHS8260pModel/0/9/targets[0]: (integer) 4000
+/OREHS8260pModel/0/9/targets[1]: (integer) 0
+/OREHS8260pModel/0/9/targets[2]: (integer) 0
+/OREHS8260pModel/0/9/targets[3]: (integer) 3000
+/OREHS8260pModel/0/9/targets[4]: (integer) 3500
+/OREHS8260pModel/0/9/targets[5]: (integer) 0
+/OREHS8260pModel/0/9/targets[6]: (integer) 0
+/OREHS8260pModel/0/9/targets[7]: (integer) 0
+/OREHS8260pModel/0/9/tripTime[0]: (integer) 16
+/OREHS8260pModel/0/9/tripTime[1]: (integer) 16
+/OREHS8260pModel/0/9/tripTime[2]: (integer) 16
+/OREHS8260pModel/0/9/tripTime[3]: (integer) 16
+/OREHS8260pModel/0/9/tripTime[4]: (integer) 16
+/OREHS8260pModel/0/9/tripTime[5]: (integer) 16
+/OREHS8260pModel/0/9/tripTime[6]: (integer) 16
+/OREHS8260pModel/0/9/tripTime[7]: (integer) 16
+/ORGretina4MModel/1/10/Baseline Restore Enabled[0]: (bool) false
+/ORGretina4MModel/1/10/Baseline Restore Enabled[1]: (bool) false
+/ORGretina4MModel/1/10/Baseline Restore Enabled[2]: (bool) false
+/ORGretina4MModel/1/10/Baseline Restore Enabled[3]: (bool) false
+/ORGretina4MModel/1/10/Baseline Restore Enabled[4]: (bool) false
+/ORGretina4MModel/1/10/Baseline Restore Enabled[5]: (bool) false
+/ORGretina4MModel/1/10/Baseline Restore Enabled[6]: (bool) false
+/ORGretina4MModel/1/10/Baseline Restore Enabled[7]: (bool) false
+/ORGretina4MModel/1/10/Baseline Restore Enabled[8]: (bool) false
+/ORGretina4MModel/1/10/Baseline Restore Enabled[9]: (bool) false
+/ORGretina4MModel/1/10/Card: (integer) 10
+/ORGretina4MModel/1/10/Chpsdv[0]: (integer) 3
+/ORGretina4MModel/1/10/Chpsdv[1]: (integer) 0
+/ORGretina4MModel/1/10/Chpsdv[2]: (integer) 3
+/ORGretina4MModel/1/10/Chpsdv[3]: (integer) 0
+/ORGretina4MModel/1/10/Chpsdv[4]: (integer) 3
+/ORGretina4MModel/1/10/Chpsdv[5]: (integer) 0
+/ORGretina4MModel/1/10/Chpsdv[6]: (integer) 0
+/ORGretina4MModel/1/10/Chpsdv[7]: (integer) 0
+/ORGretina4MModel/1/10/Chpsdv[8]: (integer) 3
+/ORGretina4MModel/1/10/Chpsdv[9]: (integer) 0
+/ORGretina4MModel/1/10/Chpsrt[0]: (integer) 2
+/ORGretina4MModel/1/10/Chpsrt[1]: (integer) 0
+/ORGretina4MModel/1/10/Chpsrt[2]: (integer) 2
+/ORGretina4MModel/1/10/Chpsrt[3]: (integer) 0
+/ORGretina4MModel/1/10/Chpsrt[4]: (integer) 2
+/ORGretina4MModel/1/10/Chpsrt[5]: (integer) 0
+/ORGretina4MModel/1/10/Chpsrt[6]: (integer) 0
+/ORGretina4MModel/1/10/Chpsrt[7]: (integer) 0
+/ORGretina4MModel/1/10/Chpsrt[8]: (integer) 2
+/ORGretina4MModel/1/10/Chpsrt[9]: (integer) 0
+/ORGretina4MModel/1/10/Class Name: (string) ORGretina4MModel
+/ORGretina4MModel/1/10/Clock Phase: (integer) 0
+/ORGretina4MModel/1/10/Clock Source: (integer) 0
+/ORGretina4MModel/1/10/Collection Time: (integer) 200
+/ORGretina4MModel/1/10/Debug Mode[0]: (bool) false
+/ORGretina4MModel/1/10/Debug Mode[1]: (bool) false
+/ORGretina4MModel/1/10/Debug Mode[2]: (bool) false
+/ORGretina4MModel/1/10/Debug Mode[3]: (bool) false
+/ORGretina4MModel/1/10/Debug Mode[4]: (bool) false
+/ORGretina4MModel/1/10/Debug Mode[5]: (bool) false
+/ORGretina4MModel/1/10/Debug Mode[6]: (bool) false
+/ORGretina4MModel/1/10/Debug Mode[7]: (bool) false
+/ORGretina4MModel/1/10/Debug Mode[8]: (bool) false
+/ORGretina4MModel/1/10/Debug Mode[9]: (bool) false
+/ORGretina4MModel/1/10/Down Sample: (integer) 0
+/ORGretina4MModel/1/10/Enabled[0]: (bool) true
+/ORGretina4MModel/1/10/Enabled[1]: (bool) true
+/ORGretina4MModel/1/10/Enabled[2]: (bool) false
+/ORGretina4MModel/1/10/Enabled[3]: (bool) false
+/ORGretina4MModel/1/10/Enabled[4]: (bool) true
+/ORGretina4MModel/1/10/Enabled[5]: (bool) false
+/ORGretina4MModel/1/10/Enabled[6]: (bool) false
+/ORGretina4MModel/1/10/Enabled[7]: (bool) false
+/ORGretina4MModel/1/10/Enabled[8]: (bool) false
+/ORGretina4MModel/1/10/Enabled[9]: (bool) false
+/ORGretina4MModel/1/10/Ext Trig Length: (integer) 400
+/ORGretina4MModel/1/10/External Window: (integer) 400
+/ORGretina4MModel/1/10/FtCnt[0]: (integer) 0
+/ORGretina4MModel/1/10/FtCnt[1]: (integer) 0
+/ORGretina4MModel/1/10/FtCnt[2]: (integer) 0
+/ORGretina4MModel/1/10/FtCnt[3]: (integer) 0
+/ORGretina4MModel/1/10/FtCnt[4]: (integer) 0
+/ORGretina4MModel/1/10/FtCnt[5]: (integer) 0
+/ORGretina4MModel/1/10/FtCnt[6]: (integer) 0
+/ORGretina4MModel/1/10/FtCnt[7]: (integer) 0
+/ORGretina4MModel/1/10/FtCnt[8]: (integer) 0
+/ORGretina4MModel/1/10/FtCnt[9]: (integer) 0
+/ORGretina4MModel/1/10/Hist E Multiplier: (integer) 1
+/ORGretina4MModel/1/10/Integration Time: (integer) 400
+/ORGretina4MModel/1/10/LED Threshold[0]: (integer) 700
+/ORGretina4MModel/1/10/LED Threshold[1]: (integer) 400
+/ORGretina4MModel/1/10/LED Threshold[2]: (integer) 5
+/ORGretina4MModel/1/10/LED Threshold[3]: (integer) 5
+/ORGretina4MModel/1/10/LED Threshold[4]: (integer) 5000
+/ORGretina4MModel/1/10/LED Threshold[5]: (integer) 5
+/ORGretina4MModel/1/10/LED Threshold[6]: (integer) 700
+/ORGretina4MModel/1/10/LED Threshold[7]: (integer) 400
+/ORGretina4MModel/1/10/LED Threshold[8]: (integer) 900
+/ORGretina4MModel/1/10/LED Threshold[9]: (integer) 400
+/ORGretina4MModel/1/10/Mrpsdv[0]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsdv[1]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsdv[2]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsdv[3]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsdv[4]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsdv[5]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsdv[6]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsdv[7]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsdv[8]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsdv[9]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsrt[0]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsrt[1]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsrt[2]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsrt[3]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsrt[4]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsrt[5]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsrt[6]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsrt[7]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsrt[8]: (integer) 0
+/ORGretina4MModel/1/10/Mrpsrt[9]: (integer) 0
+/ORGretina4MModel/1/10/Noise Window: (integer) 127
+/ORGretina4MModel/1/10/PZ Trace Enabled[0]: (bool) false
+/ORGretina4MModel/1/10/PZ Trace Enabled[1]: (bool) false
+/ORGretina4MModel/1/10/PZ Trace Enabled[2]: (bool) false
+/ORGretina4MModel/1/10/PZ Trace Enabled[3]: (bool) false
+/ORGretina4MModel/1/10/PZ Trace Enabled[4]: (bool) false
+/ORGretina4MModel/1/10/PZ Trace Enabled[5]: (bool) false
+/ORGretina4MModel/1/10/PZ Trace Enabled[6]: (bool) false
+/ORGretina4MModel/1/10/PZ Trace Enabled[7]: (bool) false
+/ORGretina4MModel/1/10/PZ Trace Enabled[8]: (bool) false
+/ORGretina4MModel/1/10/PZ Trace Enabled[9]: (bool) false
+/ORGretina4MModel/1/10/Pile Up[0]: (bool) false
+/ORGretina4MModel/1/10/Pile Up[1]: (bool) false
+/ORGretina4MModel/1/10/Pile Up[2]: (bool) false
+/ORGretina4MModel/1/10/Pile Up[3]: (bool) false
+/ORGretina4MModel/1/10/Pile Up[4]: (bool) false
+/ORGretina4MModel/1/10/Pile Up[5]: (bool) false
+/ORGretina4MModel/1/10/Pile Up[6]: (bool) false
+/ORGretina4MModel/1/10/Pile Up[7]: (bool) false
+/ORGretina4MModel/1/10/Pile Up[8]: (bool) false
+/ORGretina4MModel/1/10/Pile Up[9]: (bool) false
+/ORGretina4MModel/1/10/Pile Up Window: (integer) 1024
+/ORGretina4MModel/1/10/Pole Zero Enabled[0]: (bool) false
+/ORGretina4MModel/1/10/Pole Zero Enabled[1]: (bool) false
+/ORGretina4MModel/1/10/Pole Zero Enabled[2]: (bool) false
+/ORGretina4MModel/1/10/Pole Zero Enabled[3]: (bool) false
+/ORGretina4MModel/1/10/Pole Zero Enabled[4]: (bool) false
+/ORGretina4MModel/1/10/Pole Zero Enabled[5]: (bool) false
+/ORGretina4MModel/1/10/Pole Zero Enabled[6]: (bool) false
+/ORGretina4MModel/1/10/Pole Zero Enabled[7]: (bool) false
+/ORGretina4MModel/1/10/Pole Zero Enabled[8]: (bool) false
+/ORGretina4MModel/1/10/Pole Zero Enabled[9]: (bool) false
+/ORGretina4MModel/1/10/Pole Zero Multiplier[0]: (integer) 1536
+/ORGretina4MModel/1/10/Pole Zero Multiplier[1]: (integer) 1536
+/ORGretina4MModel/1/10/Pole Zero Multiplier[2]: (integer) 1536
+/ORGretina4MModel/1/10/Pole Zero Multiplier[3]: (integer) 1536
+/ORGretina4MModel/1/10/Pole Zero Multiplier[4]: (integer) 1536
+/ORGretina4MModel/1/10/Pole Zero Multiplier[5]: (integer) 1536
+/ORGretina4MModel/1/10/Pole Zero Multiplier[6]: (integer) 1536
+/ORGretina4MModel/1/10/Pole Zero Multiplier[7]: (integer) 1536
+/ORGretina4MModel/1/10/Pole Zero Multiplier[8]: (integer) 1536
+/ORGretina4MModel/1/10/Pole Zero Multiplier[9]: (integer) 1536
+/ORGretina4MModel/1/10/Postrecnt[0]: (integer) 1009
+/ORGretina4MModel/1/10/Postrecnt[1]: (integer) 1009
+/ORGretina4MModel/1/10/Postrecnt[2]: (integer) 1009
+/ORGretina4MModel/1/10/Postrecnt[3]: (integer) 1009
+/ORGretina4MModel/1/10/Postrecnt[4]: (integer) 1009
+/ORGretina4MModel/1/10/Postrecnt[5]: (integer) 1009
+/ORGretina4MModel/1/10/Postrecnt[6]: (integer) 1009
+/ORGretina4MModel/1/10/Postrecnt[7]: (integer) 1009
+/ORGretina4MModel/1/10/Postrecnt[8]: (integer) 1009
+/ORGretina4MModel/1/10/Postrecnt[9]: (integer) 1009
+/ORGretina4MModel/1/10/PreSum Enabled[0]: (bool) false
+/ORGretina4MModel/1/10/PreSum Enabled[1]: (bool) false
+/ORGretina4MModel/1/10/PreSum Enabled[2]: (bool) false
+/ORGretina4MModel/1/10/PreSum Enabled[3]: (bool) false
+/ORGretina4MModel/1/10/PreSum Enabled[4]: (bool) false
+/ORGretina4MModel/1/10/PreSum Enabled[5]: (bool) false
+/ORGretina4MModel/1/10/PreSum Enabled[6]: (bool) false
+/ORGretina4MModel/1/10/PreSum Enabled[7]: (bool) false
+/ORGretina4MModel/1/10/PreSum Enabled[8]: (bool) false
+/ORGretina4MModel/1/10/PreSum Enabled[9]: (bool) false
+/ORGretina4MModel/1/10/Prerecnt[0]: (integer) 1009
+/ORGretina4MModel/1/10/Prerecnt[1]: (integer) 1009
+/ORGretina4MModel/1/10/Prerecnt[2]: (integer) 1009
+/ORGretina4MModel/1/10/Prerecnt[3]: (integer) 1009
+/ORGretina4MModel/1/10/Prerecnt[4]: (integer) 1009
+/ORGretina4MModel/1/10/Prerecnt[5]: (integer) 1009
+/ORGretina4MModel/1/10/Prerecnt[6]: (integer) 1009
+/ORGretina4MModel/1/10/Prerecnt[7]: (integer) 1009
+/ORGretina4MModel/1/10/Prerecnt[8]: (integer) 1009
+/ORGretina4MModel/1/10/Prerecnt[9]: (integer) 1009
+/ORGretina4MModel/1/10/TPol[0]: (integer) 3
+/ORGretina4MModel/1/10/TPol[1]: (integer) 3
+/ORGretina4MModel/1/10/TPol[2]: (integer) 1
+/ORGretina4MModel/1/10/TPol[3]: (integer) 1
+/ORGretina4MModel/1/10/TPol[4]: (integer) 3
+/ORGretina4MModel/1/10/TPol[5]: (integer) 0
+/ORGretina4MModel/1/10/TPol[6]: (integer) 3
+/ORGretina4MModel/1/10/TPol[7]: (integer) 3
+/ORGretina4MModel/1/10/TPol[8]: (integer) 1
+/ORGretina4MModel/1/10/TPol[9]: (integer) 1
+/ORGretina4MModel/1/10/TRAP Threshold[0]: (integer) 700
+/ORGretina4MModel/1/10/TRAP Threshold[1]: (integer) 400
+/ORGretina4MModel/1/10/TRAP Threshold[2]: (integer) 5
+/ORGretina4MModel/1/10/TRAP Threshold[3]: (integer) 5
+/ORGretina4MModel/1/10/TRAP Threshold[4]: (integer) 5000
+/ORGretina4MModel/1/10/TRAP Threshold[5]: (integer) 5
+/ORGretina4MModel/1/10/TRAP Threshold[6]: (integer) 700
+/ORGretina4MModel/1/10/TRAP Threshold[7]: (integer) 400
+/ORGretina4MModel/1/10/TRAP Threshold[8]: (integer) 900
+/ORGretina4MModel/1/10/TRAP Threshold[9]: (integer) 400
+/ORGretina4MModel/1/10/Trap Enabled[0]: (bool) true
+/ORGretina4MModel/1/10/Trap Enabled[1]: (bool) true
+/ORGretina4MModel/1/10/Trap Enabled[2]: (bool) true
+/ORGretina4MModel/1/10/Trap Enabled[3]: (bool) true
+/ORGretina4MModel/1/10/Trap Enabled[4]: (bool) true
+/ORGretina4MModel/1/10/Trap Enabled[5]: (bool) true
+/ORGretina4MModel/1/10/Trap Enabled[6]: (bool) true
+/ORGretina4MModel/1/10/Trap Enabled[7]: (bool) true
+/ORGretina4MModel/1/10/Trap Enabled[8]: (bool) true
+/ORGretina4MModel/1/10/Trap Enabled[9]: (bool) true
+/ORGretina4MModel/1/10/Trigger Mode[0]: (integer) 0
+/ORGretina4MModel/1/10/Trigger Mode[1]: (integer) 0
+/ORGretina4MModel/1/10/Trigger Mode[2]: (integer) 0
+/ORGretina4MModel/1/10/Trigger Mode[3]: (integer) 0
+/ORGretina4MModel/1/10/Trigger Mode[4]: (integer) 0
+/ORGretina4MModel/1/10/Trigger Mode[5]: (integer) 0
+/ORGretina4MModel/1/10/Trigger Mode[6]: (integer) 0
+/ORGretina4MModel/1/10/Trigger Mode[7]: (integer) 0
+/ORGretina4MModel/1/10/Trigger Mode[8]: (integer) 0
+/ORGretina4MModel/1/10/Trigger Mode[9]: (integer) 0
+/ORGretina4MModel/1/10/baseAddress: (integer) 11534336
+/ORGretina4MModel/1/10/forceFullInit[0]: (bool) true
+/ORGretina4MModel/1/10/forceFullInit[1]: (bool) true
+/ORGretina4MModel/1/10/forceFullInit[2]: (bool) true
+/ORGretina4MModel/1/10/forceFullInit[3]: (bool) true
+/ORGretina4MModel/1/10/forceFullInit[4]: (bool) true
+/ORGretina4MModel/1/10/forceFullInit[5]: (bool) true
+/ORGretina4MModel/1/10/forceFullInit[6]: (bool) true
+/ORGretina4MModel/1/10/forceFullInit[7]: (bool) true
+/ORGretina4MModel/1/10/forceFullInit[8]: (bool) true
+/ORGretina4MModel/1/10/forceFullInit[9]: (bool) true
+/ORGretina4MModel/1/10/forceFullInitCard: (integer) 1
+/ORGretina4MModel/1/11/Baseline Restore Enabled[0]: (bool) false
+/ORGretina4MModel/1/11/Baseline Restore Enabled[1]: (bool) false
+/ORGretina4MModel/1/11/Baseline Restore Enabled[2]: (bool) false
+/ORGretina4MModel/1/11/Baseline Restore Enabled[3]: (bool) false
+/ORGretina4MModel/1/11/Baseline Restore Enabled[4]: (bool) false
+/ORGretina4MModel/1/11/Baseline Restore Enabled[5]: (bool) false
+/ORGretina4MModel/1/11/Baseline Restore Enabled[6]: (bool) false
+/ORGretina4MModel/1/11/Baseline Restore Enabled[7]: (bool) false
+/ORGretina4MModel/1/11/Baseline Restore Enabled[8]: (bool) false
+/ORGretina4MModel/1/11/Baseline Restore Enabled[9]: (bool) false
+/ORGretina4MModel/1/11/Card: (integer) 11
+/ORGretina4MModel/1/11/Chpsdv[0]: (integer) 3
+/ORGretina4MModel/1/11/Chpsdv[1]: (integer) 0
+/ORGretina4MModel/1/11/Chpsdv[2]: (integer) 3
+/ORGretina4MModel/1/11/Chpsdv[3]: (integer) 0
+/ORGretina4MModel/1/11/Chpsdv[4]: (integer) 3
+/ORGretina4MModel/1/11/Chpsdv[5]: (integer) 0
+/ORGretina4MModel/1/11/Chpsdv[6]: (integer) 0
+/ORGretina4MModel/1/11/Chpsdv[7]: (integer) 0
+/ORGretina4MModel/1/11/Chpsdv[8]: (integer) 3
+/ORGretina4MModel/1/11/Chpsdv[9]: (integer) 0
+/ORGretina4MModel/1/11/Chpsrt[0]: (integer) 2
+/ORGretina4MModel/1/11/Chpsrt[1]: (integer) 0
+/ORGretina4MModel/1/11/Chpsrt[2]: (integer) 2
+/ORGretina4MModel/1/11/Chpsrt[3]: (integer) 0
+/ORGretina4MModel/1/11/Chpsrt[4]: (integer) 2
+/ORGretina4MModel/1/11/Chpsrt[5]: (integer) 0
+/ORGretina4MModel/1/11/Chpsrt[6]: (integer) 0
+/ORGretina4MModel/1/11/Chpsrt[7]: (integer) 0
+/ORGretina4MModel/1/11/Chpsrt[8]: (integer) 2
+/ORGretina4MModel/1/11/Chpsrt[9]: (integer) 0
+/ORGretina4MModel/1/11/Class Name: (string) ORGretina4MModel
+/ORGretina4MModel/1/11/Clock Phase: (integer) 0
+/ORGretina4MModel/1/11/Clock Source: (integer) 0
+/ORGretina4MModel/1/11/Collection Time: (integer) 200
+/ORGretina4MModel/1/11/Debug Mode[0]: (bool) false
+/ORGretina4MModel/1/11/Debug Mode[1]: (bool) false
+/ORGretina4MModel/1/11/Debug Mode[2]: (bool) false
+/ORGretina4MModel/1/11/Debug Mode[3]: (bool) false
+/ORGretina4MModel/1/11/Debug Mode[4]: (bool) false
+/ORGretina4MModel/1/11/Debug Mode[5]: (bool) false
+/ORGretina4MModel/1/11/Debug Mode[6]: (bool) false
+/ORGretina4MModel/1/11/Debug Mode[7]: (bool) false
+/ORGretina4MModel/1/11/Debug Mode[8]: (bool) false
+/ORGretina4MModel/1/11/Debug Mode[9]: (bool) false
+/ORGretina4MModel/1/11/Down Sample: (integer) 0
+/ORGretina4MModel/1/11/Enabled[0]: (bool) false
+/ORGretina4MModel/1/11/Enabled[1]: (bool) false
+/ORGretina4MModel/1/11/Enabled[2]: (bool) true
+/ORGretina4MModel/1/11/Enabled[3]: (bool) true
+/ORGretina4MModel/1/11/Enabled[4]: (bool) true
+/ORGretina4MModel/1/11/Enabled[5]: (bool) true
+/ORGretina4MModel/1/11/Enabled[6]: (bool) true
+/ORGretina4MModel/1/11/Enabled[7]: (bool) true
+/ORGretina4MModel/1/11/Enabled[8]: (bool) false
+/ORGretina4MModel/1/11/Enabled[9]: (bool) false
+/ORGretina4MModel/1/11/Ext Trig Length: (integer) 400
+/ORGretina4MModel/1/11/External Window: (integer) 400
+/ORGretina4MModel/1/11/FtCnt[0]: (integer) 0
+/ORGretina4MModel/1/11/FtCnt[1]: (integer) 0
+/ORGretina4MModel/1/11/FtCnt[2]: (integer) 0
+/ORGretina4MModel/1/11/FtCnt[3]: (integer) 0
+/ORGretina4MModel/1/11/FtCnt[4]: (integer) 0
+/ORGretina4MModel/1/11/FtCnt[5]: (integer) 0
+/ORGretina4MModel/1/11/FtCnt[6]: (integer) 0
+/ORGretina4MModel/1/11/FtCnt[7]: (integer) 0
+/ORGretina4MModel/1/11/FtCnt[8]: (integer) 0
+/ORGretina4MModel/1/11/FtCnt[9]: (integer) 0
+/ORGretina4MModel/1/11/Hist E Multiplier: (integer) 1
+/ORGretina4MModel/1/11/Integration Time: (integer) 400
+/ORGretina4MModel/1/11/LED Threshold[0]: (integer) 10000
+/ORGretina4MModel/1/11/LED Threshold[1]: (integer) 10000
+/ORGretina4MModel/1/11/LED Threshold[2]: (integer) 800
+/ORGretina4MModel/1/11/LED Threshold[3]: (integer) 400
+/ORGretina4MModel/1/11/LED Threshold[4]: (integer) 800
+/ORGretina4MModel/1/11/LED Threshold[5]: (integer) 400
+/ORGretina4MModel/1/11/LED Threshold[6]: (integer) 900
+/ORGretina4MModel/1/11/LED Threshold[7]: (integer) 400
+/ORGretina4MModel/1/11/LED Threshold[8]: (integer) 826
+/ORGretina4MModel/1/11/LED Threshold[9]: (integer) 800
+/ORGretina4MModel/1/11/Mrpsdv[0]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsdv[1]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsdv[2]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsdv[3]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsdv[4]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsdv[5]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsdv[6]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsdv[7]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsdv[8]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsdv[9]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsrt[0]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsrt[1]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsrt[2]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsrt[3]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsrt[4]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsrt[5]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsrt[6]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsrt[7]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsrt[8]: (integer) 0
+/ORGretina4MModel/1/11/Mrpsrt[9]: (integer) 0
+/ORGretina4MModel/1/11/Noise Window: (integer) 127
+/ORGretina4MModel/1/11/PZ Trace Enabled[0]: (bool) false
+/ORGretina4MModel/1/11/PZ Trace Enabled[1]: (bool) false
+/ORGretina4MModel/1/11/PZ Trace Enabled[2]: (bool) false
+/ORGretina4MModel/1/11/PZ Trace Enabled[3]: (bool) false
+/ORGretina4MModel/1/11/PZ Trace Enabled[4]: (bool) false
+/ORGretina4MModel/1/11/PZ Trace Enabled[5]: (bool) false
+/ORGretina4MModel/1/11/PZ Trace Enabled[6]: (bool) false
+/ORGretina4MModel/1/11/PZ Trace Enabled[7]: (bool) false
+/ORGretina4MModel/1/11/PZ Trace Enabled[8]: (bool) false
+/ORGretina4MModel/1/11/PZ Trace Enabled[9]: (bool) false
+/ORGretina4MModel/1/11/Pile Up[0]: (bool) false
+/ORGretina4MModel/1/11/Pile Up[1]: (bool) false
+/ORGretina4MModel/1/11/Pile Up[2]: (bool) false
+/ORGretina4MModel/1/11/Pile Up[3]: (bool) false
+/ORGretina4MModel/1/11/Pile Up[4]: (bool) false
+/ORGretina4MModel/1/11/Pile Up[5]: (bool) false
+/ORGretina4MModel/1/11/Pile Up[6]: (bool) false
+/ORGretina4MModel/1/11/Pile Up[7]: (bool) false
+/ORGretina4MModel/1/11/Pile Up[8]: (bool) false
+/ORGretina4MModel/1/11/Pile Up[9]: (bool) false
+/ORGretina4MModel/1/11/Pile Up Window: (integer) 1024
+/ORGretina4MModel/1/11/Pole Zero Enabled[0]: (bool) false
+/ORGretina4MModel/1/11/Pole Zero Enabled[1]: (bool) false
+/ORGretina4MModel/1/11/Pole Zero Enabled[2]: (bool) false
+/ORGretina4MModel/1/11/Pole Zero Enabled[3]: (bool) false
+/ORGretina4MModel/1/11/Pole Zero Enabled[4]: (bool) false
+/ORGretina4MModel/1/11/Pole Zero Enabled[5]: (bool) false
+/ORGretina4MModel/1/11/Pole Zero Enabled[6]: (bool) false
+/ORGretina4MModel/1/11/Pole Zero Enabled[7]: (bool) false
+/ORGretina4MModel/1/11/Pole Zero Enabled[8]: (bool) false
+/ORGretina4MModel/1/11/Pole Zero Enabled[9]: (bool) false
+/ORGretina4MModel/1/11/Pole Zero Multiplier[0]: (integer) 1536
+/ORGretina4MModel/1/11/Pole Zero Multiplier[1]: (integer) 1536
+/ORGretina4MModel/1/11/Pole Zero Multiplier[2]: (integer) 1536
+/ORGretina4MModel/1/11/Pole Zero Multiplier[3]: (integer) 1536
+/ORGretina4MModel/1/11/Pole Zero Multiplier[4]: (integer) 1536
+/ORGretina4MModel/1/11/Pole Zero Multiplier[5]: (integer) 1536
+/ORGretina4MModel/1/11/Pole Zero Multiplier[6]: (integer) 1536
+/ORGretina4MModel/1/11/Pole Zero Multiplier[7]: (integer) 1536
+/ORGretina4MModel/1/11/Pole Zero Multiplier[8]: (integer) 1536
+/ORGretina4MModel/1/11/Pole Zero Multiplier[9]: (integer) 1536
+/ORGretina4MModel/1/11/Postrecnt[0]: (integer) 1009
+/ORGretina4MModel/1/11/Postrecnt[1]: (integer) 1009
+/ORGretina4MModel/1/11/Postrecnt[2]: (integer) 1009
+/ORGretina4MModel/1/11/Postrecnt[3]: (integer) 1009
+/ORGretina4MModel/1/11/Postrecnt[4]: (integer) 1009
+/ORGretina4MModel/1/11/Postrecnt[5]: (integer) 1009
+/ORGretina4MModel/1/11/Postrecnt[6]: (integer) 1009
+/ORGretina4MModel/1/11/Postrecnt[7]: (integer) 1009
+/ORGretina4MModel/1/11/Postrecnt[8]: (integer) 1009
+/ORGretina4MModel/1/11/Postrecnt[9]: (integer) 1009
+/ORGretina4MModel/1/11/PreSum Enabled[0]: (bool) false
+/ORGretina4MModel/1/11/PreSum Enabled[1]: (bool) false
+/ORGretina4MModel/1/11/PreSum Enabled[2]: (bool) false
+/ORGretina4MModel/1/11/PreSum Enabled[3]: (bool) false
+/ORGretina4MModel/1/11/PreSum Enabled[4]: (bool) false
+/ORGretina4MModel/1/11/PreSum Enabled[5]: (bool) false
+/ORGretina4MModel/1/11/PreSum Enabled[6]: (bool) false
+/ORGretina4MModel/1/11/PreSum Enabled[7]: (bool) false
+/ORGretina4MModel/1/11/PreSum Enabled[8]: (bool) false
+/ORGretina4MModel/1/11/PreSum Enabled[9]: (bool) false
+/ORGretina4MModel/1/11/Prerecnt[0]: (integer) 1009
+/ORGretina4MModel/1/11/Prerecnt[1]: (integer) 1009
+/ORGretina4MModel/1/11/Prerecnt[2]: (integer) 1009
+/ORGretina4MModel/1/11/Prerecnt[3]: (integer) 1009
+/ORGretina4MModel/1/11/Prerecnt[4]: (integer) 1009
+/ORGretina4MModel/1/11/Prerecnt[5]: (integer) 1009
+/ORGretina4MModel/1/11/Prerecnt[6]: (integer) 1009
+/ORGretina4MModel/1/11/Prerecnt[7]: (integer) 1009
+/ORGretina4MModel/1/11/Prerecnt[8]: (integer) 1009
+/ORGretina4MModel/1/11/Prerecnt[9]: (integer) 1009
+/ORGretina4MModel/1/11/TPol[0]: (integer) 1
+/ORGretina4MModel/1/11/TPol[1]: (integer) 1
+/ORGretina4MModel/1/11/TPol[2]: (integer) 3
+/ORGretina4MModel/1/11/TPol[3]: (integer) 3
+/ORGretina4MModel/1/11/TPol[4]: (integer) 3
+/ORGretina4MModel/1/11/TPol[5]: (integer) 3
+/ORGretina4MModel/1/11/TPol[6]: (integer) 3
+/ORGretina4MModel/1/11/TPol[7]: (integer) 3
+/ORGretina4MModel/1/11/TPol[8]: (integer) 1
+/ORGretina4MModel/1/11/TPol[9]: (integer) 1
+/ORGretina4MModel/1/11/TRAP Threshold[0]: (integer) 10000
+/ORGretina4MModel/1/11/TRAP Threshold[1]: (integer) 10000
+/ORGretina4MModel/1/11/TRAP Threshold[2]: (integer) 800
+/ORGretina4MModel/1/11/TRAP Threshold[3]: (integer) 400
+/ORGretina4MModel/1/11/TRAP Threshold[4]: (integer) 800
+/ORGretina4MModel/1/11/TRAP Threshold[5]: (integer) 400
+/ORGretina4MModel/1/11/TRAP Threshold[6]: (integer) 900
+/ORGretina4MModel/1/11/TRAP Threshold[7]: (integer) 400
+/ORGretina4MModel/1/11/TRAP Threshold[8]: (integer) 826
+/ORGretina4MModel/1/11/TRAP Threshold[9]: (integer) 800
+/ORGretina4MModel/1/11/Trap Enabled[0]: (bool) true
+/ORGretina4MModel/1/11/Trap Enabled[1]: (bool) true
+/ORGretina4MModel/1/11/Trap Enabled[2]: (bool) true
+/ORGretina4MModel/1/11/Trap Enabled[3]: (bool) true
+/ORGretina4MModel/1/11/Trap Enabled[4]: (bool) true
+/ORGretina4MModel/1/11/Trap Enabled[5]: (bool) true
+/ORGretina4MModel/1/11/Trap Enabled[6]: (bool) true
+/ORGretina4MModel/1/11/Trap Enabled[7]: (bool) true
+/ORGretina4MModel/1/11/Trap Enabled[8]: (bool) true
+/ORGretina4MModel/1/11/Trap Enabled[9]: (bool) true
+/ORGretina4MModel/1/11/Trigger Mode[0]: (integer) 0
+/ORGretina4MModel/1/11/Trigger Mode[1]: (integer) 0
+/ORGretina4MModel/1/11/Trigger Mode[2]: (integer) 0
+/ORGretina4MModel/1/11/Trigger Mode[3]: (integer) 0
+/ORGretina4MModel/1/11/Trigger Mode[4]: (integer) 0
+/ORGretina4MModel/1/11/Trigger Mode[5]: (integer) 0
+/ORGretina4MModel/1/11/Trigger Mode[6]: (integer) 0
+/ORGretina4MModel/1/11/Trigger Mode[7]: (integer) 0
+/ORGretina4MModel/1/11/Trigger Mode[8]: (integer) 0
+/ORGretina4MModel/1/11/Trigger Mode[9]: (integer) 0
+/ORGretina4MModel/1/11/baseAddress: (integer) 12582912
+/ORGretina4MModel/1/11/forceFullInit[0]: (bool) true
+/ORGretina4MModel/1/11/forceFullInit[1]: (bool) true
+/ORGretina4MModel/1/11/forceFullInit[2]: (bool) true
+/ORGretina4MModel/1/11/forceFullInit[3]: (bool) true
+/ORGretina4MModel/1/11/forceFullInit[4]: (bool) true
+/ORGretina4MModel/1/11/forceFullInit[5]: (bool) true
+/ORGretina4MModel/1/11/forceFullInit[6]: (bool) true
+/ORGretina4MModel/1/11/forceFullInit[7]: (bool) true
+/ORGretina4MModel/1/11/forceFullInit[8]: (bool) true
+/ORGretina4MModel/1/11/forceFullInit[9]: (bool) true
+/ORGretina4MModel/1/11/forceFullInitCard: (integer) 1
+/ORGretina4MModel/1/4/Baseline Restore Enabled[0]: (bool) false
+/ORGretina4MModel/1/4/Baseline Restore Enabled[1]: (bool) false
+/ORGretina4MModel/1/4/Baseline Restore Enabled[2]: (bool) false
+/ORGretina4MModel/1/4/Baseline Restore Enabled[3]: (bool) false
+/ORGretina4MModel/1/4/Baseline Restore Enabled[4]: (bool) false
+/ORGretina4MModel/1/4/Baseline Restore Enabled[5]: (bool) false
+/ORGretina4MModel/1/4/Baseline Restore Enabled[6]: (bool) false
+/ORGretina4MModel/1/4/Baseline Restore Enabled[7]: (bool) false
+/ORGretina4MModel/1/4/Baseline Restore Enabled[8]: (bool) false
+/ORGretina4MModel/1/4/Baseline Restore Enabled[9]: (bool) false
+/ORGretina4MModel/1/4/Card: (integer) 4
+/ORGretina4MModel/1/4/Chpsdv[0]: (integer) 3
+/ORGretina4MModel/1/4/Chpsdv[1]: (integer) 0
+/ORGretina4MModel/1/4/Chpsdv[2]: (integer) 3
+/ORGretina4MModel/1/4/Chpsdv[3]: (integer) 0
+/ORGretina4MModel/1/4/Chpsdv[4]: (integer) 3
+/ORGretina4MModel/1/4/Chpsdv[5]: (integer) 0
+/ORGretina4MModel/1/4/Chpsdv[6]: (integer) 0
+/ORGretina4MModel/1/4/Chpsdv[7]: (integer) 0
+/ORGretina4MModel/1/4/Chpsdv[8]: (integer) 3
+/ORGretina4MModel/1/4/Chpsdv[9]: (integer) 0
+/ORGretina4MModel/1/4/Chpsrt[0]: (integer) 2
+/ORGretina4MModel/1/4/Chpsrt[1]: (integer) 0
+/ORGretina4MModel/1/4/Chpsrt[2]: (integer) 2
+/ORGretina4MModel/1/4/Chpsrt[3]: (integer) 0
+/ORGretina4MModel/1/4/Chpsrt[4]: (integer) 2
+/ORGretina4MModel/1/4/Chpsrt[5]: (integer) 0
+/ORGretina4MModel/1/4/Chpsrt[6]: (integer) 0
+/ORGretina4MModel/1/4/Chpsrt[7]: (integer) 0
+/ORGretina4MModel/1/4/Chpsrt[8]: (integer) 2
+/ORGretina4MModel/1/4/Chpsrt[9]: (integer) 0
+/ORGretina4MModel/1/4/Class Name: (string) ORGretina4MModel
+/ORGretina4MModel/1/4/Clock Phase: (integer) 0
+/ORGretina4MModel/1/4/Clock Source: (integer) 0
+/ORGretina4MModel/1/4/Collection Time: (integer) 200
+/ORGretina4MModel/1/4/Debug Mode[0]: (bool) false
+/ORGretina4MModel/1/4/Debug Mode[1]: (bool) false
+/ORGretina4MModel/1/4/Debug Mode[2]: (bool) false
+/ORGretina4MModel/1/4/Debug Mode[3]: (bool) false
+/ORGretina4MModel/1/4/Debug Mode[4]: (bool) false
+/ORGretina4MModel/1/4/Debug Mode[5]: (bool) false
+/ORGretina4MModel/1/4/Debug Mode[6]: (bool) false
+/ORGretina4MModel/1/4/Debug Mode[7]: (bool) false
+/ORGretina4MModel/1/4/Debug Mode[8]: (bool) false
+/ORGretina4MModel/1/4/Debug Mode[9]: (bool) false
+/ORGretina4MModel/1/4/Down Sample: (integer) 0
+/ORGretina4MModel/1/4/Enabled[0]: (bool) false
+/ORGretina4MModel/1/4/Enabled[1]: (bool) false
+/ORGretina4MModel/1/4/Enabled[2]: (bool) true
+/ORGretina4MModel/1/4/Enabled[3]: (bool) true
+/ORGretina4MModel/1/4/Enabled[4]: (bool) true
+/ORGretina4MModel/1/4/Enabled[5]: (bool) true
+/ORGretina4MModel/1/4/Enabled[6]: (bool) true
+/ORGretina4MModel/1/4/Enabled[7]: (bool) true
+/ORGretina4MModel/1/4/Enabled[8]: (bool) false
+/ORGretina4MModel/1/4/Enabled[9]: (bool) false
+/ORGretina4MModel/1/4/Ext Trig Length: (integer) 400
+/ORGretina4MModel/1/4/External Window: (integer) 400
+/ORGretina4MModel/1/4/FtCnt[0]: (integer) 0
+/ORGretina4MModel/1/4/FtCnt[1]: (integer) 0
+/ORGretina4MModel/1/4/FtCnt[2]: (integer) 0
+/ORGretina4MModel/1/4/FtCnt[3]: (integer) 0
+/ORGretina4MModel/1/4/FtCnt[4]: (integer) 0
+/ORGretina4MModel/1/4/FtCnt[5]: (integer) 0
+/ORGretina4MModel/1/4/FtCnt[6]: (integer) 0
+/ORGretina4MModel/1/4/FtCnt[7]: (integer) 0
+/ORGretina4MModel/1/4/FtCnt[8]: (integer) 0
+/ORGretina4MModel/1/4/FtCnt[9]: (integer) 0
+/ORGretina4MModel/1/4/Hist E Multiplier: (integer) 1
+/ORGretina4MModel/1/4/Integration Time: (integer) 400
+/ORGretina4MModel/1/4/LED Threshold[0]: (integer) 5
+/ORGretina4MModel/1/4/LED Threshold[1]: (integer) 5
+/ORGretina4MModel/1/4/LED Threshold[2]: (integer) 900
+/ORGretina4MModel/1/4/LED Threshold[3]: (integer) 450
+/ORGretina4MModel/1/4/LED Threshold[4]: (integer) 700
+/ORGretina4MModel/1/4/LED Threshold[5]: (integer) 400
+/ORGretina4MModel/1/4/LED Threshold[6]: (integer) 800
+/ORGretina4MModel/1/4/LED Threshold[7]: (integer) 400
+/ORGretina4MModel/1/4/LED Threshold[8]: (integer) 1150
+/ORGretina4MModel/1/4/LED Threshold[9]: (integer) 600
+/ORGretina4MModel/1/4/Mrpsdv[0]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsdv[1]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsdv[2]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsdv[3]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsdv[4]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsdv[5]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsdv[6]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsdv[7]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsdv[8]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsdv[9]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsrt[0]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsrt[1]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsrt[2]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsrt[3]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsrt[4]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsrt[5]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsrt[6]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsrt[7]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsrt[8]: (integer) 0
+/ORGretina4MModel/1/4/Mrpsrt[9]: (integer) 0
+/ORGretina4MModel/1/4/Noise Window: (integer) 127
+/ORGretina4MModel/1/4/PZ Trace Enabled[0]: (bool) false
+/ORGretina4MModel/1/4/PZ Trace Enabled[1]: (bool) false
+/ORGretina4MModel/1/4/PZ Trace Enabled[2]: (bool) false
+/ORGretina4MModel/1/4/PZ Trace Enabled[3]: (bool) false
+/ORGretina4MModel/1/4/PZ Trace Enabled[4]: (bool) false
+/ORGretina4MModel/1/4/PZ Trace Enabled[5]: (bool) false
+/ORGretina4MModel/1/4/PZ Trace Enabled[6]: (bool) false
+/ORGretina4MModel/1/4/PZ Trace Enabled[7]: (bool) false
+/ORGretina4MModel/1/4/PZ Trace Enabled[8]: (bool) false
+/ORGretina4MModel/1/4/PZ Trace Enabled[9]: (bool) false
+/ORGretina4MModel/1/4/Pile Up[0]: (bool) false
+/ORGretina4MModel/1/4/Pile Up[1]: (bool) false
+/ORGretina4MModel/1/4/Pile Up[2]: (bool) false
+/ORGretina4MModel/1/4/Pile Up[3]: (bool) false
+/ORGretina4MModel/1/4/Pile Up[4]: (bool) false
+/ORGretina4MModel/1/4/Pile Up[5]: (bool) false
+/ORGretina4MModel/1/4/Pile Up[6]: (bool) false
+/ORGretina4MModel/1/4/Pile Up[7]: (bool) false
+/ORGretina4MModel/1/4/Pile Up[8]: (bool) false
+/ORGretina4MModel/1/4/Pile Up[9]: (bool) false
+/ORGretina4MModel/1/4/Pile Up Window: (integer) 1024
+/ORGretina4MModel/1/4/Pole Zero Enabled[0]: (bool) false
+/ORGretina4MModel/1/4/Pole Zero Enabled[1]: (bool) false
+/ORGretina4MModel/1/4/Pole Zero Enabled[2]: (bool) false
+/ORGretina4MModel/1/4/Pole Zero Enabled[3]: (bool) false
+/ORGretina4MModel/1/4/Pole Zero Enabled[4]: (bool) false
+/ORGretina4MModel/1/4/Pole Zero Enabled[5]: (bool) false
+/ORGretina4MModel/1/4/Pole Zero Enabled[6]: (bool) false
+/ORGretina4MModel/1/4/Pole Zero Enabled[7]: (bool) false
+/ORGretina4MModel/1/4/Pole Zero Enabled[8]: (bool) false
+/ORGretina4MModel/1/4/Pole Zero Enabled[9]: (bool) false
+/ORGretina4MModel/1/4/Pole Zero Multiplier[0]: (integer) 1536
+/ORGretina4MModel/1/4/Pole Zero Multiplier[1]: (integer) 1536
+/ORGretina4MModel/1/4/Pole Zero Multiplier[2]: (integer) 1536
+/ORGretina4MModel/1/4/Pole Zero Multiplier[3]: (integer) 1536
+/ORGretina4MModel/1/4/Pole Zero Multiplier[4]: (integer) 1536
+/ORGretina4MModel/1/4/Pole Zero Multiplier[5]: (integer) 1536
+/ORGretina4MModel/1/4/Pole Zero Multiplier[6]: (integer) 1536
+/ORGretina4MModel/1/4/Pole Zero Multiplier[7]: (integer) 1536
+/ORGretina4MModel/1/4/Pole Zero Multiplier[8]: (integer) 1536
+/ORGretina4MModel/1/4/Pole Zero Multiplier[9]: (integer) 1536
+/ORGretina4MModel/1/4/Postrecnt[0]: (integer) 1009
+/ORGretina4MModel/1/4/Postrecnt[1]: (integer) 1009
+/ORGretina4MModel/1/4/Postrecnt[2]: (integer) 1009
+/ORGretina4MModel/1/4/Postrecnt[3]: (integer) 1009
+/ORGretina4MModel/1/4/Postrecnt[4]: (integer) 1009
+/ORGretina4MModel/1/4/Postrecnt[5]: (integer) 1009
+/ORGretina4MModel/1/4/Postrecnt[6]: (integer) 1009
+/ORGretina4MModel/1/4/Postrecnt[7]: (integer) 1009
+/ORGretina4MModel/1/4/Postrecnt[8]: (integer) 1009
+/ORGretina4MModel/1/4/Postrecnt[9]: (integer) 1009
+/ORGretina4MModel/1/4/PreSum Enabled[0]: (bool) false
+/ORGretina4MModel/1/4/PreSum Enabled[1]: (bool) false
+/ORGretina4MModel/1/4/PreSum Enabled[2]: (bool) false
+/ORGretina4MModel/1/4/PreSum Enabled[3]: (bool) false
+/ORGretina4MModel/1/4/PreSum Enabled[4]: (bool) false
+/ORGretina4MModel/1/4/PreSum Enabled[5]: (bool) false
+/ORGretina4MModel/1/4/PreSum Enabled[6]: (bool) false
+/ORGretina4MModel/1/4/PreSum Enabled[7]: (bool) false
+/ORGretina4MModel/1/4/PreSum Enabled[8]: (bool) false
+/ORGretina4MModel/1/4/PreSum Enabled[9]: (bool) false
+/ORGretina4MModel/1/4/Prerecnt[0]: (integer) 1009
+/ORGretina4MModel/1/4/Prerecnt[1]: (integer) 1009
+/ORGretina4MModel/1/4/Prerecnt[2]: (integer) 1009
+/ORGretina4MModel/1/4/Prerecnt[3]: (integer) 1009
+/ORGretina4MModel/1/4/Prerecnt[4]: (integer) 1009
+/ORGretina4MModel/1/4/Prerecnt[5]: (integer) 1009
+/ORGretina4MModel/1/4/Prerecnt[6]: (integer) 1009
+/ORGretina4MModel/1/4/Prerecnt[7]: (integer) 1009
+/ORGretina4MModel/1/4/Prerecnt[8]: (integer) 1009
+/ORGretina4MModel/1/4/Prerecnt[9]: (integer) 1009
+/ORGretina4MModel/1/4/TPol[0]: (integer) 1
+/ORGretina4MModel/1/4/TPol[1]: (integer) 1
+/ORGretina4MModel/1/4/TPol[2]: (integer) 3
+/ORGretina4MModel/1/4/TPol[3]: (integer) 3
+/ORGretina4MModel/1/4/TPol[4]: (integer) 3
+/ORGretina4MModel/1/4/TPol[5]: (integer) 3
+/ORGretina4MModel/1/4/TPol[6]: (integer) 3
+/ORGretina4MModel/1/4/TPol[7]: (integer) 3
+/ORGretina4MModel/1/4/TPol[8]: (integer) 1
+/ORGretina4MModel/1/4/TPol[9]: (integer) 1
+/ORGretina4MModel/1/4/TRAP Threshold[0]: (integer) 5
+/ORGretina4MModel/1/4/TRAP Threshold[1]: (integer) 5
+/ORGretina4MModel/1/4/TRAP Threshold[2]: (integer) 900
+/ORGretina4MModel/1/4/TRAP Threshold[3]: (integer) 450
+/ORGretina4MModel/1/4/TRAP Threshold[4]: (integer) 700
+/ORGretina4MModel/1/4/TRAP Threshold[5]: (integer) 400
+/ORGretina4MModel/1/4/TRAP Threshold[6]: (integer) 800
+/ORGretina4MModel/1/4/TRAP Threshold[7]: (integer) 400
+/ORGretina4MModel/1/4/TRAP Threshold[8]: (integer) 1150
+/ORGretina4MModel/1/4/TRAP Threshold[9]: (integer) 600
+/ORGretina4MModel/1/4/Trap Enabled[0]: (bool) true
+/ORGretina4MModel/1/4/Trap Enabled[1]: (bool) true
+/ORGretina4MModel/1/4/Trap Enabled[2]: (bool) true
+/ORGretina4MModel/1/4/Trap Enabled[3]: (bool) true
+/ORGretina4MModel/1/4/Trap Enabled[4]: (bool) true
+/ORGretina4MModel/1/4/Trap Enabled[5]: (bool) true
+/ORGretina4MModel/1/4/Trap Enabled[6]: (bool) true
+/ORGretina4MModel/1/4/Trap Enabled[7]: (bool) true
+/ORGretina4MModel/1/4/Trap Enabled[8]: (bool) true
+/ORGretina4MModel/1/4/Trap Enabled[9]: (bool) true
+/ORGretina4MModel/1/4/Trigger Mode[0]: (integer) 0
+/ORGretina4MModel/1/4/Trigger Mode[1]: (integer) 0
+/ORGretina4MModel/1/4/Trigger Mode[2]: (integer) 0
+/ORGretina4MModel/1/4/Trigger Mode[3]: (integer) 0
+/ORGretina4MModel/1/4/Trigger Mode[4]: (integer) 0
+/ORGretina4MModel/1/4/Trigger Mode[5]: (integer) 0
+/ORGretina4MModel/1/4/Trigger Mode[6]: (integer) 0
+/ORGretina4MModel/1/4/Trigger Mode[7]: (integer) 0
+/ORGretina4MModel/1/4/Trigger Mode[8]: (integer) 0
+/ORGretina4MModel/1/4/Trigger Mode[9]: (integer) 0
+/ORGretina4MModel/1/4/baseAddress: (integer) 5242880
+/ORGretina4MModel/1/4/forceFullInit[0]: (bool) true
+/ORGretina4MModel/1/4/forceFullInit[1]: (bool) true
+/ORGretina4MModel/1/4/forceFullInit[2]: (bool) true
+/ORGretina4MModel/1/4/forceFullInit[3]: (bool) true
+/ORGretina4MModel/1/4/forceFullInit[4]: (bool) true
+/ORGretina4MModel/1/4/forceFullInit[5]: (bool) true
+/ORGretina4MModel/1/4/forceFullInit[6]: (bool) true
+/ORGretina4MModel/1/4/forceFullInit[7]: (bool) true
+/ORGretina4MModel/1/4/forceFullInit[8]: (bool) true
+/ORGretina4MModel/1/4/forceFullInit[9]: (bool) true
+/ORGretina4MModel/1/4/forceFullInitCard: (integer) 1
+/ORGretina4MModel/1/5/Baseline Restore Enabled[0]: (bool) false
+/ORGretina4MModel/1/5/Baseline Restore Enabled[1]: (bool) false
+/ORGretina4MModel/1/5/Baseline Restore Enabled[2]: (bool) false
+/ORGretina4MModel/1/5/Baseline Restore Enabled[3]: (bool) false
+/ORGretina4MModel/1/5/Baseline Restore Enabled[4]: (bool) false
+/ORGretina4MModel/1/5/Baseline Restore Enabled[5]: (bool) false
+/ORGretina4MModel/1/5/Baseline Restore Enabled[6]: (bool) false
+/ORGretina4MModel/1/5/Baseline Restore Enabled[7]: (bool) false
+/ORGretina4MModel/1/5/Baseline Restore Enabled[8]: (bool) false
+/ORGretina4MModel/1/5/Baseline Restore Enabled[9]: (bool) false
+/ORGretina4MModel/1/5/Card: (integer) 5
+/ORGretina4MModel/1/5/Chpsdv[0]: (integer) 3
+/ORGretina4MModel/1/5/Chpsdv[1]: (integer) 0
+/ORGretina4MModel/1/5/Chpsdv[2]: (integer) 3
+/ORGretina4MModel/1/5/Chpsdv[3]: (integer) 0
+/ORGretina4MModel/1/5/Chpsdv[4]: (integer) 3
+/ORGretina4MModel/1/5/Chpsdv[5]: (integer) 0
+/ORGretina4MModel/1/5/Chpsdv[6]: (integer) 0
+/ORGretina4MModel/1/5/Chpsdv[7]: (integer) 0
+/ORGretina4MModel/1/5/Chpsdv[8]: (integer) 3
+/ORGretina4MModel/1/5/Chpsdv[9]: (integer) 0
+/ORGretina4MModel/1/5/Chpsrt[0]: (integer) 2
+/ORGretina4MModel/1/5/Chpsrt[1]: (integer) 0
+/ORGretina4MModel/1/5/Chpsrt[2]: (integer) 2
+/ORGretina4MModel/1/5/Chpsrt[3]: (integer) 0
+/ORGretina4MModel/1/5/Chpsrt[4]: (integer) 2
+/ORGretina4MModel/1/5/Chpsrt[5]: (integer) 0
+/ORGretina4MModel/1/5/Chpsrt[6]: (integer) 0
+/ORGretina4MModel/1/5/Chpsrt[7]: (integer) 0
+/ORGretina4MModel/1/5/Chpsrt[8]: (integer) 2
+/ORGretina4MModel/1/5/Chpsrt[9]: (integer) 0
+/ORGretina4MModel/1/5/Class Name: (string) ORGretina4MModel
+/ORGretina4MModel/1/5/Clock Phase: (integer) 0
+/ORGretina4MModel/1/5/Clock Source: (integer) 0
+/ORGretina4MModel/1/5/Collection Time: (integer) 200
+/ORGretina4MModel/1/5/Debug Mode[0]: (bool) false
+/ORGretina4MModel/1/5/Debug Mode[1]: (bool) false
+/ORGretina4MModel/1/5/Debug Mode[2]: (bool) false
+/ORGretina4MModel/1/5/Debug Mode[3]: (bool) false
+/ORGretina4MModel/1/5/Debug Mode[4]: (bool) false
+/ORGretina4MModel/1/5/Debug Mode[5]: (bool) false
+/ORGretina4MModel/1/5/Debug Mode[6]: (bool) false
+/ORGretina4MModel/1/5/Debug Mode[7]: (bool) false
+/ORGretina4MModel/1/5/Debug Mode[8]: (bool) false
+/ORGretina4MModel/1/5/Debug Mode[9]: (bool) false
+/ORGretina4MModel/1/5/Down Sample: (integer) 0
+/ORGretina4MModel/1/5/Enabled[0]: (bool) true
+/ORGretina4MModel/1/5/Enabled[1]: (bool) true
+/ORGretina4MModel/1/5/Enabled[2]: (bool) true
+/ORGretina4MModel/1/5/Enabled[3]: (bool) true
+/ORGretina4MModel/1/5/Enabled[4]: (bool) true
+/ORGretina4MModel/1/5/Enabled[5]: (bool) false
+/ORGretina4MModel/1/5/Enabled[6]: (bool) true
+/ORGretina4MModel/1/5/Enabled[7]: (bool) true
+/ORGretina4MModel/1/5/Enabled[8]: (bool) true
+/ORGretina4MModel/1/5/Enabled[9]: (bool) true
+/ORGretina4MModel/1/5/Ext Trig Length: (integer) 400
+/ORGretina4MModel/1/5/External Window: (integer) 400
+/ORGretina4MModel/1/5/FtCnt[0]: (integer) 0
+/ORGretina4MModel/1/5/FtCnt[1]: (integer) 0
+/ORGretina4MModel/1/5/FtCnt[2]: (integer) 0
+/ORGretina4MModel/1/5/FtCnt[3]: (integer) 0
+/ORGretina4MModel/1/5/FtCnt[4]: (integer) 0
+/ORGretina4MModel/1/5/FtCnt[5]: (integer) 0
+/ORGretina4MModel/1/5/FtCnt[6]: (integer) 0
+/ORGretina4MModel/1/5/FtCnt[7]: (integer) 0
+/ORGretina4MModel/1/5/FtCnt[8]: (integer) 0
+/ORGretina4MModel/1/5/FtCnt[9]: (integer) 0
+/ORGretina4MModel/1/5/Hist E Multiplier: (integer) 1
+/ORGretina4MModel/1/5/Integration Time: (integer) 400
+/ORGretina4MModel/1/5/LED Threshold[0]: (integer) 700
+/ORGretina4MModel/1/5/LED Threshold[1]: (integer) 400
+/ORGretina4MModel/1/5/LED Threshold[2]: (integer) 700
+/ORGretina4MModel/1/5/LED Threshold[3]: (integer) 400
+/ORGretina4MModel/1/5/LED Threshold[4]: (integer) 5000
+/ORGretina4MModel/1/5/LED Threshold[5]: (integer) 5
+/ORGretina4MModel/1/5/LED Threshold[6]: (integer) 700
+/ORGretina4MModel/1/5/LED Threshold[7]: (integer) 400
+/ORGretina4MModel/1/5/LED Threshold[8]: (integer) 700
+/ORGretina4MModel/1/5/LED Threshold[9]: (integer) 400
+/ORGretina4MModel/1/5/Mrpsdv[0]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsdv[1]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsdv[2]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsdv[3]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsdv[4]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsdv[5]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsdv[6]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsdv[7]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsdv[8]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsdv[9]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsrt[0]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsrt[1]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsrt[2]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsrt[3]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsrt[4]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsrt[5]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsrt[6]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsrt[7]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsrt[8]: (integer) 0
+/ORGretina4MModel/1/5/Mrpsrt[9]: (integer) 0
+/ORGretina4MModel/1/5/Noise Window: (integer) 127
+/ORGretina4MModel/1/5/PZ Trace Enabled[0]: (bool) false
+/ORGretina4MModel/1/5/PZ Trace Enabled[1]: (bool) false
+/ORGretina4MModel/1/5/PZ Trace Enabled[2]: (bool) false
+/ORGretina4MModel/1/5/PZ Trace Enabled[3]: (bool) false
+/ORGretina4MModel/1/5/PZ Trace Enabled[4]: (bool) false
+/ORGretina4MModel/1/5/PZ Trace Enabled[5]: (bool) false
+/ORGretina4MModel/1/5/PZ Trace Enabled[6]: (bool) false
+/ORGretina4MModel/1/5/PZ Trace Enabled[7]: (bool) false
+/ORGretina4MModel/1/5/PZ Trace Enabled[8]: (bool) false
+/ORGretina4MModel/1/5/PZ Trace Enabled[9]: (bool) false
+/ORGretina4MModel/1/5/Pile Up[0]: (bool) false
+/ORGretina4MModel/1/5/Pile Up[1]: (bool) false
+/ORGretina4MModel/1/5/Pile Up[2]: (bool) false
+/ORGretina4MModel/1/5/Pile Up[3]: (bool) false
+/ORGretina4MModel/1/5/Pile Up[4]: (bool) false
+/ORGretina4MModel/1/5/Pile Up[5]: (bool) false
+/ORGretina4MModel/1/5/Pile Up[6]: (bool) false
+/ORGretina4MModel/1/5/Pile Up[7]: (bool) false
+/ORGretina4MModel/1/5/Pile Up[8]: (bool) false
+/ORGretina4MModel/1/5/Pile Up[9]: (bool) false
+/ORGretina4MModel/1/5/Pile Up Window: (integer) 1024
+/ORGretina4MModel/1/5/Pole Zero Enabled[0]: (bool) false
+/ORGretina4MModel/1/5/Pole Zero Enabled[1]: (bool) false
+/ORGretina4MModel/1/5/Pole Zero Enabled[2]: (bool) false
+/ORGretina4MModel/1/5/Pole Zero Enabled[3]: (bool) false
+/ORGretina4MModel/1/5/Pole Zero Enabled[4]: (bool) false
+/ORGretina4MModel/1/5/Pole Zero Enabled[5]: (bool) false
+/ORGretina4MModel/1/5/Pole Zero Enabled[6]: (bool) false
+/ORGretina4MModel/1/5/Pole Zero Enabled[7]: (bool) false
+/ORGretina4MModel/1/5/Pole Zero Enabled[8]: (bool) false
+/ORGretina4MModel/1/5/Pole Zero Enabled[9]: (bool) false
+/ORGretina4MModel/1/5/Pole Zero Multiplier[0]: (integer) 1536
+/ORGretina4MModel/1/5/Pole Zero Multiplier[1]: (integer) 1536
+/ORGretina4MModel/1/5/Pole Zero Multiplier[2]: (integer) 1536
+/ORGretina4MModel/1/5/Pole Zero Multiplier[3]: (integer) 1536
+/ORGretina4MModel/1/5/Pole Zero Multiplier[4]: (integer) 1536
+/ORGretina4MModel/1/5/Pole Zero Multiplier[5]: (integer) 1536
+/ORGretina4MModel/1/5/Pole Zero Multiplier[6]: (integer) 1536
+/ORGretina4MModel/1/5/Pole Zero Multiplier[7]: (integer) 1536
+/ORGretina4MModel/1/5/Pole Zero Multiplier[8]: (integer) 1536
+/ORGretina4MModel/1/5/Pole Zero Multiplier[9]: (integer) 1536
+/ORGretina4MModel/1/5/Postrecnt[0]: (integer) 1009
+/ORGretina4MModel/1/5/Postrecnt[1]: (integer) 1009
+/ORGretina4MModel/1/5/Postrecnt[2]: (integer) 1009
+/ORGretina4MModel/1/5/Postrecnt[3]: (integer) 1009
+/ORGretina4MModel/1/5/Postrecnt[4]: (integer) 1009
+/ORGretina4MModel/1/5/Postrecnt[5]: (integer) 1009
+/ORGretina4MModel/1/5/Postrecnt[6]: (integer) 1009
+/ORGretina4MModel/1/5/Postrecnt[7]: (integer) 1009
+/ORGretina4MModel/1/5/Postrecnt[8]: (integer) 1009
+/ORGretina4MModel/1/5/Postrecnt[9]: (integer) 1009
+/ORGretina4MModel/1/5/PreSum Enabled[0]: (bool) false
+/ORGretina4MModel/1/5/PreSum Enabled[1]: (bool) false
+/ORGretina4MModel/1/5/PreSum Enabled[2]: (bool) false
+/ORGretina4MModel/1/5/PreSum Enabled[3]: (bool) false
+/ORGretina4MModel/1/5/PreSum Enabled[4]: (bool) false
+/ORGretina4MModel/1/5/PreSum Enabled[5]: (bool) false
+/ORGretina4MModel/1/5/PreSum Enabled[6]: (bool) false
+/ORGretina4MModel/1/5/PreSum Enabled[7]: (bool) false
+/ORGretina4MModel/1/5/PreSum Enabled[8]: (bool) false
+/ORGretina4MModel/1/5/PreSum Enabled[9]: (bool) false
+/ORGretina4MModel/1/5/Prerecnt[0]: (integer) 1009
+/ORGretina4MModel/1/5/Prerecnt[1]: (integer) 1009
+/ORGretina4MModel/1/5/Prerecnt[2]: (integer) 1009
+/ORGretina4MModel/1/5/Prerecnt[3]: (integer) 1009
+/ORGretina4MModel/1/5/Prerecnt[4]: (integer) 1009
+/ORGretina4MModel/1/5/Prerecnt[5]: (integer) 1009
+/ORGretina4MModel/1/5/Prerecnt[6]: (integer) 1009
+/ORGretina4MModel/1/5/Prerecnt[7]: (integer) 1009
+/ORGretina4MModel/1/5/Prerecnt[8]: (integer) 1009
+/ORGretina4MModel/1/5/Prerecnt[9]: (integer) 1009
+/ORGretina4MModel/1/5/TPol[0]: (integer) 3
+/ORGretina4MModel/1/5/TPol[1]: (integer) 3
+/ORGretina4MModel/1/5/TPol[2]: (integer) 3
+/ORGretina4MModel/1/5/TPol[3]: (integer) 3
+/ORGretina4MModel/1/5/TPol[4]: (integer) 3
+/ORGretina4MModel/1/5/TPol[5]: (integer) 3
+/ORGretina4MModel/1/5/TPol[6]: (integer) 3
+/ORGretina4MModel/1/5/TPol[7]: (integer) 3
+/ORGretina4MModel/1/5/TPol[8]: (integer) 3
+/ORGretina4MModel/1/5/TPol[9]: (integer) 3
+/ORGretina4MModel/1/5/TRAP Threshold[0]: (integer) 700
+/ORGretina4MModel/1/5/TRAP Threshold[1]: (integer) 400
+/ORGretina4MModel/1/5/TRAP Threshold[2]: (integer) 700
+/ORGretina4MModel/1/5/TRAP Threshold[3]: (integer) 400
+/ORGretina4MModel/1/5/TRAP Threshold[4]: (integer) 5000
+/ORGretina4MModel/1/5/TRAP Threshold[5]: (integer) 5
+/ORGretina4MModel/1/5/TRAP Threshold[6]: (integer) 700
+/ORGretina4MModel/1/5/TRAP Threshold[7]: (integer) 400
+/ORGretina4MModel/1/5/TRAP Threshold[8]: (integer) 700
+/ORGretina4MModel/1/5/TRAP Threshold[9]: (integer) 400
+/ORGretina4MModel/1/5/Trap Enabled[0]: (bool) true
+/ORGretina4MModel/1/5/Trap Enabled[1]: (bool) true
+/ORGretina4MModel/1/5/Trap Enabled[2]: (bool) true
+/ORGretina4MModel/1/5/Trap Enabled[3]: (bool) true
+/ORGretina4MModel/1/5/Trap Enabled[4]: (bool) true
+/ORGretina4MModel/1/5/Trap Enabled[5]: (bool) true
+/ORGretina4MModel/1/5/Trap Enabled[6]: (bool) true
+/ORGretina4MModel/1/5/Trap Enabled[7]: (bool) true
+/ORGretina4MModel/1/5/Trap Enabled[8]: (bool) true
+/ORGretina4MModel/1/5/Trap Enabled[9]: (bool) true
+/ORGretina4MModel/1/5/Trigger Mode[0]: (integer) 0
+/ORGretina4MModel/1/5/Trigger Mode[1]: (integer) 0
+/ORGretina4MModel/1/5/Trigger Mode[2]: (integer) 0
+/ORGretina4MModel/1/5/Trigger Mode[3]: (integer) 0
+/ORGretina4MModel/1/5/Trigger Mode[4]: (integer) 0
+/ORGretina4MModel/1/5/Trigger Mode[5]: (integer) 0
+/ORGretina4MModel/1/5/Trigger Mode[6]: (integer) 0
+/ORGretina4MModel/1/5/Trigger Mode[7]: (integer) 0
+/ORGretina4MModel/1/5/Trigger Mode[8]: (integer) 0
+/ORGretina4MModel/1/5/Trigger Mode[9]: (integer) 0
+/ORGretina4MModel/1/5/baseAddress: (integer) 6291456
+/ORGretina4MModel/1/5/forceFullInit[0]: (bool) true
+/ORGretina4MModel/1/5/forceFullInit[1]: (bool) true
+/ORGretina4MModel/1/5/forceFullInit[2]: (bool) true
+/ORGretina4MModel/1/5/forceFullInit[3]: (bool) true
+/ORGretina4MModel/1/5/forceFullInit[4]: (bool) true
+/ORGretina4MModel/1/5/forceFullInit[5]: (bool) true
+/ORGretina4MModel/1/5/forceFullInit[6]: (bool) true
+/ORGretina4MModel/1/5/forceFullInit[7]: (bool) true
+/ORGretina4MModel/1/5/forceFullInit[8]: (bool) true
+/ORGretina4MModel/1/5/forceFullInit[9]: (bool) true
+/ORGretina4MModel/1/5/forceFullInitCard: (integer) 1
+/ORGretina4MModel/1/6/Baseline Restore Enabled[0]: (bool) false
+/ORGretina4MModel/1/6/Baseline Restore Enabled[1]: (bool) false
+/ORGretina4MModel/1/6/Baseline Restore Enabled[2]: (bool) false
+/ORGretina4MModel/1/6/Baseline Restore Enabled[3]: (bool) false
+/ORGretina4MModel/1/6/Baseline Restore Enabled[4]: (bool) false
+/ORGretina4MModel/1/6/Baseline Restore Enabled[5]: (bool) false
+/ORGretina4MModel/1/6/Baseline Restore Enabled[6]: (bool) false
+/ORGretina4MModel/1/6/Baseline Restore Enabled[7]: (bool) false
+/ORGretina4MModel/1/6/Baseline Restore Enabled[8]: (bool) false
+/ORGretina4MModel/1/6/Baseline Restore Enabled[9]: (bool) false
+/ORGretina4MModel/1/6/Card: (integer) 6
+/ORGretina4MModel/1/6/Chpsdv[0]: (integer) 3
+/ORGretina4MModel/1/6/Chpsdv[1]: (integer) 0
+/ORGretina4MModel/1/6/Chpsdv[2]: (integer) 3
+/ORGretina4MModel/1/6/Chpsdv[3]: (integer) 0
+/ORGretina4MModel/1/6/Chpsdv[4]: (integer) 3
+/ORGretina4MModel/1/6/Chpsdv[5]: (integer) 0
+/ORGretina4MModel/1/6/Chpsdv[6]: (integer) 0
+/ORGretina4MModel/1/6/Chpsdv[7]: (integer) 0
+/ORGretina4MModel/1/6/Chpsdv[8]: (integer) 3
+/ORGretina4MModel/1/6/Chpsdv[9]: (integer) 0
+/ORGretina4MModel/1/6/Chpsrt[0]: (integer) 2
+/ORGretina4MModel/1/6/Chpsrt[1]: (integer) 0
+/ORGretina4MModel/1/6/Chpsrt[2]: (integer) 2
+/ORGretina4MModel/1/6/Chpsrt[3]: (integer) 0
+/ORGretina4MModel/1/6/Chpsrt[4]: (integer) 2
+/ORGretina4MModel/1/6/Chpsrt[5]: (integer) 0
+/ORGretina4MModel/1/6/Chpsrt[6]: (integer) 0
+/ORGretina4MModel/1/6/Chpsrt[7]: (integer) 0
+/ORGretina4MModel/1/6/Chpsrt[8]: (integer) 2
+/ORGretina4MModel/1/6/Chpsrt[9]: (integer) 0
+/ORGretina4MModel/1/6/Class Name: (string) ORGretina4MModel
+/ORGretina4MModel/1/6/Clock Phase: (integer) 0
+/ORGretina4MModel/1/6/Clock Source: (integer) 0
+/ORGretina4MModel/1/6/Collection Time: (integer) 200
+/ORGretina4MModel/1/6/Debug Mode[0]: (bool) false
+/ORGretina4MModel/1/6/Debug Mode[1]: (bool) false
+/ORGretina4MModel/1/6/Debug Mode[2]: (bool) false
+/ORGretina4MModel/1/6/Debug Mode[3]: (bool) false
+/ORGretina4MModel/1/6/Debug Mode[4]: (bool) false
+/ORGretina4MModel/1/6/Debug Mode[5]: (bool) false
+/ORGretina4MModel/1/6/Debug Mode[6]: (bool) false
+/ORGretina4MModel/1/6/Debug Mode[7]: (bool) false
+/ORGretina4MModel/1/6/Debug Mode[8]: (bool) false
+/ORGretina4MModel/1/6/Debug Mode[9]: (bool) false
+/ORGretina4MModel/1/6/Down Sample: (integer) 0
+/ORGretina4MModel/1/6/Enabled[0]: (bool) true
+/ORGretina4MModel/1/6/Enabled[1]: (bool) true
+/ORGretina4MModel/1/6/Enabled[2]: (bool) true
+/ORGretina4MModel/1/6/Enabled[3]: (bool) true
+/ORGretina4MModel/1/6/Enabled[4]: (bool) true
+/ORGretina4MModel/1/6/Enabled[5]: (bool) false
+/ORGretina4MModel/1/6/Enabled[6]: (bool) true
+/ORGretina4MModel/1/6/Enabled[7]: (bool) true
+/ORGretina4MModel/1/6/Enabled[8]: (bool) true
+/ORGretina4MModel/1/6/Enabled[9]: (bool) true
+/ORGretina4MModel/1/6/Ext Trig Length: (integer) 400
+/ORGretina4MModel/1/6/External Window: (integer) 400
+/ORGretina4MModel/1/6/FtCnt[0]: (integer) 0
+/ORGretina4MModel/1/6/FtCnt[1]: (integer) 0
+/ORGretina4MModel/1/6/FtCnt[2]: (integer) 0
+/ORGretina4MModel/1/6/FtCnt[3]: (integer) 0
+/ORGretina4MModel/1/6/FtCnt[4]: (integer) 0
+/ORGretina4MModel/1/6/FtCnt[5]: (integer) 0
+/ORGretina4MModel/1/6/FtCnt[6]: (integer) 0
+/ORGretina4MModel/1/6/FtCnt[7]: (integer) 0
+/ORGretina4MModel/1/6/FtCnt[8]: (integer) 0
+/ORGretina4MModel/1/6/FtCnt[9]: (integer) 0
+/ORGretina4MModel/1/6/Hist E Multiplier: (integer) 1
+/ORGretina4MModel/1/6/Integration Time: (integer) 400
+/ORGretina4MModel/1/6/LED Threshold[0]: (integer) 700
+/ORGretina4MModel/1/6/LED Threshold[1]: (integer) 400
+/ORGretina4MModel/1/6/LED Threshold[2]: (integer) 700
+/ORGretina4MModel/1/6/LED Threshold[3]: (integer) 400
+/ORGretina4MModel/1/6/LED Threshold[4]: (integer) 5000
+/ORGretina4MModel/1/6/LED Threshold[5]: (integer) 5000
+/ORGretina4MModel/1/6/LED Threshold[6]: (integer) 1000
+/ORGretina4MModel/1/6/LED Threshold[7]: (integer) 500
+/ORGretina4MModel/1/6/LED Threshold[8]: (integer) 900
+/ORGretina4MModel/1/6/LED Threshold[9]: (integer) 400
+/ORGretina4MModel/1/6/Mrpsdv[0]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsdv[1]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsdv[2]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsdv[3]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsdv[4]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsdv[5]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsdv[6]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsdv[7]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsdv[8]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsdv[9]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsrt[0]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsrt[1]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsrt[2]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsrt[3]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsrt[4]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsrt[5]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsrt[6]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsrt[7]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsrt[8]: (integer) 0
+/ORGretina4MModel/1/6/Mrpsrt[9]: (integer) 0
+/ORGretina4MModel/1/6/Noise Window: (integer) 127
+/ORGretina4MModel/1/6/PZ Trace Enabled[0]: (bool) false
+/ORGretina4MModel/1/6/PZ Trace Enabled[1]: (bool) false
+/ORGretina4MModel/1/6/PZ Trace Enabled[2]: (bool) false
+/ORGretina4MModel/1/6/PZ Trace Enabled[3]: (bool) false
+/ORGretina4MModel/1/6/PZ Trace Enabled[4]: (bool) false
+/ORGretina4MModel/1/6/PZ Trace Enabled[5]: (bool) false
+/ORGretina4MModel/1/6/PZ Trace Enabled[6]: (bool) false
+/ORGretina4MModel/1/6/PZ Trace Enabled[7]: (bool) false
+/ORGretina4MModel/1/6/PZ Trace Enabled[8]: (bool) false
+/ORGretina4MModel/1/6/PZ Trace Enabled[9]: (bool) false
+/ORGretina4MModel/1/6/Pile Up[0]: (bool) false
+/ORGretina4MModel/1/6/Pile Up[1]: (bool) false
+/ORGretina4MModel/1/6/Pile Up[2]: (bool) false
+/ORGretina4MModel/1/6/Pile Up[3]: (bool) false
+/ORGretina4MModel/1/6/Pile Up[4]: (bool) false
+/ORGretina4MModel/1/6/Pile Up[5]: (bool) false
+/ORGretina4MModel/1/6/Pile Up[6]: (bool) false
+/ORGretina4MModel/1/6/Pile Up[7]: (bool) false
+/ORGretina4MModel/1/6/Pile Up[8]: (bool) false
+/ORGretina4MModel/1/6/Pile Up[9]: (bool) false
+/ORGretina4MModel/1/6/Pile Up Window: (integer) 1024
+/ORGretina4MModel/1/6/Pole Zero Enabled[0]: (bool) false
+/ORGretina4MModel/1/6/Pole Zero Enabled[1]: (bool) false
+/ORGretina4MModel/1/6/Pole Zero Enabled[2]: (bool) false
+/ORGretina4MModel/1/6/Pole Zero Enabled[3]: (bool) false
+/ORGretina4MModel/1/6/Pole Zero Enabled[4]: (bool) false
+/ORGretina4MModel/1/6/Pole Zero Enabled[5]: (bool) false
+/ORGretina4MModel/1/6/Pole Zero Enabled[6]: (bool) false
+/ORGretina4MModel/1/6/Pole Zero Enabled[7]: (bool) false
+/ORGretina4MModel/1/6/Pole Zero Enabled[8]: (bool) false
+/ORGretina4MModel/1/6/Pole Zero Enabled[9]: (bool) false
+/ORGretina4MModel/1/6/Pole Zero Multiplier[0]: (integer) 1536
+/ORGretina4MModel/1/6/Pole Zero Multiplier[1]: (integer) 1536
+/ORGretina4MModel/1/6/Pole Zero Multiplier[2]: (integer) 1536
+/ORGretina4MModel/1/6/Pole Zero Multiplier[3]: (integer) 1536
+/ORGretina4MModel/1/6/Pole Zero Multiplier[4]: (integer) 1536
+/ORGretina4MModel/1/6/Pole Zero Multiplier[5]: (integer) 1536
+/ORGretina4MModel/1/6/Pole Zero Multiplier[6]: (integer) 1536
+/ORGretina4MModel/1/6/Pole Zero Multiplier[7]: (integer) 1536
+/ORGretina4MModel/1/6/Pole Zero Multiplier[8]: (integer) 1536
+/ORGretina4MModel/1/6/Pole Zero Multiplier[9]: (integer) 1536
+/ORGretina4MModel/1/6/Postrecnt[0]: (integer) 1009
+/ORGretina4MModel/1/6/Postrecnt[1]: (integer) 1009
+/ORGretina4MModel/1/6/Postrecnt[2]: (integer) 1009
+/ORGretina4MModel/1/6/Postrecnt[3]: (integer) 1009
+/ORGretina4MModel/1/6/Postrecnt[4]: (integer) 1009
+/ORGretina4MModel/1/6/Postrecnt[5]: (integer) 1009
+/ORGretina4MModel/1/6/Postrecnt[6]: (integer) 1009
+/ORGretina4MModel/1/6/Postrecnt[7]: (integer) 1009
+/ORGretina4MModel/1/6/Postrecnt[8]: (integer) 1009
+/ORGretina4MModel/1/6/Postrecnt[9]: (integer) 1009
+/ORGretina4MModel/1/6/PreSum Enabled[0]: (bool) false
+/ORGretina4MModel/1/6/PreSum Enabled[1]: (bool) false
+/ORGretina4MModel/1/6/PreSum Enabled[2]: (bool) false
+/ORGretina4MModel/1/6/PreSum Enabled[3]: (bool) false
+/ORGretina4MModel/1/6/PreSum Enabled[4]: (bool) false
+/ORGretina4MModel/1/6/PreSum Enabled[5]: (bool) false
+/ORGretina4MModel/1/6/PreSum Enabled[6]: (bool) false
+/ORGretina4MModel/1/6/PreSum Enabled[7]: (bool) false
+/ORGretina4MModel/1/6/PreSum Enabled[8]: (bool) false
+/ORGretina4MModel/1/6/PreSum Enabled[9]: (bool) false
+/ORGretina4MModel/1/6/Prerecnt[0]: (integer) 1009
+/ORGretina4MModel/1/6/Prerecnt[1]: (integer) 1009
+/ORGretina4MModel/1/6/Prerecnt[2]: (integer) 1009
+/ORGretina4MModel/1/6/Prerecnt[3]: (integer) 1009
+/ORGretina4MModel/1/6/Prerecnt[4]: (integer) 1009
+/ORGretina4MModel/1/6/Prerecnt[5]: (integer) 1009
+/ORGretina4MModel/1/6/Prerecnt[6]: (integer) 1009
+/ORGretina4MModel/1/6/Prerecnt[7]: (integer) 1009
+/ORGretina4MModel/1/6/Prerecnt[8]: (integer) 1009
+/ORGretina4MModel/1/6/Prerecnt[9]: (integer) 1009
+/ORGretina4MModel/1/6/TPol[0]: (integer) 3
+/ORGretina4MModel/1/6/TPol[1]: (integer) 3
+/ORGretina4MModel/1/6/TPol[2]: (integer) 3
+/ORGretina4MModel/1/6/TPol[3]: (integer) 3
+/ORGretina4MModel/1/6/TPol[4]: (integer) 3
+/ORGretina4MModel/1/6/TPol[5]: (integer) 3
+/ORGretina4MModel/1/6/TPol[6]: (integer) 3
+/ORGretina4MModel/1/6/TPol[7]: (integer) 3
+/ORGretina4MModel/1/6/TPol[8]: (integer) 3
+/ORGretina4MModel/1/6/TPol[9]: (integer) 3
+/ORGretina4MModel/1/6/TRAP Threshold[0]: (integer) 700
+/ORGretina4MModel/1/6/TRAP Threshold[1]: (integer) 400
+/ORGretina4MModel/1/6/TRAP Threshold[2]: (integer) 700
+/ORGretina4MModel/1/6/TRAP Threshold[3]: (integer) 400
+/ORGretina4MModel/1/6/TRAP Threshold[4]: (integer) 5000
+/ORGretina4MModel/1/6/TRAP Threshold[5]: (integer) 5000
+/ORGretina4MModel/1/6/TRAP Threshold[6]: (integer) 1000
+/ORGretina4MModel/1/6/TRAP Threshold[7]: (integer) 500
+/ORGretina4MModel/1/6/TRAP Threshold[8]: (integer) 900
+/ORGretina4MModel/1/6/TRAP Threshold[9]: (integer) 400
+/ORGretina4MModel/1/6/Trap Enabled[0]: (bool) true
+/ORGretina4MModel/1/6/Trap Enabled[1]: (bool) true
+/ORGretina4MModel/1/6/Trap Enabled[2]: (bool) true
+/ORGretina4MModel/1/6/Trap Enabled[3]: (bool) true
+/ORGretina4MModel/1/6/Trap Enabled[4]: (bool) true
+/ORGretina4MModel/1/6/Trap Enabled[5]: (bool) true
+/ORGretina4MModel/1/6/Trap Enabled[6]: (bool) true
+/ORGretina4MModel/1/6/Trap Enabled[7]: (bool) true
+/ORGretina4MModel/1/6/Trap Enabled[8]: (bool) true
+/ORGretina4MModel/1/6/Trap Enabled[9]: (bool) true
+/ORGretina4MModel/1/6/Trigger Mode[0]: (integer) 0
+/ORGretina4MModel/1/6/Trigger Mode[1]: (integer) 0
+/ORGretina4MModel/1/6/Trigger Mode[2]: (integer) 0
+/ORGretina4MModel/1/6/Trigger Mode[3]: (integer) 0
+/ORGretina4MModel/1/6/Trigger Mode[4]: (integer) 0
+/ORGretina4MModel/1/6/Trigger Mode[5]: (integer) 0
+/ORGretina4MModel/1/6/Trigger Mode[6]: (integer) 0
+/ORGretina4MModel/1/6/Trigger Mode[7]: (integer) 0
+/ORGretina4MModel/1/6/Trigger Mode[8]: (integer) 0
+/ORGretina4MModel/1/6/Trigger Mode[9]: (integer) 0
+/ORGretina4MModel/1/6/baseAddress: (integer) 7340032
+/ORGretina4MModel/1/6/forceFullInit[0]: (bool) true
+/ORGretina4MModel/1/6/forceFullInit[1]: (bool) true
+/ORGretina4MModel/1/6/forceFullInit[2]: (bool) true
+/ORGretina4MModel/1/6/forceFullInit[3]: (bool) true
+/ORGretina4MModel/1/6/forceFullInit[4]: (bool) true
+/ORGretina4MModel/1/6/forceFullInit[5]: (bool) true
+/ORGretina4MModel/1/6/forceFullInit[6]: (bool) true
+/ORGretina4MModel/1/6/forceFullInit[7]: (bool) true
+/ORGretina4MModel/1/6/forceFullInit[8]: (bool) true
+/ORGretina4MModel/1/6/forceFullInit[9]: (bool) true
+/ORGretina4MModel/1/6/forceFullInitCard: (integer) 1
+/ORGretina4MModel/1/7/Baseline Restore Enabled[0]: (bool) false
+/ORGretina4MModel/1/7/Baseline Restore Enabled[1]: (bool) false
+/ORGretina4MModel/1/7/Baseline Restore Enabled[2]: (bool) false
+/ORGretina4MModel/1/7/Baseline Restore Enabled[3]: (bool) false
+/ORGretina4MModel/1/7/Baseline Restore Enabled[4]: (bool) false
+/ORGretina4MModel/1/7/Baseline Restore Enabled[5]: (bool) false
+/ORGretina4MModel/1/7/Baseline Restore Enabled[6]: (bool) false
+/ORGretina4MModel/1/7/Baseline Restore Enabled[7]: (bool) false
+/ORGretina4MModel/1/7/Baseline Restore Enabled[8]: (bool) false
+/ORGretina4MModel/1/7/Baseline Restore Enabled[9]: (bool) false
+/ORGretina4MModel/1/7/Card: (integer) 7
+/ORGretina4MModel/1/7/Chpsdv[0]: (integer) 3
+/ORGretina4MModel/1/7/Chpsdv[1]: (integer) 0
+/ORGretina4MModel/1/7/Chpsdv[2]: (integer) 3
+/ORGretina4MModel/1/7/Chpsdv[3]: (integer) 0
+/ORGretina4MModel/1/7/Chpsdv[4]: (integer) 3
+/ORGretina4MModel/1/7/Chpsdv[5]: (integer) 0
+/ORGretina4MModel/1/7/Chpsdv[6]: (integer) 0
+/ORGretina4MModel/1/7/Chpsdv[7]: (integer) 0
+/ORGretina4MModel/1/7/Chpsdv[8]: (integer) 3
+/ORGretina4MModel/1/7/Chpsdv[9]: (integer) 0
+/ORGretina4MModel/1/7/Chpsrt[0]: (integer) 2
+/ORGretina4MModel/1/7/Chpsrt[1]: (integer) 0
+/ORGretina4MModel/1/7/Chpsrt[2]: (integer) 2
+/ORGretina4MModel/1/7/Chpsrt[3]: (integer) 0
+/ORGretina4MModel/1/7/Chpsrt[4]: (integer) 2
+/ORGretina4MModel/1/7/Chpsrt[5]: (integer) 0
+/ORGretina4MModel/1/7/Chpsrt[6]: (integer) 0
+/ORGretina4MModel/1/7/Chpsrt[7]: (integer) 0
+/ORGretina4MModel/1/7/Chpsrt[8]: (integer) 2
+/ORGretina4MModel/1/7/Chpsrt[9]: (integer) 0
+/ORGretina4MModel/1/7/Class Name: (string) ORGretina4MModel
+/ORGretina4MModel/1/7/Clock Phase: (integer) 0
+/ORGretina4MModel/1/7/Clock Source: (integer) 0
+/ORGretina4MModel/1/7/Collection Time: (integer) 200
+/ORGretina4MModel/1/7/Debug Mode[0]: (bool) false
+/ORGretina4MModel/1/7/Debug Mode[1]: (bool) false
+/ORGretina4MModel/1/7/Debug Mode[2]: (bool) false
+/ORGretina4MModel/1/7/Debug Mode[3]: (bool) false
+/ORGretina4MModel/1/7/Debug Mode[4]: (bool) false
+/ORGretina4MModel/1/7/Debug Mode[5]: (bool) false
+/ORGretina4MModel/1/7/Debug Mode[6]: (bool) false
+/ORGretina4MModel/1/7/Debug Mode[7]: (bool) false
+/ORGretina4MModel/1/7/Debug Mode[8]: (bool) false
+/ORGretina4MModel/1/7/Debug Mode[9]: (bool) false
+/ORGretina4MModel/1/7/Down Sample: (integer) 0
+/ORGretina4MModel/1/7/Enabled[0]: (bool) false
+/ORGretina4MModel/1/7/Enabled[1]: (bool) false
+/ORGretina4MModel/1/7/Enabled[2]: (bool) true
+/ORGretina4MModel/1/7/Enabled[3]: (bool) true
+/ORGretina4MModel/1/7/Enabled[4]: (bool) true
+/ORGretina4MModel/1/7/Enabled[5]: (bool) true
+/ORGretina4MModel/1/7/Enabled[6]: (bool) false
+/ORGretina4MModel/1/7/Enabled[7]: (bool) false
+/ORGretina4MModel/1/7/Enabled[8]: (bool) true
+/ORGretina4MModel/1/7/Enabled[9]: (bool) true
+/ORGretina4MModel/1/7/Ext Trig Length: (integer) 400
+/ORGretina4MModel/1/7/External Window: (integer) 400
+/ORGretina4MModel/1/7/FtCnt[0]: (integer) 0
+/ORGretina4MModel/1/7/FtCnt[1]: (integer) 0
+/ORGretina4MModel/1/7/FtCnt[2]: (integer) 0
+/ORGretina4MModel/1/7/FtCnt[3]: (integer) 0
+/ORGretina4MModel/1/7/FtCnt[4]: (integer) 0
+/ORGretina4MModel/1/7/FtCnt[5]: (integer) 0
+/ORGretina4MModel/1/7/FtCnt[6]: (integer) 0
+/ORGretina4MModel/1/7/FtCnt[7]: (integer) 0
+/ORGretina4MModel/1/7/FtCnt[8]: (integer) 0
+/ORGretina4MModel/1/7/FtCnt[9]: (integer) 0
+/ORGretina4MModel/1/7/Hist E Multiplier: (integer) 1
+/ORGretina4MModel/1/7/Integration Time: (integer) 400
+/ORGretina4MModel/1/7/LED Threshold[0]: (integer) 1200
+/ORGretina4MModel/1/7/LED Threshold[1]: (integer) 500
+/ORGretina4MModel/1/7/LED Threshold[2]: (integer) 800
+/ORGretina4MModel/1/7/LED Threshold[3]: (integer) 400
+/ORGretina4MModel/1/7/LED Threshold[4]: (integer) 800
+/ORGretina4MModel/1/7/LED Threshold[5]: (integer) 400
+/ORGretina4MModel/1/7/LED Threshold[6]: (integer) 700
+/ORGretina4MModel/1/7/LED Threshold[7]: (integer) 700
+/ORGretina4MModel/1/7/LED Threshold[8]: (integer) 800
+/ORGretina4MModel/1/7/LED Threshold[9]: (integer) 400
+/ORGretina4MModel/1/7/Mrpsdv[0]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsdv[1]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsdv[2]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsdv[3]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsdv[4]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsdv[5]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsdv[6]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsdv[7]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsdv[8]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsdv[9]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsrt[0]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsrt[1]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsrt[2]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsrt[3]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsrt[4]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsrt[5]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsrt[6]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsrt[7]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsrt[8]: (integer) 0
+/ORGretina4MModel/1/7/Mrpsrt[9]: (integer) 0
+/ORGretina4MModel/1/7/Noise Window: (integer) 127
+/ORGretina4MModel/1/7/PZ Trace Enabled[0]: (bool) false
+/ORGretina4MModel/1/7/PZ Trace Enabled[1]: (bool) false
+/ORGretina4MModel/1/7/PZ Trace Enabled[2]: (bool) false
+/ORGretina4MModel/1/7/PZ Trace Enabled[3]: (bool) false
+/ORGretina4MModel/1/7/PZ Trace Enabled[4]: (bool) false
+/ORGretina4MModel/1/7/PZ Trace Enabled[5]: (bool) false
+/ORGretina4MModel/1/7/PZ Trace Enabled[6]: (bool) false
+/ORGretina4MModel/1/7/PZ Trace Enabled[7]: (bool) false
+/ORGretina4MModel/1/7/PZ Trace Enabled[8]: (bool) false
+/ORGretina4MModel/1/7/PZ Trace Enabled[9]: (bool) false
+/ORGretina4MModel/1/7/Pile Up[0]: (bool) false
+/ORGretina4MModel/1/7/Pile Up[1]: (bool) false
+/ORGretina4MModel/1/7/Pile Up[2]: (bool) false
+/ORGretina4MModel/1/7/Pile Up[3]: (bool) false
+/ORGretina4MModel/1/7/Pile Up[4]: (bool) false
+/ORGretina4MModel/1/7/Pile Up[5]: (bool) false
+/ORGretina4MModel/1/7/Pile Up[6]: (bool) false
+/ORGretina4MModel/1/7/Pile Up[7]: (bool) false
+/ORGretina4MModel/1/7/Pile Up[8]: (bool) false
+/ORGretina4MModel/1/7/Pile Up[9]: (bool) false
+/ORGretina4MModel/1/7/Pile Up Window: (integer) 1024
+/ORGretina4MModel/1/7/Pole Zero Enabled[0]: (bool) false
+/ORGretina4MModel/1/7/Pole Zero Enabled[1]: (bool) false
+/ORGretina4MModel/1/7/Pole Zero Enabled[2]: (bool) false
+/ORGretina4MModel/1/7/Pole Zero Enabled[3]: (bool) false
+/ORGretina4MModel/1/7/Pole Zero Enabled[4]: (bool) false
+/ORGretina4MModel/1/7/Pole Zero Enabled[5]: (bool) false
+/ORGretina4MModel/1/7/Pole Zero Enabled[6]: (bool) false
+/ORGretina4MModel/1/7/Pole Zero Enabled[7]: (bool) false
+/ORGretina4MModel/1/7/Pole Zero Enabled[8]: (bool) false
+/ORGretina4MModel/1/7/Pole Zero Enabled[9]: (bool) false
+/ORGretina4MModel/1/7/Pole Zero Multiplier[0]: (integer) 1536
+/ORGretina4MModel/1/7/Pole Zero Multiplier[1]: (integer) 1536
+/ORGretina4MModel/1/7/Pole Zero Multiplier[2]: (integer) 1536
+/ORGretina4MModel/1/7/Pole Zero Multiplier[3]: (integer) 1536
+/ORGretina4MModel/1/7/Pole Zero Multiplier[4]: (integer) 1536
+/ORGretina4MModel/1/7/Pole Zero Multiplier[5]: (integer) 1536
+/ORGretina4MModel/1/7/Pole Zero Multiplier[6]: (integer) 1536
+/ORGretina4MModel/1/7/Pole Zero Multiplier[7]: (integer) 1536
+/ORGretina4MModel/1/7/Pole Zero Multiplier[8]: (integer) 1536
+/ORGretina4MModel/1/7/Pole Zero Multiplier[9]: (integer) 1536
+/ORGretina4MModel/1/7/Postrecnt[0]: (integer) 1009
+/ORGretina4MModel/1/7/Postrecnt[1]: (integer) 1009
+/ORGretina4MModel/1/7/Postrecnt[2]: (integer) 1009
+/ORGretina4MModel/1/7/Postrecnt[3]: (integer) 1009
+/ORGretina4MModel/1/7/Postrecnt[4]: (integer) 1009
+/ORGretina4MModel/1/7/Postrecnt[5]: (integer) 1009
+/ORGretina4MModel/1/7/Postrecnt[6]: (integer) 1009
+/ORGretina4MModel/1/7/Postrecnt[7]: (integer) 1009
+/ORGretina4MModel/1/7/Postrecnt[8]: (integer) 1009
+/ORGretina4MModel/1/7/Postrecnt[9]: (integer) 1009
+/ORGretina4MModel/1/7/PreSum Enabled[0]: (bool) false
+/ORGretina4MModel/1/7/PreSum Enabled[1]: (bool) false
+/ORGretina4MModel/1/7/PreSum Enabled[2]: (bool) false
+/ORGretina4MModel/1/7/PreSum Enabled[3]: (bool) false
+/ORGretina4MModel/1/7/PreSum Enabled[4]: (bool) false
+/ORGretina4MModel/1/7/PreSum Enabled[5]: (bool) false
+/ORGretina4MModel/1/7/PreSum Enabled[6]: (bool) false
+/ORGretina4MModel/1/7/PreSum Enabled[7]: (bool) false
+/ORGretina4MModel/1/7/PreSum Enabled[8]: (bool) false
+/ORGretina4MModel/1/7/PreSum Enabled[9]: (bool) false
+/ORGretina4MModel/1/7/Prerecnt[0]: (integer) 1009
+/ORGretina4MModel/1/7/Prerecnt[1]: (integer) 1009
+/ORGretina4MModel/1/7/Prerecnt[2]: (integer) 1009
+/ORGretina4MModel/1/7/Prerecnt[3]: (integer) 1009
+/ORGretina4MModel/1/7/Prerecnt[4]: (integer) 1009
+/ORGretina4MModel/1/7/Prerecnt[5]: (integer) 1009
+/ORGretina4MModel/1/7/Prerecnt[6]: (integer) 1009
+/ORGretina4MModel/1/7/Prerecnt[7]: (integer) 1009
+/ORGretina4MModel/1/7/Prerecnt[8]: (integer) 1009
+/ORGretina4MModel/1/7/Prerecnt[9]: (integer) 1009
+/ORGretina4MModel/1/7/TPol[0]: (integer) 3
+/ORGretina4MModel/1/7/TPol[1]: (integer) 3
+/ORGretina4MModel/1/7/TPol[2]: (integer) 3
+/ORGretina4MModel/1/7/TPol[3]: (integer) 3
+/ORGretina4MModel/1/7/TPol[4]: (integer) 3
+/ORGretina4MModel/1/7/TPol[5]: (integer) 3
+/ORGretina4MModel/1/7/TPol[6]: (integer) 1
+/ORGretina4MModel/1/7/TPol[7]: (integer) 1
+/ORGretina4MModel/1/7/TPol[8]: (integer) 3
+/ORGretina4MModel/1/7/TPol[9]: (integer) 3
+/ORGretina4MModel/1/7/TRAP Threshold[0]: (integer) 1200
+/ORGretina4MModel/1/7/TRAP Threshold[1]: (integer) 500
+/ORGretina4MModel/1/7/TRAP Threshold[2]: (integer) 800
+/ORGretina4MModel/1/7/TRAP Threshold[3]: (integer) 400
+/ORGretina4MModel/1/7/TRAP Threshold[4]: (integer) 800
+/ORGretina4MModel/1/7/TRAP Threshold[5]: (integer) 400
+/ORGretina4MModel/1/7/TRAP Threshold[6]: (integer) 700
+/ORGretina4MModel/1/7/TRAP Threshold[7]: (integer) 700
+/ORGretina4MModel/1/7/TRAP Threshold[8]: (integer) 800
+/ORGretina4MModel/1/7/TRAP Threshold[9]: (integer) 400
+/ORGretina4MModel/1/7/Trap Enabled[0]: (bool) true
+/ORGretina4MModel/1/7/Trap Enabled[1]: (bool) true
+/ORGretina4MModel/1/7/Trap Enabled[2]: (bool) true
+/ORGretina4MModel/1/7/Trap Enabled[3]: (bool) true
+/ORGretina4MModel/1/7/Trap Enabled[4]: (bool) true
+/ORGretina4MModel/1/7/Trap Enabled[5]: (bool) true
+/ORGretina4MModel/1/7/Trap Enabled[6]: (bool) true
+/ORGretina4MModel/1/7/Trap Enabled[7]: (bool) true
+/ORGretina4MModel/1/7/Trap Enabled[8]: (bool) true
+/ORGretina4MModel/1/7/Trap Enabled[9]: (bool) true
+/ORGretina4MModel/1/7/Trigger Mode[0]: (integer) 0
+/ORGretina4MModel/1/7/Trigger Mode[1]: (integer) 0
+/ORGretina4MModel/1/7/Trigger Mode[2]: (integer) 0
+/ORGretina4MModel/1/7/Trigger Mode[3]: (integer) 0
+/ORGretina4MModel/1/7/Trigger Mode[4]: (integer) 0
+/ORGretina4MModel/1/7/Trigger Mode[5]: (integer) 0
+/ORGretina4MModel/1/7/Trigger Mode[6]: (integer) 0
+/ORGretina4MModel/1/7/Trigger Mode[7]: (integer) 0
+/ORGretina4MModel/1/7/Trigger Mode[8]: (integer) 0
+/ORGretina4MModel/1/7/Trigger Mode[9]: (integer) 0
+/ORGretina4MModel/1/7/baseAddress: (integer) 8388608
+/ORGretina4MModel/1/7/forceFullInit[0]: (bool) true
+/ORGretina4MModel/1/7/forceFullInit[1]: (bool) true
+/ORGretina4MModel/1/7/forceFullInit[2]: (bool) true
+/ORGretina4MModel/1/7/forceFullInit[3]: (bool) true
+/ORGretina4MModel/1/7/forceFullInit[4]: (bool) true
+/ORGretina4MModel/1/7/forceFullInit[5]: (bool) true
+/ORGretina4MModel/1/7/forceFullInit[6]: (bool) true
+/ORGretina4MModel/1/7/forceFullInit[7]: (bool) true
+/ORGretina4MModel/1/7/forceFullInit[8]: (bool) true
+/ORGretina4MModel/1/7/forceFullInit[9]: (bool) true
+/ORGretina4MModel/1/7/forceFullInitCard: (integer) 1
+/ORGretina4MModel/1/8/Baseline Restore Enabled[0]: (bool) false
+/ORGretina4MModel/1/8/Baseline Restore Enabled[1]: (bool) false
+/ORGretina4MModel/1/8/Baseline Restore Enabled[2]: (bool) false
+/ORGretina4MModel/1/8/Baseline Restore Enabled[3]: (bool) false
+/ORGretina4MModel/1/8/Baseline Restore Enabled[4]: (bool) false
+/ORGretina4MModel/1/8/Baseline Restore Enabled[5]: (bool) false
+/ORGretina4MModel/1/8/Baseline Restore Enabled[6]: (bool) false
+/ORGretina4MModel/1/8/Baseline Restore Enabled[7]: (bool) false
+/ORGretina4MModel/1/8/Baseline Restore Enabled[8]: (bool) false
+/ORGretina4MModel/1/8/Baseline Restore Enabled[9]: (bool) false
+/ORGretina4MModel/1/8/Card: (integer) 8
+/ORGretina4MModel/1/8/Chpsdv[0]: (integer) 3
+/ORGretina4MModel/1/8/Chpsdv[1]: (integer) 0
+/ORGretina4MModel/1/8/Chpsdv[2]: (integer) 3
+/ORGretina4MModel/1/8/Chpsdv[3]: (integer) 0
+/ORGretina4MModel/1/8/Chpsdv[4]: (integer) 3
+/ORGretina4MModel/1/8/Chpsdv[5]: (integer) 0
+/ORGretina4MModel/1/8/Chpsdv[6]: (integer) 0
+/ORGretina4MModel/1/8/Chpsdv[7]: (integer) 0
+/ORGretina4MModel/1/8/Chpsdv[8]: (integer) 3
+/ORGretina4MModel/1/8/Chpsdv[9]: (integer) 0
+/ORGretina4MModel/1/8/Chpsrt[0]: (integer) 2
+/ORGretina4MModel/1/8/Chpsrt[1]: (integer) 0
+/ORGretina4MModel/1/8/Chpsrt[2]: (integer) 2
+/ORGretina4MModel/1/8/Chpsrt[3]: (integer) 0
+/ORGretina4MModel/1/8/Chpsrt[4]: (integer) 2
+/ORGretina4MModel/1/8/Chpsrt[5]: (integer) 0
+/ORGretina4MModel/1/8/Chpsrt[6]: (integer) 0
+/ORGretina4MModel/1/8/Chpsrt[7]: (integer) 0
+/ORGretina4MModel/1/8/Chpsrt[8]: (integer) 2
+/ORGretina4MModel/1/8/Chpsrt[9]: (integer) 0
+/ORGretina4MModel/1/8/Class Name: (string) ORGretina4MModel
+/ORGretina4MModel/1/8/Clock Phase: (integer) 0
+/ORGretina4MModel/1/8/Clock Source: (integer) 0
+/ORGretina4MModel/1/8/Collection Time: (integer) 200
+/ORGretina4MModel/1/8/Debug Mode[0]: (bool) false
+/ORGretina4MModel/1/8/Debug Mode[1]: (bool) false
+/ORGretina4MModel/1/8/Debug Mode[2]: (bool) false
+/ORGretina4MModel/1/8/Debug Mode[3]: (bool) false
+/ORGretina4MModel/1/8/Debug Mode[4]: (bool) false
+/ORGretina4MModel/1/8/Debug Mode[5]: (bool) false
+/ORGretina4MModel/1/8/Debug Mode[6]: (bool) false
+/ORGretina4MModel/1/8/Debug Mode[7]: (bool) false
+/ORGretina4MModel/1/8/Debug Mode[8]: (bool) false
+/ORGretina4MModel/1/8/Debug Mode[9]: (bool) false
+/ORGretina4MModel/1/8/Down Sample: (integer) 0
+/ORGretina4MModel/1/8/Enabled[0]: (bool) true
+/ORGretina4MModel/1/8/Enabled[1]: (bool) true
+/ORGretina4MModel/1/8/Enabled[2]: (bool) false
+/ORGretina4MModel/1/8/Enabled[3]: (bool) false
+/ORGretina4MModel/1/8/Enabled[4]: (bool) true
+/ORGretina4MModel/1/8/Enabled[5]: (bool) false
+/ORGretina4MModel/1/8/Enabled[6]: (bool) false
+/ORGretina4MModel/1/8/Enabled[7]: (bool) false
+/ORGretina4MModel/1/8/Enabled[8]: (bool) true
+/ORGretina4MModel/1/8/Enabled[9]: (bool) true
+/ORGretina4MModel/1/8/Ext Trig Length: (integer) 400
+/ORGretina4MModel/1/8/External Window: (integer) 400
+/ORGretina4MModel/1/8/FtCnt[0]: (integer) 0
+/ORGretina4MModel/1/8/FtCnt[1]: (integer) 0
+/ORGretina4MModel/1/8/FtCnt[2]: (integer) 0
+/ORGretina4MModel/1/8/FtCnt[3]: (integer) 0
+/ORGretina4MModel/1/8/FtCnt[4]: (integer) 0
+/ORGretina4MModel/1/8/FtCnt[5]: (integer) 0
+/ORGretina4MModel/1/8/FtCnt[6]: (integer) 0
+/ORGretina4MModel/1/8/FtCnt[7]: (integer) 0
+/ORGretina4MModel/1/8/FtCnt[8]: (integer) 0
+/ORGretina4MModel/1/8/FtCnt[9]: (integer) 0
+/ORGretina4MModel/1/8/Hist E Multiplier: (integer) 1
+/ORGretina4MModel/1/8/Integration Time: (integer) 400
+/ORGretina4MModel/1/8/LED Threshold[0]: (integer) 700
+/ORGretina4MModel/1/8/LED Threshold[1]: (integer) 400
+/ORGretina4MModel/1/8/LED Threshold[2]: (integer) 1000
+/ORGretina4MModel/1/8/LED Threshold[3]: (integer) 1000
+/ORGretina4MModel/1/8/LED Threshold[4]: (integer) 5000
+/ORGretina4MModel/1/8/LED Threshold[5]: (integer) 5000
+/ORGretina4MModel/1/8/LED Threshold[6]: (integer) 5
+/ORGretina4MModel/1/8/LED Threshold[7]: (integer) 5
+/ORGretina4MModel/1/8/LED Threshold[8]: (integer) 700
+/ORGretina4MModel/1/8/LED Threshold[9]: (integer) 500
+/ORGretina4MModel/1/8/Mrpsdv[0]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsdv[1]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsdv[2]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsdv[3]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsdv[4]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsdv[5]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsdv[6]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsdv[7]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsdv[8]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsdv[9]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsrt[0]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsrt[1]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsrt[2]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsrt[3]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsrt[4]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsrt[5]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsrt[6]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsrt[7]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsrt[8]: (integer) 0
+/ORGretina4MModel/1/8/Mrpsrt[9]: (integer) 0
+/ORGretina4MModel/1/8/Noise Window: (integer) 127
+/ORGretina4MModel/1/8/PZ Trace Enabled[0]: (bool) false
+/ORGretina4MModel/1/8/PZ Trace Enabled[1]: (bool) false
+/ORGretina4MModel/1/8/PZ Trace Enabled[2]: (bool) false
+/ORGretina4MModel/1/8/PZ Trace Enabled[3]: (bool) false
+/ORGretina4MModel/1/8/PZ Trace Enabled[4]: (bool) false
+/ORGretina4MModel/1/8/PZ Trace Enabled[5]: (bool) false
+/ORGretina4MModel/1/8/PZ Trace Enabled[6]: (bool) false
+/ORGretina4MModel/1/8/PZ Trace Enabled[7]: (bool) false
+/ORGretina4MModel/1/8/PZ Trace Enabled[8]: (bool) false
+/ORGretina4MModel/1/8/PZ Trace Enabled[9]: (bool) false
+/ORGretina4MModel/1/8/Pile Up[0]: (bool) false
+/ORGretina4MModel/1/8/Pile Up[1]: (bool) false
+/ORGretina4MModel/1/8/Pile Up[2]: (bool) false
+/ORGretina4MModel/1/8/Pile Up[3]: (bool) false
+/ORGretina4MModel/1/8/Pile Up[4]: (bool) false
+/ORGretina4MModel/1/8/Pile Up[5]: (bool) false
+/ORGretina4MModel/1/8/Pile Up[6]: (bool) false
+/ORGretina4MModel/1/8/Pile Up[7]: (bool) false
+/ORGretina4MModel/1/8/Pile Up[8]: (bool) false
+/ORGretina4MModel/1/8/Pile Up[9]: (bool) false
+/ORGretina4MModel/1/8/Pile Up Window: (integer) 1024
+/ORGretina4MModel/1/8/Pole Zero Enabled[0]: (bool) false
+/ORGretina4MModel/1/8/Pole Zero Enabled[1]: (bool) false
+/ORGretina4MModel/1/8/Pole Zero Enabled[2]: (bool) false
+/ORGretina4MModel/1/8/Pole Zero Enabled[3]: (bool) false
+/ORGretina4MModel/1/8/Pole Zero Enabled[4]: (bool) false
+/ORGretina4MModel/1/8/Pole Zero Enabled[5]: (bool) false
+/ORGretina4MModel/1/8/Pole Zero Enabled[6]: (bool) false
+/ORGretina4MModel/1/8/Pole Zero Enabled[7]: (bool) false
+/ORGretina4MModel/1/8/Pole Zero Enabled[8]: (bool) false
+/ORGretina4MModel/1/8/Pole Zero Enabled[9]: (bool) false
+/ORGretina4MModel/1/8/Pole Zero Multiplier[0]: (integer) 1536
+/ORGretina4MModel/1/8/Pole Zero Multiplier[1]: (integer) 1536
+/ORGretina4MModel/1/8/Pole Zero Multiplier[2]: (integer) 1536
+/ORGretina4MModel/1/8/Pole Zero Multiplier[3]: (integer) 1536
+/ORGretina4MModel/1/8/Pole Zero Multiplier[4]: (integer) 1536
+/ORGretina4MModel/1/8/Pole Zero Multiplier[5]: (integer) 1536
+/ORGretina4MModel/1/8/Pole Zero Multiplier[6]: (integer) 1536
+/ORGretina4MModel/1/8/Pole Zero Multiplier[7]: (integer) 1536
+/ORGretina4MModel/1/8/Pole Zero Multiplier[8]: (integer) 1536
+/ORGretina4MModel/1/8/Pole Zero Multiplier[9]: (integer) 1536
+/ORGretina4MModel/1/8/Postrecnt[0]: (integer) 1009
+/ORGretina4MModel/1/8/Postrecnt[1]: (integer) 1009
+/ORGretina4MModel/1/8/Postrecnt[2]: (integer) 1009
+/ORGretina4MModel/1/8/Postrecnt[3]: (integer) 1009
+/ORGretina4MModel/1/8/Postrecnt[4]: (integer) 1009
+/ORGretina4MModel/1/8/Postrecnt[5]: (integer) 1009
+/ORGretina4MModel/1/8/Postrecnt[6]: (integer) 1009
+/ORGretina4MModel/1/8/Postrecnt[7]: (integer) 1009
+/ORGretina4MModel/1/8/Postrecnt[8]: (integer) 1009
+/ORGretina4MModel/1/8/Postrecnt[9]: (integer) 1009
+/ORGretina4MModel/1/8/PreSum Enabled[0]: (bool) false
+/ORGretina4MModel/1/8/PreSum Enabled[1]: (bool) false
+/ORGretina4MModel/1/8/PreSum Enabled[2]: (bool) false
+/ORGretina4MModel/1/8/PreSum Enabled[3]: (bool) false
+/ORGretina4MModel/1/8/PreSum Enabled[4]: (bool) false
+/ORGretina4MModel/1/8/PreSum Enabled[5]: (bool) false
+/ORGretina4MModel/1/8/PreSum Enabled[6]: (bool) false
+/ORGretina4MModel/1/8/PreSum Enabled[7]: (bool) false
+/ORGretina4MModel/1/8/PreSum Enabled[8]: (bool) false
+/ORGretina4MModel/1/8/PreSum Enabled[9]: (bool) false
+/ORGretina4MModel/1/8/Prerecnt[0]: (integer) 1009
+/ORGretina4MModel/1/8/Prerecnt[1]: (integer) 1009
+/ORGretina4MModel/1/8/Prerecnt[2]: (integer) 1009
+/ORGretina4MModel/1/8/Prerecnt[3]: (integer) 1009
+/ORGretina4MModel/1/8/Prerecnt[4]: (integer) 1009
+/ORGretina4MModel/1/8/Prerecnt[5]: (integer) 1009
+/ORGretina4MModel/1/8/Prerecnt[6]: (integer) 1009
+/ORGretina4MModel/1/8/Prerecnt[7]: (integer) 1009
+/ORGretina4MModel/1/8/Prerecnt[8]: (integer) 1009
+/ORGretina4MModel/1/8/Prerecnt[9]: (integer) 1009
+/ORGretina4MModel/1/8/TPol[0]: (integer) 3
+/ORGretina4MModel/1/8/TPol[1]: (integer) 3
+/ORGretina4MModel/1/8/TPol[2]: (integer) 1
+/ORGretina4MModel/1/8/TPol[3]: (integer) 1
+/ORGretina4MModel/1/8/TPol[4]: (integer) 3
+/ORGretina4MModel/1/8/TPol[5]: (integer) 3
+/ORGretina4MModel/1/8/TPol[6]: (integer) 1
+/ORGretina4MModel/1/8/TPol[7]: (integer) 1
+/ORGretina4MModel/1/8/TPol[8]: (integer) 3
+/ORGretina4MModel/1/8/TPol[9]: (integer) 3
+/ORGretina4MModel/1/8/TRAP Threshold[0]: (integer) 700
+/ORGretina4MModel/1/8/TRAP Threshold[1]: (integer) 400
+/ORGretina4MModel/1/8/TRAP Threshold[2]: (integer) 1000
+/ORGretina4MModel/1/8/TRAP Threshold[3]: (integer) 1000
+/ORGretina4MModel/1/8/TRAP Threshold[4]: (integer) 5000
+/ORGretina4MModel/1/8/TRAP Threshold[5]: (integer) 5000
+/ORGretina4MModel/1/8/TRAP Threshold[6]: (integer) 5
+/ORGretina4MModel/1/8/TRAP Threshold[7]: (integer) 5
+/ORGretina4MModel/1/8/TRAP Threshold[8]: (integer) 700
+/ORGretina4MModel/1/8/TRAP Threshold[9]: (integer) 500
+/ORGretina4MModel/1/8/Trap Enabled[0]: (bool) true
+/ORGretina4MModel/1/8/Trap Enabled[1]: (bool) true
+/ORGretina4MModel/1/8/Trap Enabled[2]: (bool) true
+/ORGretina4MModel/1/8/Trap Enabled[3]: (bool) true
+/ORGretina4MModel/1/8/Trap Enabled[4]: (bool) true
+/ORGretina4MModel/1/8/Trap Enabled[5]: (bool) true
+/ORGretina4MModel/1/8/Trap Enabled[6]: (bool) true
+/ORGretina4MModel/1/8/Trap Enabled[7]: (bool) true
+/ORGretina4MModel/1/8/Trap Enabled[8]: (bool) true
+/ORGretina4MModel/1/8/Trap Enabled[9]: (bool) true
+/ORGretina4MModel/1/8/Trigger Mode[0]: (integer) 0
+/ORGretina4MModel/1/8/Trigger Mode[1]: (integer) 0
+/ORGretina4MModel/1/8/Trigger Mode[2]: (integer) 0
+/ORGretina4MModel/1/8/Trigger Mode[3]: (integer) 0
+/ORGretina4MModel/1/8/Trigger Mode[4]: (integer) 0
+/ORGretina4MModel/1/8/Trigger Mode[5]: (integer) 0
+/ORGretina4MModel/1/8/Trigger Mode[6]: (integer) 0
+/ORGretina4MModel/1/8/Trigger Mode[7]: (integer) 0
+/ORGretina4MModel/1/8/Trigger Mode[8]: (integer) 0
+/ORGretina4MModel/1/8/Trigger Mode[9]: (integer) 0
+/ORGretina4MModel/1/8/baseAddress: (integer) 9437184
+/ORGretina4MModel/1/8/forceFullInit[0]: (bool) true
+/ORGretina4MModel/1/8/forceFullInit[1]: (bool) true
+/ORGretina4MModel/1/8/forceFullInit[2]: (bool) true
+/ORGretina4MModel/1/8/forceFullInit[3]: (bool) true
+/ORGretina4MModel/1/8/forceFullInit[4]: (bool) true
+/ORGretina4MModel/1/8/forceFullInit[5]: (bool) true
+/ORGretina4MModel/1/8/forceFullInit[6]: (bool) true
+/ORGretina4MModel/1/8/forceFullInit[7]: (bool) true
+/ORGretina4MModel/1/8/forceFullInit[8]: (bool) true
+/ORGretina4MModel/1/8/forceFullInit[9]: (bool) true
+/ORGretina4MModel/1/8/forceFullInitCard: (integer) 1
+/ORGretina4MModel/1/9/Baseline Restore Enabled[0]: (bool) false
+/ORGretina4MModel/1/9/Baseline Restore Enabled[1]: (bool) false
+/ORGretina4MModel/1/9/Baseline Restore Enabled[2]: (bool) false
+/ORGretina4MModel/1/9/Baseline Restore Enabled[3]: (bool) false
+/ORGretina4MModel/1/9/Baseline Restore Enabled[4]: (bool) false
+/ORGretina4MModel/1/9/Baseline Restore Enabled[5]: (bool) false
+/ORGretina4MModel/1/9/Baseline Restore Enabled[6]: (bool) false
+/ORGretina4MModel/1/9/Baseline Restore Enabled[7]: (bool) false
+/ORGretina4MModel/1/9/Baseline Restore Enabled[8]: (bool) false
+/ORGretina4MModel/1/9/Baseline Restore Enabled[9]: (bool) false
+/ORGretina4MModel/1/9/Card: (integer) 9
+/ORGretina4MModel/1/9/Chpsdv[0]: (integer) 3
+/ORGretina4MModel/1/9/Chpsdv[1]: (integer) 0
+/ORGretina4MModel/1/9/Chpsdv[2]: (integer) 3
+/ORGretina4MModel/1/9/Chpsdv[3]: (integer) 0
+/ORGretina4MModel/1/9/Chpsdv[4]: (integer) 3
+/ORGretina4MModel/1/9/Chpsdv[5]: (integer) 0
+/ORGretina4MModel/1/9/Chpsdv[6]: (integer) 0
+/ORGretina4MModel/1/9/Chpsdv[7]: (integer) 0
+/ORGretina4MModel/1/9/Chpsdv[8]: (integer) 3
+/ORGretina4MModel/1/9/Chpsdv[9]: (integer) 0
+/ORGretina4MModel/1/9/Chpsrt[0]: (integer) 2
+/ORGretina4MModel/1/9/Chpsrt[1]: (integer) 0
+/ORGretina4MModel/1/9/Chpsrt[2]: (integer) 2
+/ORGretina4MModel/1/9/Chpsrt[3]: (integer) 0
+/ORGretina4MModel/1/9/Chpsrt[4]: (integer) 2
+/ORGretina4MModel/1/9/Chpsrt[5]: (integer) 0
+/ORGretina4MModel/1/9/Chpsrt[6]: (integer) 0
+/ORGretina4MModel/1/9/Chpsrt[7]: (integer) 0
+/ORGretina4MModel/1/9/Chpsrt[8]: (integer) 2
+/ORGretina4MModel/1/9/Chpsrt[9]: (integer) 0
+/ORGretina4MModel/1/9/Class Name: (string) ORGretina4MModel
+/ORGretina4MModel/1/9/Clock Phase: (integer) 0
+/ORGretina4MModel/1/9/Clock Source: (integer) 0
+/ORGretina4MModel/1/9/Collection Time: (integer) 200
+/ORGretina4MModel/1/9/Debug Mode[0]: (bool) false
+/ORGretina4MModel/1/9/Debug Mode[1]: (bool) false
+/ORGretina4MModel/1/9/Debug Mode[2]: (bool) false
+/ORGretina4MModel/1/9/Debug Mode[3]: (bool) false
+/ORGretina4MModel/1/9/Debug Mode[4]: (bool) false
+/ORGretina4MModel/1/9/Debug Mode[5]: (bool) false
+/ORGretina4MModel/1/9/Debug Mode[6]: (bool) false
+/ORGretina4MModel/1/9/Debug Mode[7]: (bool) false
+/ORGretina4MModel/1/9/Debug Mode[8]: (bool) false
+/ORGretina4MModel/1/9/Debug Mode[9]: (bool) false
+/ORGretina4MModel/1/9/Down Sample: (integer) 0
+/ORGretina4MModel/1/9/Enabled[0]: (bool) false
+/ORGretina4MModel/1/9/Enabled[1]: (bool) false
+/ORGretina4MModel/1/9/Enabled[2]: (bool) false
+/ORGretina4MModel/1/9/Enabled[3]: (bool) false
+/ORGretina4MModel/1/9/Enabled[4]: (bool) false
+/ORGretina4MModel/1/9/Enabled[5]: (bool) false
+/ORGretina4MModel/1/9/Enabled[6]: (bool) false
+/ORGretina4MModel/1/9/Enabled[7]: (bool) false
+/ORGretina4MModel/1/9/Enabled[8]: (bool) true
+/ORGretina4MModel/1/9/Enabled[9]: (bool) true
+/ORGretina4MModel/1/9/Ext Trig Length: (integer) 400
+/ORGretina4MModel/1/9/External Window: (integer) 400
+/ORGretina4MModel/1/9/FtCnt[0]: (integer) 0
+/ORGretina4MModel/1/9/FtCnt[1]: (integer) 0
+/ORGretina4MModel/1/9/FtCnt[2]: (integer) 0
+/ORGretina4MModel/1/9/FtCnt[3]: (integer) 0
+/ORGretina4MModel/1/9/FtCnt[4]: (integer) 0
+/ORGretina4MModel/1/9/FtCnt[5]: (integer) 0
+/ORGretina4MModel/1/9/FtCnt[6]: (integer) 0
+/ORGretina4MModel/1/9/FtCnt[7]: (integer) 0
+/ORGretina4MModel/1/9/FtCnt[8]: (integer) 0
+/ORGretina4MModel/1/9/FtCnt[9]: (integer) 0
+/ORGretina4MModel/1/9/Hist E Multiplier: (integer) 1
+/ORGretina4MModel/1/9/Integration Time: (integer) 400
+/ORGretina4MModel/1/9/LED Threshold[0]: (integer) 5
+/ORGretina4MModel/1/9/LED Threshold[1]: (integer) 5
+/ORGretina4MModel/1/9/LED Threshold[2]: (integer) 5
+/ORGretina4MModel/1/9/LED Threshold[3]: (integer) 5
+/ORGretina4MModel/1/9/LED Threshold[4]: (integer) 5
+/ORGretina4MModel/1/9/LED Threshold[5]: (integer) 5
+/ORGretina4MModel/1/9/LED Threshold[6]: (integer) 5
+/ORGretina4MModel/1/9/LED Threshold[7]: (integer) 5
+/ORGretina4MModel/1/9/LED Threshold[8]: (integer) 700
+/ORGretina4MModel/1/9/LED Threshold[9]: (integer) 400
+/ORGretina4MModel/1/9/Mrpsdv[0]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsdv[1]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsdv[2]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsdv[3]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsdv[4]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsdv[5]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsdv[6]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsdv[7]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsdv[8]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsdv[9]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsrt[0]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsrt[1]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsrt[2]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsrt[3]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsrt[4]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsrt[5]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsrt[6]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsrt[7]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsrt[8]: (integer) 0
+/ORGretina4MModel/1/9/Mrpsrt[9]: (integer) 0
+/ORGretina4MModel/1/9/Noise Window: (integer) 127
+/ORGretina4MModel/1/9/PZ Trace Enabled[0]: (bool) false
+/ORGretina4MModel/1/9/PZ Trace Enabled[1]: (bool) false
+/ORGretina4MModel/1/9/PZ Trace Enabled[2]: (bool) false
+/ORGretina4MModel/1/9/PZ Trace Enabled[3]: (bool) false
+/ORGretina4MModel/1/9/PZ Trace Enabled[4]: (bool) false
+/ORGretina4MModel/1/9/PZ Trace Enabled[5]: (bool) false
+/ORGretina4MModel/1/9/PZ Trace Enabled[6]: (bool) false
+/ORGretina4MModel/1/9/PZ Trace Enabled[7]: (bool) false
+/ORGretina4MModel/1/9/PZ Trace Enabled[8]: (bool) false
+/ORGretina4MModel/1/9/PZ Trace Enabled[9]: (bool) false
+/ORGretina4MModel/1/9/Pile Up[0]: (bool) false
+/ORGretina4MModel/1/9/Pile Up[1]: (bool) false
+/ORGretina4MModel/1/9/Pile Up[2]: (bool) false
+/ORGretina4MModel/1/9/Pile Up[3]: (bool) false
+/ORGretina4MModel/1/9/Pile Up[4]: (bool) false
+/ORGretina4MModel/1/9/Pile Up[5]: (bool) false
+/ORGretina4MModel/1/9/Pile Up[6]: (bool) false
+/ORGretina4MModel/1/9/Pile Up[7]: (bool) false
+/ORGretina4MModel/1/9/Pile Up[8]: (bool) false
+/ORGretina4MModel/1/9/Pile Up[9]: (bool) false
+/ORGretina4MModel/1/9/Pile Up Window: (integer) 1024
+/ORGretina4MModel/1/9/Pole Zero Enabled[0]: (bool) false
+/ORGretina4MModel/1/9/Pole Zero Enabled[1]: (bool) false
+/ORGretina4MModel/1/9/Pole Zero Enabled[2]: (bool) false
+/ORGretina4MModel/1/9/Pole Zero Enabled[3]: (bool) false
+/ORGretina4MModel/1/9/Pole Zero Enabled[4]: (bool) false
+/ORGretina4MModel/1/9/Pole Zero Enabled[5]: (bool) false
+/ORGretina4MModel/1/9/Pole Zero Enabled[6]: (bool) false
+/ORGretina4MModel/1/9/Pole Zero Enabled[7]: (bool) false
+/ORGretina4MModel/1/9/Pole Zero Enabled[8]: (bool) false
+/ORGretina4MModel/1/9/Pole Zero Enabled[9]: (bool) false
+/ORGretina4MModel/1/9/Pole Zero Multiplier[0]: (integer) 1536
+/ORGretina4MModel/1/9/Pole Zero Multiplier[1]: (integer) 1536
+/ORGretina4MModel/1/9/Pole Zero Multiplier[2]: (integer) 1536
+/ORGretina4MModel/1/9/Pole Zero Multiplier[3]: (integer) 1536
+/ORGretina4MModel/1/9/Pole Zero Multiplier[4]: (integer) 1536
+/ORGretina4MModel/1/9/Pole Zero Multiplier[5]: (integer) 1536
+/ORGretina4MModel/1/9/Pole Zero Multiplier[6]: (integer) 1536
+/ORGretina4MModel/1/9/Pole Zero Multiplier[7]: (integer) 1536
+/ORGretina4MModel/1/9/Pole Zero Multiplier[8]: (integer) 1536
+/ORGretina4MModel/1/9/Pole Zero Multiplier[9]: (integer) 1536
+/ORGretina4MModel/1/9/Postrecnt[0]: (integer) 1009
+/ORGretina4MModel/1/9/Postrecnt[1]: (integer) 1009
+/ORGretina4MModel/1/9/Postrecnt[2]: (integer) 1009
+/ORGretina4MModel/1/9/Postrecnt[3]: (integer) 1009
+/ORGretina4MModel/1/9/Postrecnt[4]: (integer) 1009
+/ORGretina4MModel/1/9/Postrecnt[5]: (integer) 1009
+/ORGretina4MModel/1/9/Postrecnt[6]: (integer) 1009
+/ORGretina4MModel/1/9/Postrecnt[7]: (integer) 1009
+/ORGretina4MModel/1/9/Postrecnt[8]: (integer) 1009
+/ORGretina4MModel/1/9/Postrecnt[9]: (integer) 1009
+/ORGretina4MModel/1/9/PreSum Enabled[0]: (bool) false
+/ORGretina4MModel/1/9/PreSum Enabled[1]: (bool) false
+/ORGretina4MModel/1/9/PreSum Enabled[2]: (bool) false
+/ORGretina4MModel/1/9/PreSum Enabled[3]: (bool) false
+/ORGretina4MModel/1/9/PreSum Enabled[4]: (bool) false
+/ORGretina4MModel/1/9/PreSum Enabled[5]: (bool) false
+/ORGretina4MModel/1/9/PreSum Enabled[6]: (bool) false
+/ORGretina4MModel/1/9/PreSum Enabled[7]: (bool) false
+/ORGretina4MModel/1/9/PreSum Enabled[8]: (bool) false
+/ORGretina4MModel/1/9/PreSum Enabled[9]: (bool) false
+/ORGretina4MModel/1/9/Prerecnt[0]: (integer) 1009
+/ORGretina4MModel/1/9/Prerecnt[1]: (integer) 1009
+/ORGretina4MModel/1/9/Prerecnt[2]: (integer) 1009
+/ORGretina4MModel/1/9/Prerecnt[3]: (integer) 1009
+/ORGretina4MModel/1/9/Prerecnt[4]: (integer) 1009
+/ORGretina4MModel/1/9/Prerecnt[5]: (integer) 1009
+/ORGretina4MModel/1/9/Prerecnt[6]: (integer) 1009
+/ORGretina4MModel/1/9/Prerecnt[7]: (integer) 1009
+/ORGretina4MModel/1/9/Prerecnt[8]: (integer) 1009
+/ORGretina4MModel/1/9/Prerecnt[9]: (integer) 1009
+/ORGretina4MModel/1/9/TPol[0]: (integer) 1
+/ORGretina4MModel/1/9/TPol[1]: (integer) 1
+/ORGretina4MModel/1/9/TPol[2]: (integer) 1
+/ORGretina4MModel/1/9/TPol[3]: (integer) 1
+/ORGretina4MModel/1/9/TPol[4]: (integer) 3
+/ORGretina4MModel/1/9/TPol[5]: (integer) 3
+/ORGretina4MModel/1/9/TPol[6]: (integer) 1
+/ORGretina4MModel/1/9/TPol[7]: (integer) 1
+/ORGretina4MModel/1/9/TPol[8]: (integer) 3
+/ORGretina4MModel/1/9/TPol[9]: (integer) 3
+/ORGretina4MModel/1/9/TRAP Threshold[0]: (integer) 5
+/ORGretina4MModel/1/9/TRAP Threshold[1]: (integer) 5
+/ORGretina4MModel/1/9/TRAP Threshold[2]: (integer) 5
+/ORGretina4MModel/1/9/TRAP Threshold[3]: (integer) 5
+/ORGretina4MModel/1/9/TRAP Threshold[4]: (integer) 5
+/ORGretina4MModel/1/9/TRAP Threshold[5]: (integer) 5
+/ORGretina4MModel/1/9/TRAP Threshold[6]: (integer) 5
+/ORGretina4MModel/1/9/TRAP Threshold[7]: (integer) 5
+/ORGretina4MModel/1/9/TRAP Threshold[8]: (integer) 700
+/ORGretina4MModel/1/9/TRAP Threshold[9]: (integer) 400
+/ORGretina4MModel/1/9/Trap Enabled[0]: (bool) true
+/ORGretina4MModel/1/9/Trap Enabled[1]: (bool) true
+/ORGretina4MModel/1/9/Trap Enabled[2]: (bool) true
+/ORGretina4MModel/1/9/Trap Enabled[3]: (bool) true
+/ORGretina4MModel/1/9/Trap Enabled[4]: (bool) true
+/ORGretina4MModel/1/9/Trap Enabled[5]: (bool) true
+/ORGretina4MModel/1/9/Trap Enabled[6]: (bool) true
+/ORGretina4MModel/1/9/Trap Enabled[7]: (bool) true
+/ORGretina4MModel/1/9/Trap Enabled[8]: (bool) true
+/ORGretina4MModel/1/9/Trap Enabled[9]: (bool) true
+/ORGretina4MModel/1/9/Trigger Mode[0]: (integer) 0
+/ORGretina4MModel/1/9/Trigger Mode[1]: (integer) 0
+/ORGretina4MModel/1/9/Trigger Mode[2]: (integer) 0
+/ORGretina4MModel/1/9/Trigger Mode[3]: (integer) 0
+/ORGretina4MModel/1/9/Trigger Mode[4]: (integer) 0
+/ORGretina4MModel/1/9/Trigger Mode[5]: (integer) 0
+/ORGretina4MModel/1/9/Trigger Mode[6]: (integer) 0
+/ORGretina4MModel/1/9/Trigger Mode[7]: (integer) 0
+/ORGretina4MModel/1/9/Trigger Mode[8]: (integer) 0
+/ORGretina4MModel/1/9/Trigger Mode[9]: (integer) 0
+/ORGretina4MModel/1/9/baseAddress: (integer) 10485760
+/ORGretina4MModel/1/9/forceFullInit[0]: (bool) true
+/ORGretina4MModel/1/9/forceFullInit[1]: (bool) true
+/ORGretina4MModel/1/9/forceFullInit[2]: (bool) true
+/ORGretina4MModel/1/9/forceFullInit[3]: (bool) true
+/ORGretina4MModel/1/9/forceFullInit[4]: (bool) true
+/ORGretina4MModel/1/9/forceFullInit[5]: (bool) true
+/ORGretina4MModel/1/9/forceFullInit[6]: (bool) true
+/ORGretina4MModel/1/9/forceFullInit[7]: (bool) true
+/ORGretina4MModel/1/9/forceFullInit[8]: (bool) true
+/ORGretina4MModel/1/9/forceFullInit[9]: (bool) true
+/ORGretina4MModel/1/9/forceFullInitCard: (integer) 1
+/ORGretinaTriggerModel/1/2/Card: (integer) 2
+/ORGretinaTriggerModel/1/2/Class Name: (string) ORGretinaTriggerModel
+/ORGretinaTriggerModel/1/2/baseAddress: (integer) 3145728
+/ORGretinaTriggerModel/1/3/Card: (integer) 3
+/ORGretinaTriggerModel/1/3/Class Name: (string) ORGretinaTriggerModel
+/ORGretinaTriggerModel/1/3/baseAddress: (integer) 4194304
+/ORIPCarrierModel/1/16/Card: (integer) 16
+/ORIPCarrierModel/1/16/Class Name: (string) ORIPCarrierModel
+/ORIPCarrierModel/1/16/DaughterCards[0]/Card: (integer) 3
+/ORIPCarrierModel/1/16/DaughterCards[0]/Class Name: (string) ORIP408Model
+/ORIPCarrierModel/1/16/DaughterCards[0]/SlotName: (string) IP A
+/ORIPCarrierModel/1/16/DaughterCards[0]/baseAddress: (integer) 24576
+/ORIPCarrierModel/1/16/DaughterCards[1]/Card: (integer) 1
+/ORIPCarrierModel/1/16/DaughterCards[1]/Class Name: (string) ORIP408Model
+/ORIPCarrierModel/1/16/DaughterCards[1]/SlotName: (string) IP C
+/ORIPCarrierModel/1/16/DaughterCards[1]/baseAddress: (integer) 25088
+/ORIPCarrierModel/1/16/baseAddress: (integer) 24576
+/ORMPodCModel/0/0/Card: (integer) 0
+/ORMPodCModel/0/0/Class Name: (string) ORMPodCModel
+/ORVmecpuModel/1/0/Card: (integer) 0
+/ORVmecpuModel/1/0/Class Name: (string) ORVmecpuModel
+Pos: C1P7D1  Name: B8482  Chan: 600  enabled? Pos: C1P7D1  Name: B8482  Chan: 601  enabled? Pos: C1P7D2  Name: P42574B  Chan: 598  enabled? Pos: C1P7D2  Name: P42574B  Chan: 599  enabled? Pos: C1P7D3  Name: P42662B  Chan: 594  enabled? Pos: C1P7D3  Name: P42662B  Chan: 595  enabled? Pos: C1P7D4  Name: P42537A  Chan: 592  enabled? Pos: C1P7D4  Name: P42537A  Chan: 593  enabled? Pos: C1P6D1  Name: P42574C  Chan: 632  enabled? Pos: C1P6D1  Name: P42574C  Chan: 633  enabled? Pos: C1P6D2  Name: P42661B  Chan: 630  enabled? Pos: C1P6D2  Name: P42661B  Chan: 631  enabled? Pos: C1P6D3  Name: P42574A  Chan: 626  enabled? Pos: C1P6D3  Name: P42574A  Chan: 627  enabled? Pos: C1P6D4  Name: P42662A  Chan: 690  enabled? Pos: C1P6D4  Name: P42662A  Chan: 691  enabled? Pos: C1P2D1  Name: B8474  Chan: 692  enabled? Pos: C1P2D1  Name: B8474  Chan: 693  enabled? Pos: C1P2D2  Name: P42664A  Chan: 648  enabled? Pos: C1P2D2  Name: P42664A  Chan: 649  enabled? Pos: C1P2D3  Name: P42665A  Chan: 640  enabled? Pos: C1P2D3  Name: P42665A  Chan: 641  enabled? Pos: C1P2D4  Name: P42662C  Chan: 642  enabled? Pos: C1P2D4  Name: P42662C  Chan: 643  enabled? Pos: C1P1D1  Name: P42698B  Chan: 584  enabled? Pos: C1P1D1  Name: P42698B  Chan: 585  enabled? Pos: C1P1D2  Name: P42575A  Chan: 582  enabled? Pos: C1P1D2  Name: P42575A  Chan: 583  enabled? Pos: C1P1D3  Name: P42661C  Chan: 580  enabled? Pos: C1P1D3  Name: P42661C  Chan: 581  enabled? Pos: C1P1D4  Name: P42538A  Chan: 578  enabled? Pos: C1P1D4  Name: P42538A  Chan: 579  enabled? Pos: C1P3D1  Name: B8480  Chan: 616  enabled? Pos: C1P3D1  Name: B8480  Chan: 617  enabled? Pos: C1P3D2  Name: P42698A  Chan: 610  enabled? Pos: C1P3D2  Name: P42698A  Chan: 611  enabled? Pos: C1P3D3  Name: P42538B  Chan: 608  enabled? Pos: C1P3D3  Name: P42538B  Chan: 609  enabled? Pos: C1P3D4  Name: P42573A  Chan: 664  enabled? Pos: C1P3D4  Name: P42573A  Chan: 665  enabled? Pos: C1P5D1  Name: B8477  Chan: 680  enabled? Pos: C1P5D1  Name: B8477  Chan: 681  enabled? Pos: C1P5D2  Name: P42575B  Chan: 678  enabled? Pos: C1P5D2  Name: P42575B  Chan: 679  enabled? Pos: C1P5D3  Name: P42661A  Chan: 672  enabled? Pos: C1P5D3  Name: P42661A  Chan: 673  enabled? Pos: C1P5D4  Name: P42573B  Chan: 696  enabled? Pos: C1P5D4  Name: P42573B  Chan: 697  enabled? Pos: C1P4D1  Name: B8455  Chan: 624  enabled? Pos: C1P4D1  Name: B8455  Chan: 625  enabled? Pos: C1P4D2  Name: B8470  Chan: 628  enabled? Pos: C1P4D2  Name: B8470  Chan: 629  enabled? Pos: C1P4D3  Name: B8463  Chan: 688  enabled? Pos: C1P4D3  Name: B8463  Chan: 689  enabled? Pos: C1P4D4  Name: B8465  Chan: 694  enabled? Pos: C1P4D4  Name: B8465  Chan: 695  enabled? Pos: C1P4D5  Name: B8469  Chan: 614  enabled? Pos: C1P4D5  Name: B8469  Chan: 615  enabled? balls
