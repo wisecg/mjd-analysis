@@ -1,0 +1,9 @@
+# http://matplotlib.org/users/style_sheets.html
+
+axes.titlesize : 30
+axes.labelsize : 25
+axes.linewidth : 1
+lines.linewidth : 1
+lines.markersize : 3
+xtick.labelsize : 20
+ytick.labelsize : 20
