@@ -101,8 +101,7 @@ def eventLoop():
 	gatified = ds.GetGatifiedChain()
 	entries = gatified.GetEntries()
 
-	# need to declare individual branch access
-	# when we loop over events.
+	# need to declare individual branch access when we loop over events.
 	timestamp = ROOT.std.vector("double")()
 	trapENFCal = ROOT.std.vector("double")()
 	channel = ROOT.std.vector("double")()

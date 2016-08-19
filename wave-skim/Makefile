@@ -1,73 +1,27 @@
-# Generic MJD makefile (MGSW+ROOT)
-# Clint Wiseman, USC
+include $(MGDODIR)/buildTools/config.mk
 
-# executable name
-PROGRAM = waveSkim
+# Give the list of applications, which must be the stems of cc files with 'main'.
+APPS = waveSkim waveSkimReader
 
-# this is a list of the .cc files
-SOURCES = $(PROGRAM).cc $(wildcard ./code/*.cc)
+# shared libraries
+SHLIB =
+ARCHIVE =
+TAMDIR ?= $(ROOTSYS)
 
-# this is a list of .o files created by the makefile
-OBJECTS = $(SOURCES:.cc=.o)
+# MGSW and ROOT includes
+INCLUDEFLAGS = $(CLHEP_INCLUDE_FLAGS) -I$(MGDODIR)/Base -I$(MGDODIR)/Root -I$(MGDODIR)/Transforms
 
-# compiler options and includes
+INCLUDEFLAGS += -I$(MGDODIR)/Majorana -I$(MGDODIR)/MJDB $(ROOT_INCLUDE_FLAGS) -I$(TAMDIR)/inc -I$(TAMDIR)/include -I$(MGDODIR)/Tabree
 
-# ROOT5 (osx and linux)
-# CXX = g++
-# CXXFLAGS = -c -Wall -fPIC -O2 -g
-# LD = g++
-# LDFLAGS = -O  $(shell root-config --ldflags)
+INCLUDEFLAGS += -I$(GATDIR)/BaseClasses -I$(GATDIR)/MGTEventProcessing -I$(GATDIR)/MGOutputMCRunProcessing -I$(GATDIR)/Analysis -I$(GATDIR)/MJDAnalysis -I$(GATDIR)/DCProcs
 
-#ROOT6 (osx: clang, linux: g++)
-UNAME := $(shell uname)
-ifeq ($(UNAME), Linux)
-    CXX = g++
-    CXXFLAGS = -O -Wall -c -fPIC $(shell root-config --cflags) 
-    LD = g++
-    LDFLAGS  = -O -m64
-endif
-ifeq ($(UNAME), Darwin)
-    CXX = clang++
-    CXXFLAGS = -O -Wall -c -fPIC $(shell root-config --cflags) 
-    LD = clang++
-    LDFLAGS  = -O  $(shell root-config --ldflags) 
-endif
+INCLUDEFLAGS += $(shell root-config --cflags)
 
+LIBFLAGS = -L$(MGDODIR)/lib -lMGDORoot -lMGDOBase -lMGDOTransforms -lMGDOMajorana -lMGDOGerdaTransforms -lMGDOMJDB -lMGDOTabree
 
-MGDOINCLUDE = -I$(MGDODIR)/Base -I$(MGDODIR)/Root -I$(MGDODIR)/Transforms -I$(MGDODIR)/Majorana -I$(MGDODIR)/Tabree -I$(MGDODIR)/MJDB
-MGDOLIB = -L$(MGDODIR)/lib -lMGDOBase -lMGDOMajorana -lMGDORoot -lMGDOTransforms -lMGDOTabree -lMGDOMJDB
-TAMINCLUDE = -I$(MGDODIR)/tam/inc
-TAMLIB = -L$(MGDODIR)/tam/lib -lTAM
-GATINCLUDE= -I$(GATDIR)/BaseClasses -I$(GATDIR)/DCProcs -I$(GATDIR)/MGOutputMCRunProcessing -I$(GATDIR)/MGTEventProcessing #-I$(GATDIR)/buildtools 
-GATLIB = -L$(GATDIR)/lib -lGATBaseClasses -lGATDCProcs -lGATMGOutputMCRunProcessing -lGATMGTEventProcessing #-lGATbuildtools 
-CLHEPINCLUDE = -I$(CLHEP_INCLUDE_DIR)
+LIBFLAGS += -L$(GATDIR)/lib -lGATBaseClasses -lGATMGTEventProcessing -lGATMGOutputMCRunProcessing -lGATAnalysis -lGATMJDAnalysis -lGATDCProcs $(ROOT_LIB_FLAGS) -lSpectrum -lTreePlayer -L$(TAMDIR)/lib -lTAM
 
-ROOTLIB= $(shell root-config --libs)
-ROOTINCLUDE = -I$(ROOTSYS)/include
+LIBFLAGS += $(shell root-config --ldflags)
 
-ALLINC= -I. $(ROOTINCLUDE) $(MGDOINCLUDE) $(GATINCLUDE) $(CLHEPINCLUDE) $(TAMINCLUDE)
-ALLLIB= $(ROOTLIB) $(MGDOLIB) $(GATLIB) $(TAMLIB)
+include $(MGDODIR)/buildTools/BasicMakefile
 
-#####################
-
-all: $(SOURCES) $(PROGRAM)
-	@echo sources: $(SOURCES)  executable is: $(PROGRAM)
-
-# $< is the first term in the dependencies list
-# -o creates an object file
-# $@ refers to the target (left side of the : symbol)
-    
-.cc.o:
-#	@echo creating object file.  
-#	@echo target list: $(OBJECTS)  source list: $(SOURCES)
-	$(CXX) $(CXXFLAGS) $(ALLINC) $< -o $@ 
-
-$(PROGRAM): $(OBJECTS) 
-	@echo creating executable ...
-	$(LD) $(LDFLAGS) $(ALLLIB) $(OBJECTS) -o $@ 
-
-.PHONY: clean
-
-clean:
-	find . -name "*.o" -type f -delete
-	rm $(PROGRAM)

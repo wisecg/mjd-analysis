@@ -70,46 +70,37 @@ using namespace std;
 void skimmer(char cutstr[500], char skimloc[500]);
 void grabber(char wsout[500]);
 
-int main(int argc, char** argv)
+int main()
 {
-
 	// =========== THE BIG CUT ===========
-	//
 	char cutstr[1000];
 	char HGCut[500] = "channel%2==0";	// only look at high gain
 	// char SDCut[500] = "mH==1";
 	char SDCut[500] = "1";
 	// char energyCut[500] = "trapENFCal > 0 && trapENFCal < 30";
-	char energyCut[500] = "trapENFCal > 1590 && trapENFCal < 1595";
+	// char energyCut[500] = "trapENFCal > 1590 && trapENFCal < 1595";
+	char energyCut[500] = "trapENFCal > 1550 && trapENFCal < 1650";
 	// char TrapETailMinCut[500] = "trapETailMin < 0";
 	char TrapETailMinCut[500] = "1";
 	char DCCut[500] = "!wfDCBits";
-	char vetoCut[500] = "(dtmu_s < -0.2e-3 || dtmu_s > 1)";
+	char vetoCut[500] = "!muVeto";
 	char burstCut[500] = "!(time_s > 2192e3 && time_s < 2195e3) && !(time_s > 7370e3 && time_s < 7371e3) && !(time_s > 7840e3 && time_s < 7860e3) && !(time_s > 8384e3 && time_s < 8387e3) && !(time_s > 8984e3 && time_s < 8985e3) && !(time_s > 9002e3 && time_s < 9005e3) && run != 13075 && run != 13093 && run != 13116";
 	char runCut[500] = "run!=13312 && run!=13121 && run!=13004 && run!=12766 && run!=12735 && run!=12445 && run!=11175 && run!=12723 && run!=12746 && run!=12767 && run!=13071 && run!=13073 && run!=13074 && run!=13120 && run!=13205 && run!=13306 && run!=13307 && run!=9857 && run!=9862 && run!=9863";
-	// char segfaultCut[500] = "run!=9422. && run!=9423 && run!=9425 && run!=9426 && run!=9427";
-	char segfaultCut[500] = "1";
+	char segfaultCut[500] = "run!=9422. && run!=9423 && run!=9425 && run!=9426 && run!=9427";
+	// char segfaultCut[500] = "1";
 	sprintf(cutstr,"%s && %s && %s && %s && %s && %s && %s && %s && %s"
 		,HGCut,SDCut,energyCut,TrapETailMinCut,DCCut,vetoCut,burstCut,runCut,segfaultCut);
 
-
 	// =========== Skim file location ===========
-	//
 	// char skimloc[500] = "/Users/wisecg/dev/datasets/ds1/*.root";
-	char skimloc[500] = "/project/projectdirs/majorana/data/mjd/surfmjd/analysis/skim/DS1/gatrev_185602346/*.root";
-	// char skimloc[500] = "/Users/wisecg/dev/datasets/ds1_lowE/*.root";
-	// char skimloc[500] = "/global/u1/w/wisecg/lowE/lowSkim/*.root";
-
+	char skimloc[500] = "$MJDDATADIR/surfmjd/analysis/skim/DS1/20160621_265313037/*.root";
 
 	// =========== waveSkim output file ===========
-	//
 	// char wsout[500] = "./output/waveSkim_DS1.root";
-
-	char wsout[500] = "./output/waveSkim_DEP_DS1.root";
+	char wsout[500] = "./output/waveSkim-1550-1650.root";
 
 
 	// =========== Ready? Go! ===========
-	//
 	skimmer(cutstr,skimloc);
 	grabber(wsout);
 
@@ -138,7 +129,7 @@ void skimmer(char cutstr[500], char skimloc[500])
 	double startTime=0,stopTime=0,sumEH=0,sumEL=0;
 	vector<int> *iHit=0,*channel=0,*P=0,*D=0,*gain=0,*mageID=0,*detID=0,*dateMT=0,*muType=0;
 	vector<double> *mAct_g=0,*tloc_s=0,*time_s=0,*timeMT=0,*trapECal=0,*trapENFCal=0,*aenorm=0,*kvorrT=0,*toe=0,*dcrSlope95=0,*dcrSlope99=0,*trapETailMin=0,*dtmu_s=0,*trap4usMax=0,*t150=0;
-	vector<bool> *isEnr=0,*isNat=0,*isGood=0,*isLNFill=0,*badScaler=0,*muVeto1ms=0;
+	vector<bool> *isEnr=0,*isNat=0,*isGood=0,*isLNFill=0,*badScaler=0,*muVeto=0;
 	// vector<string> *detName;
 	vector<unsigned int> *wfDCBits=0;
 	skim->SetBranchAddress("gatrev",&gatrev);
@@ -180,7 +171,7 @@ void skimmer(char cutstr[500], char skimloc[500])
 	skim->SetBranchAddress("isGood",&isGood);
 	skim->SetBranchAddress("isLNFill",&isLNFill);
 	skim->SetBranchAddress("badScaler",&badScaler);
-	skim->SetBranchAddress("muVeto1ms",&muVeto1ms);
+	skim->SetBranchAddress("muVeto",&muVeto);
 	// skim->SetBranchAddress("detName",&detName);
 	skim->SetBranchAddress("wfDCBits",&wfDCBits);
 
@@ -390,13 +381,13 @@ void grabber(char wsout[500])
 		gatSkim->Branch("RawWFwholeWFLinFitOffset",&RawWFwholeWFLinFitOffset);
 		gatSkim->Branch("RawWFwholeWFLinFitOffsetUnc",&RawWFwholeWFLinFitOffsetUnc);
 		gatSkim->Branch("RawWFwholeWFLinFitChi2",&RawWFwholeWFLinFitChi2);
-		gatSkim->Branch("trapENF55us",&trapENF55us);
+		// gatSkim->Branch("trapENF55us",&trapENF55us);
 		gatSkim->Branch("trapENF70us",&trapENF70us);
-		gatSkim->Branch("trapENF85us",&trapENF85us);
+		// gatSkim->Branch("trapENF85us",&trapENF85us);
 		gatSkim->Branch("trapENF100us",&trapENF100us);
-		gatSkim->Branch("trapENF115us",&trapENF115us);
+		// gatSkim->Branch("trapENF115us",&trapENF115us);
 		gatSkim->Branch("trapENF130us",&trapENF130us);
-		gatSkim->Branch("trapBL",&trapBL);
+		// gatSkim->Branch("trapBL",&trapBL);
 		gatSkim->Branch("trap500nsMax",&trap500nsMax);
 		gatSkim->Branch("trapENF500nsrt",&trapENF500nsrt);
 		gatSkim->Branch("trap1usMax",&trap1usMax);
@@ -544,13 +535,13 @@ void grabber(char wsout[500])
 			gatChain->SetBranchAddress("RawWFwholeWFLinFitOffset",&RawWFwholeWFLinFitOffset);
 			gatChain->SetBranchAddress("RawWFwholeWFLinFitOffsetUnc",&RawWFwholeWFLinFitOffsetUnc);
 			gatChain->SetBranchAddress("RawWFwholeWFLinFitChi2",&RawWFwholeWFLinFitChi2);
-			gatChain->SetBranchAddress("trapENF55us",&trapENF55us);
+			// gatChain->SetBranchAddress("trapENF55us",&trapENF55us);
 			gatChain->SetBranchAddress("trapENF70us",&trapENF70us);
-			gatChain->SetBranchAddress("trapENF85us",&trapENF85us);
+			// gatChain->SetBranchAddress("trapENF85us",&trapENF85us);
 			gatChain->SetBranchAddress("trapENF100us",&trapENF100us);
-			gatChain->SetBranchAddress("trapENF115us",&trapENF115us);
+			// gatChain->SetBranchAddress("trapENF115us",&trapENF115us);
 			gatChain->SetBranchAddress("trapENF130us",&trapENF130us);
-			gatChain->SetBranchAddress("trapBL",&trapBL);
+			// gatChain->SetBranchAddress("trapBL",&trapBL);
 			gatChain->SetBranchAddress("trap500nsMax",&trap500nsMax);
 			gatChain->SetBranchAddress("trapENF500nsrt",&trapENF500nsrt);
 			gatChain->SetBranchAddress("trap1usMax",&trap1usMax);
