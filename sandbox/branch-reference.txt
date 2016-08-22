@@ -1,0 +1,199 @@
+Skim files, August 2016
+Location: $MJDDATADIR/surfmjd/analysis/skim/DS1/20160621_265313037/
+
+root [3] skimTree->GetListOfBranches()->Print()
+ *Br    0 :skimgatrev : skimgatrev/i                                          *
+ *Br    1 :gatrev    : gatrev/i                                               *
+ *Br    2 :run       : run/I                                                  *
+ *Br    3 :iEvent    : iEvent/I                                               *
+ *Br    4 :iHit      : vector<int>                                            *
+ *Br    5 :channel   : vector<int>                                            *
+ *Br    6 :P         : vector<int>                                            *
+ *Br    7 :D         : vector<int>                                            *
+ *Br    8 :gain      : vector<int>                                            *
+ *Br    9 :mageID    : vector<int>                                            *
+ *Br   10 :detID     : vector<int>                                            *
+ *Br   11 :detName   : vector<string>                                         *
+ *Br   12 :isEnr     : vector<bool>                                           *
+ *Br   13 :isNat     : vector<bool>                                           *
+ *Br   14 :mAct_g    : vector<double>                                         *
+ *Br   15 :isGood    : vector<bool>                                           *
+ *Br   16 :startTime : startTime/D                                            *
+ *Br   17 :stopTime  : stopTime/D                                             *
+ *Br   18 :tloc_s    : vector<double>                                         *
+ *Br   19 :time_s    : vector<double>                                         *
+ *Br   20 :timeMT    : vector<double>                                         *
+ *Br   21 :dateMT    : vector<int>                                            *
+ *Br   22 :trapECal  : vector<double>                                         *
+ *Br   23 :trap4usMax : vector<double>                                        *
+ *Br   24 :trapENFCal : vector<double>                                        *
+ *Br   25 :sumEH     : sumEH/D                                                *
+ *Br   26 :sumEL     : sumEL/D                                                *
+ *Br   27 :mH        : mH/I                                                   *
+ *Br   28 :mL        : mL/I                                                   *
+ *Br   29 :aenorm    : vector<double>                                         *
+ *Br   30 :t150      : vector<double>                                         *
+ *Br   31 :kvorrT    : vector<double>                                         *
+ *Br   32 :toe       : vector<double>                                         *
+ *Br   33 :aenorm85  : vector<double>                                         *
+ *Br   34 :dcrSlope85 : vector<double>                                        *
+ *Br   35 :dcrSlope95 : vector<double>                                        *
+ *Br   36 :dcrSlope98 : vector<double>                                        *
+ *Br   37 :dcrSlope90 : vector<double>                                        *
+ *Br   38 :dcrSlope99 : vector<double>                                        *
+ *Br   39 :EventDC1Bits : eventDC1Bits/i                                      *
+ *Br   40 :wfDCBits  : vector<unsigned int>                                   *
+ *Br   41 :isLNFill  : vector<bool>                                           *
+ *Br   42 :trapETailMin : vector<double>                                      *
+ *Br   43 :dtmu_s    : vector<double>                                         *
+ *Br   44 :muType    : vector<int>                                            *
+ *Br   45 :badScaler : vector<bool>                                           *
+ *Br   46 :muVeto    : vector<bool>                                           *
+
+===============================================================================
+
+Reconstructed files, August 2016
+Location: /project/projectdirs/majorana/data/mjd/surfmjd/data/gatified/P3KJR
+"mij" covers branches 1 - 9
+
+root [3] mjdTree->GetListOfBranches()->Print()
+*Branch  :mij                                                                *
+*Br    0 :MGTDataObject : BASE                                               *
+*Br    1 :m         : ULong_t                                                *
+*Br    2 :mL        : ULong_t                                                *
+*Br    3 :mH        : ULong_t                                                *
+*Br    4 :i         : vector<unsigned long>                                  *
+*Br    5 :j         : vector<unsigned long>                                  *
+*Br    6 :iH        : vector<unsigned long>                                  *
+*Br    7 :jH        : vector<unsigned long>                                  *
+*Br    8 :iL        : vector<unsigned long>                                  *
+*Br    9 :jL        : vector<unsigned long>                                  *
+ *Br   10 :timeMT    : vector<double>                                         *
+ *Br   11 :dateMT    : vector<int>                                            *
+ *Br   12 :detName   : vector<string>                                         *
+ *Br   13 :detID     : vector<int>                                            *
+ *Br   14 :C         : vector<int>                                            *
+ *Br   15 :P         : vector<int>                                            *
+ *Br   16 :D         : vector<int>                                            *
+ *Br   17 :mageID    : vector<int>                                            *
+ *Br   18 :isEnr     : vector<bool>                                           *
+ *Br   19 :isNat     : vector<bool>                                           *
+ *Br   20 :rawWFMax  : vector<double>                                         *
+ *Br   21 :rawWFMin  : vector<double>                                         *
+ *Br   22 :blrwfFMR0p1 : vector<double>                                       *
+ *Br   23 :sgswfFMR0p1 : vector<double>                                       *
+ *Br   24 :blrwfFMR1 : vector<double>                                         *
+ *Br   25 :sgswfFMR1 : vector<double>                                         *
+ *Br   26 :blrwfFMR3 : vector<double>                                         *
+ *Br   27 :sgswfFMR3 : vector<double>                                         *
+ *Br   28 :blrwfFMR10 : vector<double>                                        *
+ *Br   29 :sgswfFMR10 : vector<double>                                        *
+ *Br   30 :blrwfFMR20 : vector<double>                                        *
+ *Br   31 :sgswfFMR20 : vector<double>                                        *
+ *Br   32 :blrwfFMR50 : vector<double>                                        *
+ *Br   33 :sgswfFMR50 : vector<double>                                        *
+ *Br   34 :blrwfFMR80 : vector<double>                                        *
+ *Br   35 :sgswfFMR80 : vector<double>                                        *
+ *Br   36 :blrwfFMR90 : vector<double>                                        *
+ *Br   37 :sgswfFMR90 : vector<double>                                        *
+ *Br   38 :blrwfFMR97 : vector<double>                                        *
+ *Br   39 :sgswfFMR97 : vector<double>                                        *
+ *Br   40 :blrwfFMR99 : vector<double>                                        *
+ *Br   41 :sgswfFMR99 : vector<double>                                        *
+ *Br   42 :sgswft0   : vector<double>                                         *
+ *Br   43 :TSCurrent50nsMax : vector<double>                                  *
+ *Br   44 :TSCurrent100nsMax : vector<double>                                 *
+ *Br   45 :TSCurrent200nsMax : vector<double>                                 *
+ *Br   46 :RawWFblSlope : vector<double>                                      *
+ *Br   47 :RawWFblOffset : vector<double>                                     *
+ *Br   48 :RawWFblSlopeUnc : vector<double>                                   *
+ *Br   49 :RawWFblOffsetUnc : vector<double>                                  *
+ *Br   50 :RawWFblChi2 : vector<double>                                       *
+ *Br   51 :RawWFftSlope : vector<double>                                      *
+ *Br   52 :RawWFftSlopeUnc : vector<double>                                   *
+ *Br   53 :RawWFftOffset : vector<double>                                     *
+ *Br   54 :RawWFftOffsetUnc : vector<double>                                  *
+ *Br   55 :RawWFftChi2 : vector<double>                                       *
+ *Br   56 :RawWFwholeWFLinFitSlope : vector<double>                           *
+ *Br   57 :RawWFwholeWFLinFitSlopeUnc : vector<double>                        *
+ *Br   58 :RawWFwholeWFLinFitOffset : vector<double>                          *
+ *Br   59 :RawWFwholeWFLinFitOffsetUnc : vector<double>                       *
+ *Br   60 :RawWFwholeWFLinFitChi2 : vector<double>                            *
+ *Br   61 :trapENF55us : vector<double>                                       *
+ *Br   62 :trapENF70us : vector<double>                                       *
+ *Br   63 :trapENF85us : vector<double>                                       *
+ *Br   64 :trapENF100us : vector<double>                                      *
+ *Br   65 :trapENF115us : vector<double>                                      *
+ *Br   66 :trapENF130us : vector<double>                                      *
+ *Br   67 :trapBL    : vector<double>                                         *
+ *Br   68 :trap500nsMax : vector<double>                                      *
+ *Br   69 :trapENF500nsrt : vector<double>                                    *
+ *Br   70 :trap1usMax : vector<double>                                        *
+ *Br   71 :trapENF1usrt : vector<double>                                      *
+ *Br   72 :trap2usMax : vector<double>                                        *
+ *Br   73 :trapENF2usrt : vector<double>                                      *
+ *Br   74 :trap4usMax : vector<double>                                        *
+ *Br   75 :trapENF4usrt : vector<double>                                      *
+ *Br   76 :trap6usMax : vector<double>                                        *
+ *Br   77 :trapENF6usrt : vector<double>                                      *
+ *Br   78 :trap8usMax : vector<double>                                        *
+ *Br   79 :trapENF8usrt : vector<double>                                      *
+ *Br   80 :trapE     : vector<double>                                         *
+ *Br   81 :trapEMin  : vector<double>                                         *
+ *Br   82 :longGapTrapMax : vector<double>                                    *
+ *Br   83 :trap1ust0 : vector<double>                                         *
+ *Br   84 :trapENF   : vector<double>                                         *
+ *Br   85 :trapBL1us : vector<double>                                         *
+ *Br   86 :trapETailMin : vector<double>                                      *
+ *Br   87 :trirt50nsft10nsMax : vector<double>                                *
+ *Br   88 :trirt100nsft10nsMax : vector<double>                               *
+ *Br   89 :trirt200nsft10nsMax : vector<double>                               *
+ *Br   90 :triFilMin : vector<double>                                         *
+ *Br   91 :trirt100nsft10nsIntegralW : vector<double>                         *
+ *Br   92 :blrwfIntegralW : vector<double>                                    *
+ *Br   93 :smoothTrirt100nsft10nsMax : vector<double>                         *
+ *Br   94 :energyCal : vector<double>                                         *
+ *Br   95 :trapECal  : vector<double>                                         *
+ *Br   96 :trapEMinCal : vector<double>                                       *
+ *Br   97 :trapENFCal : vector<double>                                        *
+ *Br   98 :nlcblrwfSlope : vector<double>                                     *
+ *Br   99 :RawWFdcblSlope : vector<double>                                    *
+ *Br  100 :RawWFdcblOffset : vector<double>                                   *
+ *Br  101 :RawWFdcblSlopeUnc : vector<double>                                 *
+ *Br  102 :RawWFdcblOffsetUnc : vector<double>                                *
+ *Br  103 :RawWFdcblChi2 : vector<double>                                     *
+ *Br  104 :RawWFdcftSlope : vector<double>                                    *
+ *Br  105 :RawWFdcftOffset : vector<double>                                   *
+ *Br  106 :RawWFdcftSlopeUnc : vector<double>                                 *
+ *Br  107 :RawWFdcftOffsetUnc : vector<double>                                *
+ *Br  108 :blrwf2ndDiffPeakValue : vector<double>                             *
+ *Br  109 :blrwfNorm2ndDiffPeakValue : vector<double>                         *
+ *Br  110 :blrwfSSF  : vector<double>                                         *
+ *Br  111 :BLMoverMerr : vector<double>                                       *
+ *Br  112 :FTMoverMerr : vector<double>                                       *
+ *Br  113 :delOffset : vector<double>                                         *
+ *Br  114 :toe       : vector<double>                                         *
+ *Br  115 :d2wfnoiseTagNorm : vector<double>                                  *
+ *Br  116 :d2wfDCPower : vector<double>                                       *
+ *Br  117 :d2wf0MHzTo2MHzPower : vector<double>                               *
+ *Br  118 :d2wf2MHzTo10MHzPower : vector<double>                              *
+ *Br  119 :d2wf10MHzTo20MHzPower : vector<double>                             *
+ *Br  120 :d2wf30MHzTo35MHzPower : vector<double>                             *
+ *Br  121 :d2wf48MHzTo50MHzPower : vector<double>                             *
+ *Br  122 :d2wf0MHzTo50MHzPower : vector<double>                              *
+ *Br  123 :wfDCBits  : vector<unsigned int>                                   *
+ *Br  124 :wfDC_Bit_0_SSSpikeBL : vector<double>                              *
+ *Br  125 :wfDC_Bit_1_SSSpikePhys : vector<double>                            *
+ *Br  126 :wfDC_Bit_2_EarlyTrigger : vector<double>                           *
+ *Br  127 :wfDC_Bit_3_LateTrigger : vector<double>                            *
+ *Br  128 :wfDC_Bit_4_PosSaturatedWFs : vector<double>                        *
+ *Br  129 :wfDC_Bit_5_NegSaturatedWFs : vector<double>                        *
+ *Br  130 :run       : run/D                                                  *
+ *Br  131 :startTime : startTime/D                                            *
+ *Br  132 :stopTime  : stopTime/D                                             *
+ *Br  133 :energy    : vector<double>                                         *
+ *Br  134 :channel   : vector<double>                                         *
+ *Br  135 :timestamp : vector<double>                                         *
+ *Br  136 :gatrev    : gatrev/i                                               *
+ *Br  137 :EventDC1Bits : EventDC1Bits/i                                      *
+
