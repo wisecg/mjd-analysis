@@ -19,15 +19,14 @@ Clint Wiseman, USC/Majorana
 
 from ROOT import *
 import numpy as np
-import collections
 
 def SetTreeInputs(tree, MJDict):
 	for key in sorted(MJDict):
 		if isinstance(MJDict[key], list):
-			# print "key: %-10s  val: %-10s" % (key, MJDict[key][0])
+			print "key: %-10s  val: %-10s" % (key, MJDict[key][0])
 			tree.SetBranchAddress(key, MJDict[key][0])
 		else:
-			# print "key: %-10s  val: %-10s" % (key, MJDict[key])
+			print "key: %-10s  val: %-10s" % (key, MJDict[key])
 			tree.SetBranchAddress(key, MJDict[key])
 
 def SetTreeOutputs(tree, MJDict):
