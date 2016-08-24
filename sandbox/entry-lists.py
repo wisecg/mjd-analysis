@@ -45,32 +45,32 @@ def case3():
 	print type(elist3), elist3.GetN()
 
 def case4():
-	""" TChain case 2:
-	Handles arbitrary TCuts after playing some python list tricks.
-	Gave same results as case 1 in a few test cases."""
-	skim2 = TChain("skimTree")
-	skim2.Add("/Users/wisecg/datasets/ds1/*.root")
-	skim2.Draw("Entry$","run==9425","GOFF")
-	v1 = skim2.GetV1() # a ROOT.PyDoubleBuffer, very irritating to work with
-	v1_list = list(set(v1[n] for n in xrange(skim2.GetEntries())))
-	v1_sorted = sorted(v1_list)
-	elist4 = TEntryList()
-	for i in v1_sorted:
-		elist4.Enter(long(i),skim2)
-		print v1_sorted[i]
-	print type(elist4), elist4.GetN()
+	""" TChain case 2: arbitrary TCuts."""
+	skim = TChain("skimTree")
+	skim.Add("/Users/wisecg/datasets/ds1/*.root")
 
-	# now show how to loop over a chain using the entry list
-	# elist4.Print("all")
-	skim2.SetEntryList(elist4);
-	numEntries = elist4.GetN()
-	for iEntry in xrange(numEntries):
-		entryNumber = skimTree.GetEntryNumber(iEntry);
-		# print entryNumber
-		skim.GetEntry(entryNumber)
+	# attempt to play some python list tricks.
+	# skim.Draw("Entry$","trapENFCal>1000","GOFF")
+	# v1 = skim.GetV1() # a ROOT.PyDoubleBuffer, very irritating to work with
+	# v1_list = list(set(v1[n] for n in xrange(skim.GetEntries())))
+	# v1_sorted = sorted(v1_list)
+	# elist = TEntryList()
+	# for i in v1_sorted:
+	# 	elist.Enter(long(i),skim)
+	# print type(elist), elist.GetN()
 
-	# note that we could also loop directly over the 'v1_sorted' list:
+	skim.SetEntryList(0)
+	skim.Draw(">>elist", "trapENFCal>1000", "entrylist")
+	elist = gDirectory.Get("elist")
+	print "Number of entries in the entryList is " + str(elist.GetN())
+	skim.SetEntryList(elist);
 
+	# loop over entry list
+	for ientry in xrange(elist.GetN()):
+		entryNumber = skim.GetEntryNumber(ientry)
+		skim.LoadTree( entryNumber )
+		skim.GetEntry( entryNumber )
+		print entryNumber,skim.run, skim.trapENFCal.at(0)
 
 if __name__ == "__main__":
 	main()
