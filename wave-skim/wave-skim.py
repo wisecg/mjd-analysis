@@ -21,6 +21,9 @@ def main():
 	# don't display waveform plots
 	gROOT.SetBatch(kTRUE)
 
+	# write (1) or don't write (0) eventTree
+	writeET = 0
+
 
 	# =========== 1. Skim-based wave-skimmer ===========
 	""" Must set :
@@ -43,7 +46,7 @@ def main():
 
 	bigCut = "channel%2==0 && mH>1 && sumEH>1500 && !wfDCBits && isGood && " + burstCut
 
-	SeymourSkimmer(bigCut, skimLoc, outFile)
+	SeymourSkimmer(bigCut, skimLoc, outFile, writeET)
 
 
 	# =========== 2. GAT-based wave-skimmer (takes a run list) ===========
@@ -67,14 +70,14 @@ def main():
 
 	gatCut = "channel%2==0 && trapENFCal < 4000 && trapENFCal > 1 && (trapENFCal > 800 || trapENFCal < 500) && !wfDCBits"
 
-	GatGrabber(runList, gatCut, outFile, "", 100)  # "get num entries", "test cut", or ""
+	GatGrabber(runList, gatCut, outFile, writeET, "", 100)  # "get num entries", "test cut", or ""
 
 
 # ==========================================================================================
 # ==========================================================================================
 
 
-def SeymourSkimmer(bigCut, skimLoc, outFile):
+def SeymourSkimmer(bigCut, skimLoc, outFile, writeET):
 	print "Starting wave-skim.  Cutting on: \n\n",bigCut,"\n"
 
 	skim = TChain("skimTree")
@@ -192,32 +195,32 @@ def SeymourSkimmer(bigCut, skimLoc, outFile):
 
 	waveTree.Write()
 
+	if writeET == 1:
+		print "Now writing full-event tree ..."
+		eventTree = TTree("eventTree","wave-skim full output")
+		outDict = lib.CreateOutputDict('all')
+		lib.SetTreeOutputs(eventTree, outDict)
 
-	print "Now writing full-event tree ..."
-	eventTree = TTree("eventTree","wave-skim full output")
-	outDict = lib.CreateOutputDict('all')
-	lib.SetTreeOutputs(eventTree, outDict)
+		# loop over events in this run
+		# EventMap - 0 run, 1 skimGatEntry, 2 skimTime, 3 channel list
+		for i in range(len(RunList)):
+			run = int(RunList[i])
+			ds = GATDataSet(run)
+			gat = ds.GetGatifiedChain()
+			built = ds.GetBuiltChain()
+			lib.SetTreeInputs(gat, lib.gatDict)
+			lib.SetTreeInputs(built, lib.builtDict)
 
-	# loop over events in this run
-	# EventMap - 0 run, 1 skimGatEntry, 2 skimTime, 3 channel list
-	for i in range(len(RunList)):
-		run = int(RunList[i])
-		ds = GATDataSet(run)
-		gat = ds.GetGatifiedChain()
-		built = ds.GetBuiltChain()
-		lib.SetTreeInputs(gat, lib.gatDict)
-		lib.SetTreeInputs(built, lib.builtDict)
+			for evt in EventMap:
+				if evt[0]==run:
+					built.GetEntry(long(evt[1]))
+					gat.GetEntry(long(evt[1]))
+					if abs(evt[2] - lib.timestamp.at(0)/1E8) > 0.01:
+						print "Timestamps don't match!  Skipping event ..."
+						continue
+					eventTree.Fill()
 
-		for evt in EventMap:
-			if evt[0]==run:
-				built.GetEntry(long(evt[1]))
-				gat.GetEntry(long(evt[1]))
-				if abs(evt[2] - lib.timestamp.at(0)/1E8) > 0.01:
-					print "Timestamps don't match!  Skipping event ..."
-					continue
-				eventTree.Fill()
-
-	eventTree.Write()
+		eventTree.Write()
 
 	out.Close()
 
@@ -226,7 +229,7 @@ def SeymourSkimmer(bigCut, skimLoc, outFile):
 # ==========================================================================================
 
 
-def GatGrabber(runList, gatCut, outFile, action="test cut", maxwfs=-1):
+def GatGrabber(runList, gatCut, outFile, writeET, action="test cut", maxwfs=-1):
 	print "Starting wave-skim.  Cutting on: \n\n",gatCut,"\n"
 
 	file_handle = open(runList, 'r')
@@ -336,43 +339,44 @@ def GatGrabber(runList, gatCut, outFile, action="test cut", maxwfs=-1):
 
 	waveTree.Write()
 
-	print "Now writing full-event tree ..."
-	eventTree = TTree("eventTree","wave-skim full output")
-	outDict = lib.CreateOutputDict('gatBlt')
-	lib.SetTreeOutputs(eventTree, outDict)
+	if writeET == 1:
+		print "Now writing full-event tree ..."
+		eventTree = TTree("eventTree","wave-skim full output")
+		outDict = lib.CreateOutputDict('gatBlt')
+		lib.SetTreeOutputs(eventTree, outDict)
 
-	# loop over runs
-	for i in range(len(RunList)):
+		# loop over runs
+		for i in range(len(RunList)):
 
-		run = int(RunList[i])
-		ds = GATDataSet(run)
+			run = int(RunList[i])
+			ds = GATDataSet(run)
 
-		gat = ds.GetGatifiedChain()
-		lib.SetTreeInputs(gat, lib.gatDict)
+			gat = ds.GetGatifiedChain()
+			lib.SetTreeInputs(gat, lib.gatDict)
 
-		built = ds.GetBuiltChain()
-		lib.SetTreeInputs(built, lib.builtDict)
+			built = ds.GetBuiltChain()
+			lib.SetTreeInputs(built, lib.builtDict)
 
-		gat.Draw(">>elist", gatCut, "entrylist")
-		elist = gDirectory.Get("elist")
-		gat.SetEntryList(elist)
+			gat.Draw(">>elist", gatCut, "entrylist")
+			elist = gDirectory.Get("elist")
+			gat.SetEntryList(elist)
 
-		if action == "get num entries":
-			continue
+			if action == "get num entries":
+				continue
 
-		evtsToKeep = maxwfs
-		if maxwfs == -1:
-			evtsToKeep = elist.GetN()
-		if maxwfs > elist.GetN():
-			evtsToKeep = elist.GetN()
+			evtsToKeep = maxwfs
+			if maxwfs == -1:
+				evtsToKeep = elist.GetN()
+			if maxwfs > elist.GetN():
+				evtsToKeep = elist.GetN()
 
-		for iGatList in xrange(maxwfs):
-			iGatEntry = gat.GetEntryNumber(iGatList);
-			gat.LoadTree(iGatEntry)
-			gat.GetEntry(iGatEntry)
-			eventTree.Fill()
+			for iGatList in xrange(maxwfs):
+				iGatEntry = gat.GetEntryNumber(iGatList);
+				gat.LoadTree(iGatEntry)
+				gat.GetEntry(iGatEntry)
+				eventTree.Fill()
 
-	eventTree.Write()
+		eventTree.Write()
 
 	out.Close()
 
