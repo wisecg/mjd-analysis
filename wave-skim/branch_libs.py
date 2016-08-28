@@ -48,6 +48,9 @@ def CreateOutputDict(whichDict='all'):
 		outDict = builtDict.copy()
 	if whichDict == 'gat':
 		outDict = gatDict.copy()
+	if whichDict == 'gatBlt':
+		outDict = gatDict.copy()
+		outDict.update(builtDict)
 	if whichDict == 'all':
 		for key in skimDict:
 			newKey = "s_"+key
