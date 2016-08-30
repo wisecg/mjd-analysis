@@ -24,9 +24,9 @@ def main():
 	# write (1) or don't write (0) eventTree
 	writeET = 0
 
-
 	# =========== 1. Skim-based wave-skimmer ===========
-	""" Must set :
+	"""
+	Must set :
 	1) the location of the skim files
 	2) the name of your output file
 	3) the cut of interest.
@@ -46,8 +46,7 @@ def main():
 
 	bigCut = "channel%2==0 && mH>1 && sumEH>1500 && !wfDCBits && isGood && " + burstCut
 
-	SeymourSkimmer(bigCut, skimLoc, outFile, writeET)
-
+	# SeymourSkimmer(bigCut, skimLoc, outFile, writeET)
 
 	# =========== 2. GAT-based wave-skimmer (takes a run list) ===========
 	"""
@@ -66,11 +65,13 @@ def main():
 
 	runList = "Debug.txt"
 
-	outFile = "./output/waveSkim-gatTest.root"
+	outFile = "./output/waveSkim-cal-12469.root"
 
 	gatCut = "channel%2==0 && trapENFCal < 4000 && trapENFCal > 1 && (trapENFCal > 800 || trapENFCal < 500) && !wfDCBits"
 
-	GatGrabber(runList, gatCut, outFile, writeET, "", 100)  # "get num entries", "test cut", or ""
+	# gatCut = "channel%2==0 && trapENFCal > 1591 && trapENFCal < 1593 && !wfDCBits"
+
+	GatGrabber(runList, gatCut, outFile, writeET, "", 10)  # "test", or ""
 
 
 # ==========================================================================================
@@ -275,13 +276,14 @@ def GatGrabber(runList, gatCut, outFile, writeET, action="test cut", maxwfs=-1):
 		built = ds.GetBuiltChain()
 		lib.SetTreeInputs(built, lib.builtDict)
 
-		gat.Draw(">>elist", gatCut, "entrylist")
+		# a TEntryListArray, the magical class that makes this possible
+		gat.Draw(">>elist", gatCut, "entrylistarray")
 		elist = gDirectory.Get("elist")
 		gat.SetEntryList(elist)
 
-		print "Run %d  entries %d  entry list %d  runtime %.2f" % (run, gat.GetEntries(), elist.GetN(), ds.GetRunTime()/1E9)
+		print "\n\nRun %d  entries %d  entry list %d  runtime %.2f" % (run, gat.GetEntries(), elist.GetN(), ds.GetRunTime()/1E9)
 
-		if action == "get num entries":
+		if action == "test":
 			continue
 
 		evtsToKeep = maxwfs
@@ -291,51 +293,42 @@ def GatGrabber(runList, gatCut, outFile, writeET, action="test cut", maxwfs=-1):
 			evtsToKeep = elist.GetN()
 
 		# loop over entries
-		for iGatList in xrange(maxwfs):
+		for iGatList in xrange(evtsToKeep):
+
 			iGatEntry = gat.GetEntryNumber(iGatList);
-			iTree = gat.LoadTree(iGatEntry)
-			iEntry = gat.GetEntry(iGatEntry)
+			gat.LoadTree(iGatEntry)
+			gat.GetEntry(iGatEntry)
+			subEntries = elist.GetSubListForEntry(iGatEntry)
+			subList = subEntries.GetSubLists()
 
 			gatTime = lib.timestamp.at(0)/1E8
-			numHits = lib.timestamp.size()
-			gatEvt[0] = iGatEntry
-
-			thisEventCut = gatCut + "&& Entry$==" + str(iGatEntry)
-			numPass = int(gat.Draw("channel",thisEventCut,"GOFF"))
-			chans = gat.GetV1()
-			chanList = list(set(int(chans[n]) for n in xrange(numPass)))
-
-			if action == "test cut":
-				print "list %d  run %d  entry %d  time %.2f  hits %d" % (iGatList, run, iGatEntry, gatTime, numHits)
-				for hit in xrange(numHits):
-					print "chan %d  enf %.2f" % (lib.channel.at(hit), lib.trapENFCal.at(hit))
-				print "chan list:",chanList,"\n"
-				continue
-
-			iEventTree[0] += 1
-
-			# loop over individual hits in this event
+			numHits = lib.trapENFCal.size()
 			event = lib.event
 			numWFs = int(event.GetNWaveforms())
-			print "%d,%-5d: Run %-5d  gatTime %-7.2f totWFs %-3d numPass %-3d chans:" % (iGatList,iGatEntry, run, gatTime, numWFs, numPass),chanList
 
-			foundHit = 0
-			for i in xrange(numWFs):
-				if lib.channel.at(i) in chanList:
-					wf = event.GetWaveform(i)
-					runTime[0] = gatTime
-					chn[0] = lib.channel.at(i)
-					enf[0] = lib.trapENFCal.at(i)
-					t50[0] = lib.blrwfFMR50.at(i)
-					itr[0] = i
-					theRun[0] = run
-					# print "    Hit : %d  enf %.2f  itr %d" % (chn[0],enf[0],itr[0])
-					foundHit = 1
+			print "%d : run %d  entry %d  time %.2f  hits %d  numWFs %d" % (iGatList, run, iGatEntry, gatTime, numHits, numWFs)
+			for hit in xrange(numHits):
+				print "   Hit %d  chan %d  enf %.2f" % (hit,lib.channel.at(hit),lib.trapENFCal.at(hit))
 
-					waveTree.Fill()
+			for i in xrange(numHits):
+				if subEntries.Contains(i):
+					try:
+						wf = event.GetWaveform(i)
+						runTime[0] = gatTime
+						gatEvt[0] = iGatEntry
+						chn[0] = lib.channel.at(i)
+						enf[0] = lib.trapENFCal.at(i)
+						t50[0] = lib.blrwfFMR50.at(i)
+						itr[0] = i
+						theRun[0] = run
+						waveTree.Fill()
+						print "   Output: Hit %d  chan %d  enf %.2f" % (itr[0], chn[0], enf[0])
+					except:
+						print "   Vector index not accessible for some damn reason.",sys.exc_info()[0]
+						continue
+			print ""
 
-			if foundHit == 0:
-				print "The hit in channel %d not found!" % chn[0]
+			iEventTree[0] += 1
 
 	waveTree.Write()
 
@@ -357,7 +350,7 @@ def GatGrabber(runList, gatCut, outFile, writeET, action="test cut", maxwfs=-1):
 			built = ds.GetBuiltChain()
 			lib.SetTreeInputs(built, lib.builtDict)
 
-			gat.Draw(">>elist", gatCut, "entrylist")
+			gat.Draw(">>elist", gatCut, "entrylistarray")
 			elist = gDirectory.Get("elist")
 			gat.SetEntryList(elist)
 
