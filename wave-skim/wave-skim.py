@@ -9,69 +9,40 @@ import sys
 def main():
 	"""
 	Saves all waveforms passing a cut into an output file with two trees.
-
 	"waveTree" - Contains single waveforms, some basic physics info,
 	             and the entry numbers of the skim and gat files.
-
 	"eventTree" - Contains the full entries of each event (all skim, gat, & built branches)
-
 	The idea is to look at the waveforms in "waveTree" and be able to grab any/all
 	skim or gatified parameters from the other tree as needed.
 	"""
-	# don't display waveform plots
-	gROOT.SetBatch(kTRUE)
+	gROOT.SetBatch(kTRUE)  # don't display waveform plots
+	writeET = 0  # write (1) or don't write (0) eventTree
 
-	# write (1) or don't write (0) eventTree
-	writeET = 0
-
-	# =========== 1. Skim-based wave-skimmer ===========
-	"""
-	Must set :
-	1) the location of the skim files
-	2) the name of your output file
-	3) the cut of interest.
-
+	"""=========== 1. Skim-based wave-skimmer ===========
 	This identifies events of interest from cuts based on skim file parameters,
-	and then pulls the corresponding gatified & built data.
-	"""
+	and then pulls the corresponding gatified & built data."""
 
 	skimLoc = "$MJDDATADIR/surfmjd/analysis/skim/DS1/20160621_265313037/*.root"
 	# skimLoc = "/Users/wisecg/datasets/ds1/*.root"
-
-	outFile = "./output/waveSkim-1500-mH-2.root"
-
+	outFile = "./output/waveSkim-skimTest.root"
 	burstCut = "!(time_s > 2192e3 && time_s < 2195e3) && !(time_s > 7370e3 && time_s < 7371e3) && !(time_s > 7840e3 && time_s < 7860e3) && !(time_s > 8384e3 && time_s < 8387e3) && !(time_s > 8984e3 && time_s < 8985e3) && !(time_s > 9002e3 && time_s < 9005e3) && run != 13075 && run != 13093 && run != 13116"
-
-	# bigCut = "channel%2==0 && mH==1 && (trapENFCal>1550 && trapENFCal<1650) && !wfDCBits && !muVeto && !isLNFill &&" + burstCut
-
 	bigCut = "channel%2==0 && mH>1 && sumEH>1500 && !wfDCBits && isGood && " + burstCut
 
-	# SeymourSkimmer(bigCut, skimLoc, outFile, writeET)
+	SeymourSkimmer(bigCut, skimLoc, outFile, writeET)
 
-	# =========== 2. GAT-based wave-skimmer (takes a run list) ===========
-	"""
+	"""=========== 2. GAT-based wave-skimmer (takes a run list) ===========
 	Take a list of runs from a text file, and apply a cut based on gatified parameters.
-
 	Since the gatified data is not as "cleaned" as the skim file (pulsers are usually present),
 	options are provided to first check how many events a given cut will retain,
 	and a maximum number of waveforms to save per run.
-
-	Specify "get num entries" to look at how many events in each run pass the cut,
-	"test cut" to look at the cut on a channel-by-channel basis,
-	"" to apply the cut and create the output file.
-
-	Also, can specify a maximum number of events to save per run, or leave blank to save all of them.
 	"""
 
 	runList = "Debug.txt"
+	outFile = "./output/waveSkim-cal-12470.root"
+	# gatCut = "channel%2==0 && trapENFCal < 4000 && trapENFCal > 1 && (trapENFCal > 800 || trapENFCal < 500) && !wfDCBits"
+	gatCut = "trapENFCal > 1591 && trapENFCal < 1593 && !wfDCBits"
 
-	outFile = "./output/waveSkim-cal-12469.root"
-
-	gatCut = "channel%2==0 && trapENFCal < 4000 && trapENFCal > 1 && (trapENFCal > 800 || trapENFCal < 500) && !wfDCBits"
-
-	# gatCut = "channel%2==0 && trapENFCal > 1591 && trapENFCal < 1593 && !wfDCBits"
-
-	GatGrabber(runList, gatCut, outFile, writeET, "", 10)  # "test", or ""
+	# GatGrabber(runList, gatCut, outFile, writeET, "",13)  # "test", or ""
 
 
 # ==========================================================================================
@@ -130,8 +101,8 @@ def SeymourSkimmer(bigCut, skimLoc, outFile, writeET):
 	iEventTree = np.zeros(1,dtype=long)
 	chn = np.zeros(1,dtype=int)
 	itr = np.zeros(1,dtype=int)
-	wf = MGTWaveform()
-	waveTree.Branch("waveform",wf)
+	eventOut = MGTEvent()
+	waveTree.Branch("event",eventOut)
 	waveTree.Branch("iEventTree",iEventTree,"iEventTree/L")
 	waveTree.Branch("itr",itr,"itr/I")
 	waveTree.Branch("run",theRun,"theRun/I")
@@ -144,7 +115,7 @@ def SeymourSkimmer(bigCut, skimLoc, outFile, writeET):
 	# loop over runs with events that pass the cut
 	print "Scanning gatified + built data ..."
 	eventMismatchCount, wfMismatchCount = 0, 0
-	iEventTree[0] = -1
+	iEventTree[0] = 0
 	for i in range(len(RunList)):
 		run = int(RunList[i])
 		ds = GATDataSet(run)
@@ -153,7 +124,6 @@ def SeymourSkimmer(bigCut, skimLoc, outFile, writeET):
 		lib.SetTreeInputs(gat, lib.gatDict)
 
 		built = ds.GetBuiltChain()
-		lib.SetTreeInputs(built, lib.builtDict)
 
 		# loop over events in this run
 		# EventMap - 0 run, 1 skimGatEntry, 2 skimTime, 3 channel list
@@ -172,35 +142,38 @@ def SeymourSkimmer(bigCut, skimLoc, outFile, writeET):
 
 				iEventTree[0] += 1
 
+				# ian's magic trick: assign it twice and it sticks.
+				eventOut = built.event
+				eventOut = built.event
+				# "To be honest, I have no clue what is happening when you call that line, since MGTEvent does not have an = operator or a copy constructor explicitly defined. What this means is that an automatically generated one is being used, which might be the problem."
+				numWFs = int(built.event.GetNWaveforms())
+
 				# loop over individual hits in this event
-				event = lib.event
-				numWFs = int(event.GetNWaveforms())
 				for i in xrange(numWFs):
 					if lib.channel.at(i) in evt[3]:
-						wf = event.GetWaveform(i)
-						runTime[0] = evt[2]
-						chn[0] = lib.channel.at(i)
-						enf[0] = lib.trapENFCal.at(i)
-						t50[0] = lib.blrwfFMR50.at(i)
-						itr[0] = i
-						theRun[0] = run
-						gatEvt[0] = long(evt[1])
-
-						# check the wf's directly
-						# can = TCanvas("can","Bob Ross's Canvas",800,600)
-						# waveName = "./output/wave_%d_%d_%d.pdf" % (run,long(evt[1]),i)
-						# wf.Draw()
-						# can.Print(waveName)
-
-						waveTree.Fill()
+						try:
+							runTime[0] = evt[2]
+							chn[0] = lib.channel.at(i)
+							enf[0] = lib.trapENFCal.at(i)
+							t50[0] = lib.blrwfFMR50.at(i)
+							itr[0] = i
+							theRun[0] = run
+							gatEvt[0] = long(evt[1])
+							waveTree.Fill()
+						except:
+							print "Filling failed for some damn reason.",sys.exc_info()[0]
+							continue
 
 	waveTree.Write()
 
 	if writeET == 1:
 		print "Now writing full-event tree ..."
 		eventTree = TTree("eventTree","wave-skim full output")
-		outDict = lib.CreateOutputDict('all')
+		outDict = lib.CreateOutputDict('skimGat')
 		lib.SetTreeOutputs(eventTree, outDict)
+
+		eventOut = MGTEvent()
+		eventTree.Branch("event",eventOut)
 
 		# loop over events in this run
 		# EventMap - 0 run, 1 skimGatEntry, 2 skimTime, 3 channel list
@@ -216,6 +189,11 @@ def SeymourSkimmer(bigCut, skimLoc, outFile, writeET):
 				if evt[0]==run:
 					built.GetEntry(long(evt[1]))
 					gat.GetEntry(long(evt[1]))
+
+					# ian's magic trick: assign it twice and it sticks.
+					eventOut = built.event
+					eventOut = built.event
+
 					if abs(evt[2] - lib.timestamp.at(0)/1E8) > 0.01:
 						print "Timestamps don't match!  Skipping event ..."
 						continue
@@ -252,8 +230,8 @@ def GatGrabber(runList, gatCut, outFile, writeET, action="test cut", maxwfs=-1):
 	iEventTree = np.zeros(1,dtype=long)
 	chn = np.zeros(1,dtype=int)
 	itr = np.zeros(1,dtype=int)
-	wf = MGTWaveform()
-	waveTree.Branch("waveform",wf)
+	eventOut = MGTEvent()
+	waveTree.Branch("event",eventOut)
 	waveTree.Branch("iEventTree",iEventTree,"iEventTree/L")
 	waveTree.Branch("itr",itr,"itr/I")
 	waveTree.Branch("run",theRun,"theRun/I")
@@ -265,7 +243,7 @@ def GatGrabber(runList, gatCut, outFile, writeET, action="test cut", maxwfs=-1):
 
 	# loop over runs with events that pass the cut
 	print "Scanning gatified + built data ..."
-	iEventTree[0] = -1
+	iEventTree[0] = 0
 	for i in range(len(RunList)):
 		run = int(RunList[i])
 		ds = GATDataSet(run)
@@ -274,7 +252,6 @@ def GatGrabber(runList, gatCut, outFile, writeET, action="test cut", maxwfs=-1):
 		lib.SetTreeInputs(gat, lib.gatDict)
 
 		built = ds.GetBuiltChain()
-		lib.SetTreeInputs(built, lib.builtDict)
 
 		# a TEntryListArray, the magical class that makes this possible
 		gat.Draw(">>elist", gatCut, "entrylistarray")
@@ -303,17 +280,21 @@ def GatGrabber(runList, gatCut, outFile, writeET, action="test cut", maxwfs=-1):
 
 			gatTime = lib.timestamp.at(0)/1E8
 			numHits = lib.trapENFCal.size()
-			event = lib.event
-			numWFs = int(event.GetNWaveforms())
+
+			# ian's magic trick: assign it twice and it sticks.
+			eventOut = built.event
+			eventOut = built.event
+			# "To be honest, I have no clue what is happening when you call that line, since MGTEvent does not have an = operator or a copy constructor explicitly defined. What this means is that an automatically generated one is being used, which might be the problem."
+			numWFs = int(built.event.GetNWaveforms())
 
 			print "%d : run %d  entry %d  time %.2f  hits %d  numWFs %d" % (iGatList, run, iGatEntry, gatTime, numHits, numWFs)
+
 			for hit in xrange(numHits):
 				print "   Hit %d  chan %d  enf %.2f" % (hit,lib.channel.at(hit),lib.trapENFCal.at(hit))
 
 			for i in xrange(numHits):
 				if subEntries.Contains(i):
 					try:
-						wf = event.GetWaveform(i)
 						runTime[0] = gatTime
 						gatEvt[0] = iGatEntry
 						chn[0] = lib.channel.at(i)
@@ -324,7 +305,7 @@ def GatGrabber(runList, gatCut, outFile, writeET, action="test cut", maxwfs=-1):
 						waveTree.Fill()
 						print "   Output: Hit %d  chan %d  enf %.2f" % (itr[0], chn[0], enf[0])
 					except:
-						print "   Vector index not accessible for some damn reason.",sys.exc_info()[0]
+						print "   Failed to fill for some damn reason.",sys.exc_info()[0]
 						continue
 			print ""
 
@@ -335,27 +316,22 @@ def GatGrabber(runList, gatCut, outFile, writeET, action="test cut", maxwfs=-1):
 	if writeET == 1:
 		print "Now writing full-event tree ..."
 		eventTree = TTree("eventTree","wave-skim full output")
-		outDict = lib.CreateOutputDict('gatBlt')
+		outDict = lib.CreateOutputDict('gat')
 		lib.SetTreeOutputs(eventTree, outDict)
+		eventOut = MGTEvent()
+		eventTree.Branch("event",eventOut)
 
-		# loop over runs
 		for i in range(len(RunList)):
-
 			run = int(RunList[i])
 			ds = GATDataSet(run)
-
 			gat = ds.GetGatifiedChain()
 			lib.SetTreeInputs(gat, lib.gatDict)
-
 			built = ds.GetBuiltChain()
 			lib.SetTreeInputs(built, lib.builtDict)
 
 			gat.Draw(">>elist", gatCut, "entrylistarray")
 			elist = gDirectory.Get("elist")
 			gat.SetEntryList(elist)
-
-			if action == "get num entries":
-				continue
 
 			evtsToKeep = maxwfs
 			if maxwfs == -1:
@@ -367,6 +343,8 @@ def GatGrabber(runList, gatCut, outFile, writeET, action="test cut", maxwfs=-1):
 				iGatEntry = gat.GetEntryNumber(iGatList);
 				gat.LoadTree(iGatEntry)
 				gat.GetEntry(iGatEntry)
+				eventOut = built.event
+				eventOut = built.event
 				eventTree.Fill()
 
 		eventTree.Write()
