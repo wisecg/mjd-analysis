@@ -16,7 +16,8 @@ def main(argv):
 		print "File",argv[0],"doesn't exist! Exiting ..."
 		return
 
-	plotTypes = ["gwf","gbase","grms","hbase","hrms","spec"]
+	# plotTypes = ["gwf","gbase","grms","hbase","hrms","spec"]
+	plotTypes = ["gmax","gbase"]
 
 	print "Creating plots ..."
 	plotList = createPlots(infile)
@@ -46,7 +47,7 @@ def createPlots(infile):
 		plotname = "%s.png" % name
 		plotList.append(plotname)
 
-		if "gwf" in name or "gbase" in name:
+		if "gwf" in name or "gbase" in name or "gmax" in name:
 			can = TCanvas("can","Bob Ross's Canvas",1600,550)
 			obj.SetMarkerStyle(kFullDotMedium)
 			obj.Draw("AP")
@@ -83,6 +84,7 @@ def fillDocument(doc, plotList, detList, plotTypes):
 	\usepackage{framed}
 	\usepackage{enumitem}
 	\usepackage{multicol} % 2-col table of contents
+	\extrafloats{100}
 	\\newcommand{\\tty}{\\texttt}
 	\\newcommand{\\ita}{\\textit}
 	\\newcommand{\\bol}{\\textbf}
@@ -140,9 +142,11 @@ def fillDocument(doc, plotList, detList, plotTypes):
 				if filename.endswith('.png'):
 					plot = filename[:-4]
 				if plType in plot and det in plot:
-					if plType == "gwf":
-						# doc.append(NoEscape("\\includegraphics[width=500pt]{%s}" % plot))
+					if plType == "gmax":
 						doc.append(NoEscape("\hspace*{-0.7cm}\includegraphics[width=510pt]{%s}" % plot))
+					# if plType == "gwf":
+						# doc.append(NoEscape("\\includegraphics[width=500pt]{%s}" % plot))
+						# doc.append(NoEscape("\hspace*{-0.7cm}\includegraphics[width=510pt]{%s}" % plot))
 					if plType == "gbase":
 						doc.append(NoEscape("\hspace*{-0.7cm}\includegraphics[width=510pt]{%s}" % plot))
 					if plType == "grms":

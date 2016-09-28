@@ -169,6 +169,8 @@ int main(int argc, char* argv[])
 			double rms = 0.0;
 			for(int i=4; i<nbase; i++) base += h->GetBinContent(i);
 			base /= nbase;
+			vbase[ch_index].push_back(base);
+
 			for(int i=4; i<nbase; i++) rms += pow(h->GetBinContent(i) - base, 2);
 			rms = sqrt(rms) / base;
 
@@ -244,6 +246,9 @@ int main(int argc, char* argv[])
 
 		TGraph *gmax = graph(detName + "_gmax", t1[i], vmaxima[i], "Time (sec)", "ADC", color);
 		gmax->Write();
+
+		TGraph *gbase = graph(detName + "_gbase", t1[i], vbase[i], "Time (sec)", "Baseline ADC", color);
+		gbase->Write();
 
 		TGraph *decTimes = graph(detName + "_dec", tdecimate[i], vdecimate[i], "Time (sec)", "ADC", color);
 		decTimes->SetMarkerStyle(kFullDotLarge);
