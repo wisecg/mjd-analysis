@@ -1,13 +1,9 @@
 // data-quality.cc
-// C. Wiseman, 9/10/2016
-// (Adapted from splice_waveforms.cc by T. Caldwell)
+// T. Caldwell and C. Wiseman, 9/10/2016
 //
-// Created to check problems with the "decimation" method
-// used in splice_waveforms.
-//
-// Result:  The decimation seems to be done incorrectly.
-//          It doesn't remove the same samples per waveform,
-//          so values like "max ADC" seem to decrease over time.
+// Generates near-term analysis plots from built data
+// and puts them into a ROOT file.  A wrapper program,
+// data-report.py, can be used to make a PDF of the output.
 
 #include <iostream>
 #include <fstream>
@@ -244,10 +240,10 @@ int main(int argc, char* argv[])
 		TGraph *gwf = graph(detName + "_gwf", t[i], v[i],"Time (sec)", "ADC", color);
 		gwf->Write();
 
-		TGraph *gmax = graph(detName + "_gmax", t1[i], vmaxima[i], "Time (sec)", "ADC", color);
+		TGraph *gmax = graph(detName + "_gmax", t1[i], vmaxima[i], "Time (sec)", "ADC", kRed);
 		gmax->Write();
 
-		TGraph *gbase = graph(detName + "_gbase", t1[i], vbase[i], "Time (sec)", "Baseline ADC", color);
+		TGraph *gbase = graph(detName + "_gbase", t1[i], vbase[i], "Time (sec)", "Baseline ADC", kBlue);
 		gbase->Write();
 
 		TGraph *decTimes = graph(detName + "_dec", tdecimate[i], vdecimate[i], "Time (sec)", "ADC", color);

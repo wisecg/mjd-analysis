@@ -1,4 +1,16 @@
 #!/usr/local/bin/python
+"""
+data-report.py
+C. Wiseman 9/10/2016
+
+Wraps the program data-quality.cc, takes its output ROOT
+file and generates a run summary PDF for this run.
+Intended for near-term analysis.
+
+Two plots are included for each detector:
+	"gmax", the maximum or minimum value of each waveform (whichever has a greater absolute value)
+	"gbase", the average value of the first four samples of each waveform.
+"""
 
 import sys, os
 from pylatex import *
@@ -10,10 +22,22 @@ M1Channels = {"P1D1":584, "P1D2":582, "P1D3":580, "P1D4":578, "P2D1":692, "P2D2"
 M2Channels = {"P1D1":1140, "P1D2":1142, "P1D3":1110, "P1D4":1204, "P2D1":1174, "P2D2":1144, "P2D3":1106, "P2D4":1108, "P2D5":1138, "P3D1":1176, "P3D2":1172, "P3D3":1202, "P4D1":1170, "P4D2":1208, "P4D3":1206, "P4D4":1136, "P4D5":1168, "P5D1":1330, "P5D2":1304, "P5D3":1332, "P5D4":1302, "P6D1":1296, "P6D2":1298, "P6D3":1328, "P6D4":1234, "P7D1":1268, "P7D2":1238, "P7D3":1236, "P7D4":1232}
 
 def main(argv):
-	if os.path.isfile(argv[0]):
-		infile = TFile(argv[0])
+
+	if len(argv) < 1:
+		print "Usage: ./data-report.py [run number]"
+		return
+
+	run = int(argv[0])
+
+	# run data-quality (generates a ROOT file)
+	os.system("make && ./data-quality %d" % run)
+
+	theFile = "./data-quality_%d.root" % run
+
+	if os.path.isfile(theFile):
+		infile = TFile(theFile)
 	else:
-		print "File",argv[0],"doesn't exist! Exiting ..."
+		print "File",theFile,"doesn't exist! Exiting ..."
 		return
 
 	# plotTypes = ["gwf","gbase","grms","hbase","hrms","spec"]
