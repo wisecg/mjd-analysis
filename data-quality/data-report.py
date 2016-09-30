@@ -29,15 +29,14 @@ def main(argv):
 
 	run = int(argv[0])
 
-	# run data-quality (generates a ROOT file)
-	os.system("make && ./data-quality %d" % run)
-
 	theFile = "./data-quality_%d.root" % run
 
 	if os.path.isfile(theFile):
 		infile = TFile(theFile)
 	else:
-		print "File",theFile,"doesn't exist! Exiting ..."
+		print "runnning data-quality (generates a ROOT file)"
+		os.system("make && ./data-quality %d" % run)
+		infile = TFile(theFile)
 		return
 
 	# plotTypes = ["gwf","gbase","grms","hbase","hrms","spec"]
