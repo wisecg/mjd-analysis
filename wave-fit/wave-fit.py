@@ -20,17 +20,14 @@ from subprocess import call
 chanDict = {610:"P3D2", 600:"P7D1", 692:"P2D1", 598:"P7D2", 626:"P6D3", 648:"P2D2", 582:"P1D2", 640:"P2D3", 578:"P1D4", 580:"P1D3", 690:"P6D4", 592:"P7D4", 672:"P5D3", 608:"P3D3", 664:"P3D4", 632:"P6D1"}
 
 def main():
-
-	# take care of all the file i/o in the main function
+	# take care of all the goddamn root bullshit file i/o in the main function
 
 	waveTemplates = TChain("waveTree")
 	waveTemplates.Add("./data/wave-m1cal.root")
 	print "Found",waveTemplates.GetEntries(),"template waveforms."
 	# PlotTemplateWaveforms(waveTemplates,calDict)
 
-	# create a temporary file that we can call in update mode, without altering the original
-	call(['cp',"./data/wave-standardCutDS1-newBranch.root","./data/wave-standardCutDS1-newBranch-copy.root"])
-	f1 = TFile("./data/wave-standardCutDS1-newBranch-copy.root","update")
+	f1 = TFile("./data/wave-standardCutDS1-newBranch.root")
 	waveTree = f1.Get("waveTree")
 	eventTree = f1.Get("eventTree")
 	print "Found",waveTree.GetEntries(),"input waveforms."
@@ -42,33 +39,42 @@ def main():
 	theCut = "trapENFCal > 5 && trapENFCal < 5.02 && channel!=600 && channel!=692 && d2wf0MHzTo50MHzPower < 4000"
 	theCut += " && run != 9648 && run != 9663 && run != 10185 && run != 10663 && run != 10745 && run != 11175 && run != 12445 && run != 12723 && run != 12735 && run != 13004 && channel != 580"
 
-	# take this shit to the bank
-	waveTreeNew = mcmc_wfs(waveTemplates,waveTree,eventTree,theCut)
+	# get that money and take that shit to the bank
+	waveTreeNew, mcmc_params = mcmc_wfs(waveTemplates,waveTree,eventTree,theCut)
 
-	# reapply the entry list to the output of "mcmc_wfs" and save it in a new file
-	# this makes sure that only events that have been mcmc'd are saved.
+	# get the results back into a ROOT file.
 	print "Cloning output tree ..."
-	# f2 = TFile("./data/wave-standardCutDS1-slowness.root","RECREATE")
-	# waveTreeNew.Draw(">>elist", theCut , "entrylist")
-	# elist = gDirectory.Get("elist")
-	# waveTreeNew.SetEntryList(elist)
 
-	print "in the new tree"
-	for iList in xrange(elist.GetN()):
-		entry = waveTreeNew.GetEntryNumber(iList);
-		waveTreeNew.LoadTree(entry)
-		waveTreeNew.GetEntry(entry)
-		print waveTreeNew.slowness,waveTreeNew.trapENFCal
+	call(['rm',"./data/wave-standardCutDS1-mcmc.root"])
+	f2 = TFile("./data/wave-standardCutDS1-mcmc.root","new")
 
-	# waveTreeNewSmall = waveTreeNew.CopyTree("")
-	# waveTreeNewSmall.Write()
-	# f2.Close()
+	waveTreeNew.Draw(">>elist2", theCut , "entrylist")
+	elist2 = gDirectory.Get("elist2")
+	waveTreeNew.SetEntryList(elist2)
+	waveTreeNewSmall = waveTreeNew.CopyTree("")
+	waveTreeNewSmall.SetName("waveTreeMCMC")
+	f1.Close()
+	f2.WriteTObject(waveTreeNewSmall)
+	waveTreeMCMC = f2.Get("waveTreeMCMC")
+	print waveTreeMCMC.GetEntries()
 
-	# delete the temporary file
-	call(['rm',"./data/wave-standardCutDS1-newBranch-copy.root"])
+	slowness = np.zeros(1,dtype=float)
+	t0 = np.zeros(1,dtype=float)
+	scale = np.zeros(1,dtype=float)
+	slBranch = waveTreeMCMC.Branch("slowness",slowness,"slowness/D")
+	t0Branch = waveTreeMCMC.Branch("t0",t0,"t0/D")
+	scBranch = waveTreeMCMC.Branch("scale",scale,"scale/D")
+	for i in xrange(waveTreeMCMC.GetEntries()):
+		slowness[0] = mcmc_params[i][1]
+		t0[0] = mcmc_params[i][2]
+		scale[0] = mcmc_params[i][3]
+		slBranch.Fill()
+		t0Branch.Fill()
+		scBranch.Fill()
+	waveTreeMCMC.Write("",TObject.kOverwrite)
 
 
-def mcmc_wfs(waveTemplates, waveTree, eventTree,theCut):
+def mcmc_wfs(waveTemplates, waveTree, eventTree, theCut, run_mcmc=True):
 
 	calDict = {640:28, 672:18, 610:16, 580:19, 582:34, 648:38, 600:21, 578:39, 592:27, 664:55, 626:62, 692:8, 598:22, 690:52, 632:9, 608:7}
 	calList = [[key,calDict[key]] for key in calDict]
@@ -78,8 +84,7 @@ def mcmc_wfs(waveTemplates, waveTree, eventTree,theCut):
 	waveTree.SetEntryList(elist)
 	print "Found",elist.GetN(),"entries passing cut."
 
-	mcmc_slow = np.zeros(1,dtype=float)
-	newBranch = waveTree.Branch('slowness',mcmc_slow,'slowness/D');
+	mcmc_params = []
 
 	# interactive mode
 	# print "Press enter to start ..."
@@ -103,6 +108,16 @@ def mcmc_wfs(waveTemplates, waveTree, eventTree,theCut):
 	plt.ioff()
 	fig = plt.figure(figsize=(13, 8), facecolor='w')
 	for iList in xrange(elist.GetN()):
+
+		# if you're not going to space today, pull the abort switch
+		if (run_mcmc == False):
+			slowness = np.random.uniform()
+			t0 = np.random.uniform()
+			scale = np.random.uniform()
+			mcmc_params.append([iList,slowness,t0,scale])
+			continue
+
+		# ok, now you're going to space today
 
 		entry = waveTree.GetEntryNumber(iList);
 		waveTree.LoadTree(entry)
@@ -154,7 +169,7 @@ def mcmc_wfs(waveTemplates, waveTree, eventTree,theCut):
 		tempGuess = tempBLSub[idx2] * amp
 		tempTSGuess = tempTS[idx2] + diff
 
-		# run mcmc on rising edge
+		# run mcmc on rising edge and save the results
 
 		waveModel = pymc.Model( wm.WaveformModel(waveEdge, waveEdgeTS, tempBLSub, tempTS, diff, amp, noiseAvg) )
 		M = pymc.MCMC(waveModel)
@@ -166,11 +181,7 @@ def mcmc_wfs(waveTemplates, waveTree, eventTree,theCut):
 		t0 = np.median(M.trace('switchpoint')[burnin:])
 		slowness = np.median(M.trace('slowness')[burnin:])
 		scale = np.median(M.trace('scale')[burnin:])
-
-		# fill the output tree with MCMC parameterss
-		mcmc_slow[0] = slowness
-		print "slowness should be",mcmc_slow[0]
-		newBranch.Fill()
+		mcmc_params.append([iList,slowness,t0,scale])
 
 		# recreate the best-fit signal
 
@@ -230,20 +241,16 @@ def mcmc_wfs(waveTemplates, waveTree, eventTree,theCut):
 		ax5.set_ylabel('scale')
 		ax5.axis('tight')
 
-		# write some parameters
-
 		results = "%d  %d  %d  %d  %.2fkeV  %.2fns  %dsec  %.1f \n" % (iList,entry,run,chan,trapENFCal,riseTime,runTime,power)
 
 		results += "scale %.3f (%.3f)  t0 %.2f (%.2f)  slow %.3f  (%.2f)\n" % (scale, np.std(M.trace('scale')[burnin:]), t0, np.std(M.trace('switchpoint')[burnin:]), slowness, np.std(M.trace('slowness')[burnin:]))
-
-		# results += "temp enf %.1f  amp %.3f  tempT50 %.1f  lz*10 %.1f  \n diff %.1f" % (tempENF, amp, tempT50, lastZero*10, diff)
 
 		print results
 		t = ax6.text(-0.1, 0.5, results,size=12)
 
 		plt.tight_layout()
 
-	return waveTree
+	return waveTree,mcmc_params
 
 
 def PlotTemplateWaveforms(waveTree,calDict,arg="edge"):
@@ -309,7 +316,6 @@ def PlotTemplateWaveforms(waveTree,calDict,arg="edge"):
 
 		plt.xlim(lowestWin*10, highestWin*10)
 		plt.show()
-
 
 
 def fft_waveform(waveBLSub, waveEdge, tsFFTEdge):
