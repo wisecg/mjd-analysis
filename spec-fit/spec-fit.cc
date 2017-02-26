@@ -327,7 +327,6 @@ void fitSpec(double bins, double xlow, double xhi, double fitLo)
   // minuit.DefineParameter(7, "noise", 20., 1., 0., 1000.);
   // minuit.DefineParameter(8, "axions", 1., 0.1, 0., 1000);
 
-
   // ============ Do the minimization ============
   int status = minuit.Migrad();
   cout << "Fit Status: " << status << endl;
@@ -344,12 +343,17 @@ void fitSpec(double bins, double xlow, double xhi, double fitLo)
   // should give a greater cs half the time from statistical fluctuations.
   cout << Form("Final Vals:\n   chiSq %.2f  NDF %.0f  chiSq/NDF %.2f  TMath::Prob(chiSq,NDF) %.2f\n", finalChiSquare,NDF,finalChiSquare/NDF,TMath::Prob(finalChiSquare,NDF));
 
+  // ========== For convenience, pull histos out of the fitter ==========
+  int nPar = ftr->fPars;
+  vector<TH1D*> hModel = ftr->hModel;
+  TH1D* hModelTot = ftr->hModelTot;
+
   // ============ Compute integrals ============
   double sumCts=0;
   vector<double> totalCts;
-  for (int i = 0; i < ftr->fPars; i++) {
-    ftr->hModel[i]->Scale(ftr->fParameters[i]);
-    totalCts.push_back(ftr->hModel[i]->Integral(ftr->hModel[i]->GetXaxis()->FindBin(fitLo),bins));
+  for (int i = 0; i < nPar; i++) {
+    hModel[i]->Scale(ftr->fParameters[i]);
+    totalCts.push_back(hModel[i]->Integral(hModel[i]->GetXaxis()->FindBin(fitLo),bins));
     cout << "model " << i << ": " << totalCts[i] << endl;
   }
   for (auto c : totalCts) sumCts += c;
@@ -363,7 +367,7 @@ void fitSpec(double bins, double xlow, double xhi, double fitLo)
     // for bin i: (data_i – model_i)/error_i
     double ene = ftr->hData->GetBinCenter(i);
     double data = ftr->hData->GetBinContent(i);
-    double model = ftr->hModelTot->GetBinContent(i);
+    double model = hModelTot->GetBinContent(i);
     double err = sqrt(data);
     if (data==0) err = 1.2;  // integral of the poisson probability for 1 sigma centered at 0
     double res = (data - model)/err;
@@ -402,31 +406,31 @@ void fitSpec(double bins, double xlow, double xhi, double fitLo)
   ftr->hData->GetXaxis()->SetTitle("Energy (keV)");
   ftr->hData->GetYaxis()->SetTitle(Form("Counts/%.2fkeV",(xhi-xlow)/bins));
 
-  ftr->hModelTot->SetLineColorAlpha(kRed,0.7);
-  ftr->hModelTot->SetLineWidth(2);
-  ftr->hModelTot->Draw("hist same");
+  hModelTot->SetLineColorAlpha(kRed,0.7);
+  hModelTot->SetLineWidth(2);
+  hModelTot->Draw("hist same");
   c1->Update();
 
-  ftr->hModel[0]->SetLineColor(kGreen+2);  // tritium
-  ftr->hModel[0]->Draw("hist same");
+  hModel[0]->SetLineColor(kGreen+2);  // tritium
+  hModel[0]->Draw("hist same");
 
   TH1D *hTritFlat = new TH1D("hTritFlat","hTritFlat",bins,xlow,xhi);
-  hTritFlat = (TH1D*)ftr->hModel[0];
-  hTritFlat->Add(ftr->hModel[1]); // add flat
+  hTritFlat = (TH1D*)hModel[0];
+  hTritFlat->Add(hModel[1]); // add flat
   hTritFlat->Draw("hist same");
 
-  // ftr->hModel[4]->SetLineColor(kCyan+2); // axion
-  // ftr->hModel[4]->Draw("hist same");
+  // hModel[4]->SetLineColor(kCyan+2); // axion
+  // hModel[4]->Draw("hist same");
 
-  ftr->hModel[7]->SetLineColor(kOrange+4); // noise
-  ftr->hModel[7]->Draw("hist same");
+  hModel[7]->SetLineColor(kOrange+4); // noise
+  hModel[7]->Draw("hist same");
 
   TLegend* leg1 = new TLegend(0.45,0.6,0.87,0.92);
   leg1->AddEntry(ftr->hData,"DS-1 (w/ T/E)","l");
-  leg1->AddEntry(ftr->hModelTot,Form("Model (c/n:%.2f p:%.1f)",finalChiSquare/NDF,TMath::Prob(finalChiSquare,NDF)),"l");
+  leg1->AddEntry(hModelTot,Form("Model (c/n:%.2f p:%.1f)",finalChiSquare/NDF,TMath::Prob(finalChiSquare,NDF)),"l");
   leg1->AddEntry(hTritFlat,"tritium+flat","l");
-  // leg1->AddEntry(ftr->hModel[4],"axion*sigma_pe","l");
-  leg1->AddEntry(ftr->hModel[7],"noise","l");
+  // leg1->AddEntry(hModel[4],"axion*sigma_pe","l");
+  leg1->AddEntry(hModel[7],"noise","l");
   leg1->Draw("SAME");
   c1->Update();
 
@@ -459,8 +463,8 @@ void fitSpec(double bins, double xlow, double xhi, double fitLo)
 
   // ========== Draw correlation matrix ==========
   TMatrixT<double> mCorrMatrix;
-  mCorrMatrix.ResizeTo(ftr->fPars, ftr->fPars);
-  minuit.mnemat(mCorrMatrix.GetMatrixArray(), ftr->fPars);
+  mCorrMatrix.ResizeTo(nPar, nPar);
+  minuit.mnemat(mCorrMatrix.GetMatrixArray(), nPar);
   for(int i = mCorrMatrix.GetRowLwb(); i <= mCorrMatrix.GetRowUpb(); i++)
     for(int j = mCorrMatrix.GetColLwb(); j <= mCorrMatrix.GetColUpb(); j++)
       mCorrMatrix(i,j) = mCorrMatrix(i,j)/(ftr->fParErrors[i]*ftr->fParErrors[j]);
