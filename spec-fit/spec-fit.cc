@@ -10,15 +10,14 @@
 #include "TChain.h"
 #include "TCanvas.h"
 #include "TH1.h"
-#include "TH2.h"
 #include "TLegend.h"
 #include "TStyle.h"
-#include "TEntryList.h"
 #include "TRandom3.h"
 #include "TMinuit.h"
 #include "TMath.h"
 #include "TGraph.h"
 #include "TMatrixT.h"
+#include "TLine.h"
 
 using namespace std;
 
@@ -35,30 +34,24 @@ int main()
   gROOT->ProcessLine(".x ~/env/MJDClintPlotStyle.C");
 
   // Everything has to be binned the same way for the fit to work
-  double bins = 108, xlow = 3, xhi = 30;
+  double binsPerkeV = 4;
+  double xlow = 5, xhi = 30;
+  double bins = (xhi - xlow)*binsPerkeV;
+  double fitLimit = 5;
 
   generateSpec(bins,xlow,xhi);
-  fitSpec(bins, xlow, xhi, 3.);
+  fitSpec(bins, xlow, xhi, fitLimit);
 }
 
 // Adjust gamma peaks in our model, using
 // DS-0 low energy paper results.
 void getDetectorParams(double E, double &deltaE, double &sig)
 {
-  // Energy scale correction:
-  // Delta-E(E_S) = \alpha_E * (E_S - 95.0 keV) + E_0
-  // where
-  // \alpha_E = -0.0014 \pm 0.0008
-  // E_0 = −0.256 \pm 0.016 keV
+  // Energy scale correction, eq. 1
   double alphaE = -0.0014, E_0 = -0.256;
   deltaE = alphaE * (E - 95.) + E_0;
 
-  // Resolution widths:
-  // \sigma_E(E) = \sqrt{ \sigma_0^2 + \epsilon * F * E }
-  // where
-  // \sigma_0 = 0.16 \pm 0.04 keV
-  // F = 0.11 \pm 0.02
-  // \epsilon = 0.00296 keV
+  // Resolution widths, eq. 2
   double sig0 = 0.16, F=0.11, eps=0.00296;
   sig = sqrt(pow(sig0,2) + eps * F * E);
 }
@@ -75,7 +68,6 @@ void generateSpec(double bins, double xlow, double xhi)
 
   TH1D *hEnr = new TH1D("hEnr","hEnr",bins,xlow,xhi);
   sprintf(theCut,"%s && %s && isEnr",standardCut,ds1_toeCut);
-  // sprintf(theCut,"%s",standardCut);
   cutSkim->Project("hEnr","trapENFCal",theCut);
 
   TH1D *hNat = new TH1D("hNat","hNat",bins,xlow,xhi);
@@ -308,16 +300,16 @@ void fitSpec(double bins, double xlow, double xhi, double fitLo)
   TFile *f = new TFile("./data/lowBGHistos.root");
 
   histFitter *ftr = new histFitter(8,bins,xlow,xhi,fitLo); // (# models, bins, xlo, xhi, fitLo)
-  ftr->SetData((TH1D*)f->Get("hEnr"));
+  ftr->SetData((TH1D*)f->Get("hNat"));
   ftr->AddModelHist((TH1D*)f->Get("hTrit"));
   ftr->AddModelHist((TH1D*)f->Get("hFlat"));
   ftr->AddModelHist((TH1D*)f->Get("pGe68"));
   ftr->AddModelHist((TH1D*)f->Get("pFe55"));
-  // ftr->AddModelHist((TH1D*)f->Get("hConv"));
   ftr->AddModelHist((TH1D*)f->Get("pMn54"));
   ftr->AddModelHist((TH1D*)f->Get("pCo57"));
   ftr->AddModelHist((TH1D*)f->Get("pZn65"));
   ftr->AddModelHist((TH1D*)f->Get("hNoise"));
+  // ftr->AddModelHist((TH1D*)f->Get("hConv"));
 
   TMinuit minuit(ftr->fPars);
   minuit.SetPrintLevel(0);           // -1 (Quiet), 0 (Normal), 1 (Verbose)
@@ -327,13 +319,14 @@ void fitSpec(double bins, double xlow, double xhi, double fitLo)
   // Parameters: (#, name, init val, init err, lower lim, upper lim)
   minuit.DefineParameter(0, "trit", 300., 1., 100., 10000.);
   minuit.DefineParameter(1, "flat", 10, 0.01, 0., 10000);
-  minuit.DefineParameter(2, "ge68", 50., 0.1, 0., 1000);
+  minuit.DefineParameter(2, "ge68", 100., 0.1, 0., 1000);
   minuit.DefineParameter(3, "fe55", 50., 0.1, 0, 1000);
-  // minuit.DefineParameter(4, "axions", 1., 0.1, 0., 1000);
-  minuit.DefineParameter(4, "mn54", 50., 0.1, 0., 1000);
-  minuit.DefineParameter(5, "co57", 50., 0.1, 0., 1000);
-  minuit.DefineParameter(6, "zn65", 50., 0.1, 0., 1000);
-  minuit.DefineParameter(7, "noise", 20., 1., 0., 1000.);
+  minuit.DefineParameter(4, "mn54", 10., 0.1, 0., 1000);
+  minuit.DefineParameter(5, "co57", 10., 0.1, 0., 1000);
+  minuit.DefineParameter(6, "zn65", 10., 0.1, 0., 1000);
+  // minuit.DefineParameter(7, "noise", 20., 1., 0., 1000.);
+  // minuit.DefineParameter(8, "axions", 1., 0.1, 0., 1000);
+
 
   // ============ Do the minimization ============
   int status = minuit.Migrad();
@@ -352,16 +345,13 @@ void fitSpec(double bins, double xlow, double xhi, double fitLo)
   cout << Form("Final Vals:\n   chiSq %.2f  NDF %.0f  chiSq/NDF %.2f  TMath::Prob(chiSq,NDF) %.2f\n", finalChiSquare,NDF,finalChiSquare/NDF,TMath::Prob(finalChiSquare,NDF));
 
   // ============ Compute integrals ============
+  double sumCts=0;
   vector<double> totalCts;
   for (int i = 0; i < ftr->fPars; i++) {
     ftr->hModel[i]->Scale(ftr->fParameters[i]);
     totalCts.push_back(ftr->hModel[i]->Integral(ftr->hModel[i]->GetXaxis()->FindBin(fitLo),bins));
     cout << "model " << i << ": " << totalCts[i] << endl;
   }
-  double sumParam=0;
-  for (auto p : ftr->fParameters) sumParam += p;
-  cout << "scale total: " << sumParam << endl;
-  double sumCts=0;
   for (auto c : totalCts) sumCts += c;
   cout << Form("model total (%.1f - 30 keV): %.1f\n",fitLo,sumCts);
   cout << Form("data total (%.1f - 30 keV): %.1f\n",fitLo,ftr->hData->Integral(ftr->hData->GetXaxis()->FindBin(fitLo),bins));
@@ -431,7 +421,7 @@ void fitSpec(double bins, double xlow, double xhi, double fitLo)
   ftr->hModel[7]->SetLineColor(kOrange+4); // noise
   ftr->hModel[7]->Draw("hist same");
 
-  TLegend* leg1 = new TLegend(0.4,0.5,0.87,0.92);
+  TLegend* leg1 = new TLegend(0.45,0.6,0.87,0.92);
   leg1->AddEntry(ftr->hData,"DS-1 (w/ T/E)","l");
   leg1->AddEntry(ftr->hModelTot,Form("Model (c/n:%.2f p:%.1f)",finalChiSquare/NDF,TMath::Prob(finalChiSquare,NDF)),"l");
   leg1->AddEntry(hTritFlat,"tritium+flat","l");
@@ -454,8 +444,13 @@ void fitSpec(double bins, double xlow, double xhi, double fitLo)
   gResid->Draw("ALP");
   gResid->GetYaxis()->SetNdivisions(505);
 
-  TLegend *leg2 = new TLegend(0.5,0.4,0.87,0.55);
-  leg2->AddEntry(gResid,"(data_i - model_i)/error_i","lp");
+  TLine *line = new TLine(xlow,0,xhi,0);
+  line->SetLineWidth(2);
+  line->SetLineColorAlpha(kBlack,0.5);
+  line->Draw("same");
+
+  TLegend *leg2 = new TLegend(0.68,0.38,0.87,0.52);
+  leg2->AddEntry(gResid,"(data - model)/sqrt(N)","lp");
   leg2->Draw("same");
 
   c1->cd();
@@ -485,6 +480,5 @@ void fitSpec(double bins, double xlow, double xhi, double fitLo)
   c0->SetFillStyle(4000);
   mCorrMatrix.Draw("colz");
   c0->Print("./output/corrMatrix.pdf");
-
 }
 
