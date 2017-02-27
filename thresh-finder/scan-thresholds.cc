@@ -1,4 +1,4 @@
-// thresholds.cc
+// scan-thresholds.cc
 // Examines low-energy performance of MJD detectors.
 // Requires MkCookie be run recently.
 // B. Zhu (LANL) and C. Wiseman (USC)
