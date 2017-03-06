@@ -44,19 +44,13 @@ def CreateOutputDict(whichDict='all'):
 	outDict = {}
 	if whichDict == 'skim':
 		outDict = skimDict.copy()	# doesn't append the s_
-	if whichDict == 'built':
-		outDict = builtDict.copy()
 	if whichDict == 'gat':
 		outDict = gatDict.copy()
-	if whichDict == 'gatBlt':
-		outDict = gatDict.copy()
-		outDict.update(builtDict)
-	if whichDict == 'all':
+	if whichDict == 'skimGat':
 		for key in skimDict:
 			newKey = "s_"+key
 			outDict[newKey] = skimDict[key]
 		outDict.update(gatDict)
-		outDict.update(builtDict)
 	return outDict
 
 # ================= Skim file var's (Aug. 2016) ================
@@ -93,19 +87,19 @@ s_aenorm = ROOT.std.vector("double")()
 s_t150 = ROOT.std.vector("double")()
 s_kvorrT = ROOT.std.vector("double")()
 s_toe = ROOT.std.vector("double")()
-s_aenorm85 = ROOT.std.vector("double")()
-s_dcrSlope85 = ROOT.std.vector("double")()
-s_dcrSlope95 = ROOT.std.vector("double")()
-s_dcrSlope98 = ROOT.std.vector("double")()
+# s_aenorm85 = ROOT.std.vector("double")()
+# s_dcrSlope85 = ROOT.std.vector("double")()
+# s_dcrSlope95 = ROOT.std.vector("double")()
+# s_dcrSlope98 = ROOT.std.vector("double")()
 s_dcrSlope90 = ROOT.std.vector("double")()
-s_dcrSlope99 = ROOT.std.vector("double")()
+# s_dcrSlope99 = ROOT.std.vector("double")()
 s_EventDC1Bits = np.zeros(1,dtype=int)
 s_wfDCBits = ROOT.std.vector("unsigned int")()
-s_isLNFill = ROOT.std.vector("bool")()
+s_isLNFill1 = ROOT.std.vector("bool")()
 s_trapETailMin = ROOT.std.vector("double")()
 s_dtmu_s = ROOT.std.vector("double")()
 s_muType = ROOT.std.vector("int")()
-s_badScaler = ROOT.std.vector("bool")()
+# s_badScaler = ROOT.std.vector("bool")()
 s_muVeto = ROOT.std.vector("bool")()
 
 skimDict = {
@@ -143,18 +137,18 @@ skimDict = {
 	't150':s_t150,
 	'kvorrT':s_kvorrT,
 	'toe':s_toe,
-	'aenorm85':s_aenorm85,
-	'dcrSlope85':s_dcrSlope85,
-	'dcrSlope95':s_dcrSlope95,
-	'dcrSlope98':s_dcrSlope98,
+	# 'aenorm85':s_aenorm85,
+	# 'dcrSlope85':s_dcrSlope85,
+	# 'dcrSlope95':s_dcrSlope95,
+	# 'dcrSlope98':s_dcrSlope98,
 	'dcrSlope90':s_dcrSlope90,
-	'dcrSlope99':s_dcrSlope99,
+	# 'dcrSlope99':s_dcrSlope99,
 	'wfDCBits':s_wfDCBits,
-	'isLNFill':s_isLNFill,
+	'isLNFill1':s_isLNFill1,
 	'trapETailMin':s_trapETailMin,
 	'dtmu_s':s_dtmu_s,
 	'muType':s_muType,
-	'badScaler':s_badScaler,
+	# 'badScaler':s_badScaler,
 	'muVeto':s_muVeto
 }
 
@@ -232,7 +226,7 @@ trapENF8usrt = ROOT.std.vector("double")()
 trapE     = ROOT.std.vector("double")()
 trapEMin  = ROOT.std.vector("double")()
 longGapTrapMax = ROOT.std.vector("double")()
-trap1ust0 = ROOT.std.vector("double")()
+# trap1ust0 = ROOT.std.vector("double")()
 trapENF   = ROOT.std.vector("double")()
 trapBL1us = ROOT.std.vector("double")()
 trapETailMin = ROOT.std.vector("double")()
@@ -273,12 +267,12 @@ d2wf30MHzTo35MHzPower = ROOT.std.vector("double")()
 d2wf48MHzTo50MHzPower = ROOT.std.vector("double")()
 d2wf0MHzTo50MHzPower = ROOT.std.vector("double")()
 wfDCBits  = ROOT.std.vector("unsigned int")()
-wfDC_Bit_0_SSSpikeBL = ROOT.std.vector("double")()
-wfDC_Bit_1_SSSpikePhys = ROOT.std.vector("double")()
-wfDC_Bit_2_EarlyTrigger = ROOT.std.vector("double")()
-wfDC_Bit_3_LateTrigger = ROOT.std.vector("double")()
-wfDC_Bit_4_PosSaturatedWFs = ROOT.std.vector("double")()
-wfDC_Bit_5_NegSaturatedWFs = ROOT.std.vector("double")()
+# wfDC_Bit_0_SSSpikeBL = ROOT.std.vector("double")()
+# wfDC_Bit_1_SSSpikePhys = ROOT.std.vector("double")()
+# wfDC_Bit_2_EarlyTrigger = ROOT.std.vector("double")()
+# wfDC_Bit_3_LateTrigger = ROOT.std.vector("double")()
+# wfDC_Bit_4_PosSaturatedWFs = ROOT.std.vector("double")()
+# wfDC_Bit_5_NegSaturatedWFs = ROOT.std.vector("double")()
 run       = np.zeros(1,dtype=float)
 startTime = np.zeros(1,dtype=float)
 stopTime  = np.zeros(1,dtype=float)
@@ -362,7 +356,7 @@ gatDict = {
 	'trapE'     : trapE,
 	'trapEMin'  : trapEMin,
 	'longGapTrapMax' : longGapTrapMax,
-	'trap1ust0' : trap1ust0,
+	# 'trap1ust0' : trap1ust0,
 	'trapENF'   : trapENF,
 	'trapBL1us' : trapBL1us,
 	'trapETailMin' : trapETailMin,
@@ -403,12 +397,12 @@ gatDict = {
 	'd2wf48MHzTo50MHzPower' : d2wf48MHzTo50MHzPower,
 	'd2wf0MHzTo50MHzPower' : d2wf0MHzTo50MHzPower,
 	'wfDCBits'  :  wfDCBits,
-	'wfDC_Bit_0_SSSpikeBL' : wfDC_Bit_0_SSSpikeBL,
-	'wfDC_Bit_1_SSSpikePhys' : wfDC_Bit_1_SSSpikePhys,
-	'wfDC_Bit_2_EarlyTrigger' : wfDC_Bit_2_EarlyTrigger,
-	'wfDC_Bit_3_LateTrigger' : wfDC_Bit_3_LateTrigger,
-	'wfDC_Bit_4_PosSaturatedWFs' : wfDC_Bit_4_PosSaturatedWFs,
-	'wfDC_Bit_5_NegSaturatedWFs' : wfDC_Bit_5_NegSaturatedWFs,
+	# 'wfDC_Bit_0_SSSpikeBL' : wfDC_Bit_0_SSSpikeBL,
+	# 'wfDC_Bit_1_SSSpikePhys' : wfDC_Bit_1_SSSpikePhys,
+	# 'wfDC_Bit_2_EarlyTrigger' : wfDC_Bit_2_EarlyTrigger,
+	# 'wfDC_Bit_3_LateTrigger' : wfDC_Bit_3_LateTrigger,
+	# 'wfDC_Bit_4_PosSaturatedWFs' : wfDC_Bit_4_PosSaturatedWFs,
+	# 'wfDC_Bit_5_NegSaturatedWFs' : wfDC_Bit_5_NegSaturatedWFs,
 	'run'       : [run,'run/D'],
 	'startTime' : [startTime,'startTime/D'],
 	'stopTime'  : [stopTime,'stopTime/D'],

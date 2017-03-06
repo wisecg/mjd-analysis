@@ -56,7 +56,7 @@ void plotter(char input[500]);
 void wavePlots(char input[500]);
 void entryPlots(char input[500]);
 
-int main()
+int main(int argc, char** argv)
 {
 	// char input[500] = "waveSkim_DS1LowE.root";
 	// char input[500] = "waveSkim_DEP_DS1.root";
