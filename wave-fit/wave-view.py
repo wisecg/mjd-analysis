@@ -3,24 +3,27 @@ import sys
 from ROOT import TFile,TTree,TEntryList,gDirectory,gROOT
 import waveLibs as wl
 import numpy as np
-import matplotlib.pyplot as plt
 
 def main(argv):
     """Interactive-draw or rapid-draw waveforms that pass a given TCut."""
 
-    plt.ion()
     opt1, opt2 = "", ""
-    intMode = False
-    printWaveforms = False
+    intMode, printWF, warpMode = False, False, False
     if (len(argv) >= 1): opt1 = argv[0]
     if (len(argv) >= 2): opt2 = argv[1]
     if "-i" in (opt1, opt2):
         intMode = True
         print "Interactive mode selected."
     if "-s" in (opt1, opt2):
-        printWaveforms = True
+        printWF = True
         print "Saving WF plots to current directory."
-    # gROOT.ProcessLine("gErrorIgnoreLevel = 3001;") # suppress ROOT error messages
+    if "-w" in (opt1, opt2):
+        warpMode = True
+        import matplotlib
+        matplotlib.use('TkAgg') # fast plotting, not very hi-res
+        print "Warp-speed drawing, don't trust figure axes."
+    import matplotlib.pyplot as plt
+
 
     # Set input file and cuts
 
@@ -57,24 +60,20 @@ def main(argv):
 
 
     # Make a figure (only setting data in the loop is faster)
-    # (With some more work, it could go much faster --
-    # http://bastibe.de/2013-05-30-speeding-up-matplotlib.html )
-    # See also clint's 'speed-plotter.py'
-
     fig = plt.figure(figsize=(8,5), facecolor='w')
     a1 = plt.subplot(111)
     a2 = plt.subplot(111)
     a1.set_xlabel("time (ns)")
     a1.set_ylabel("ADC")
-    p1, = a1.plot(np.ones(1), np.ones(1), color='blue')
-    p2, = a2.plot(np.ones(1), np.ones(1), color='red', linewidth=2., alpha=0.5)
-
+    ts = np.arange(0,2016*10,10)
+    p1, = a1.plot(ts, np.ones(2016), color='blue')
+    p2, = a2.plot(ts, np.ones(2016), color='red', linewidth=2., alpha=0.5)
+    plt.show(block=False)
 
     # Loop over events
     iList = -1
     while(True):
         iList += 1
-        plt.pause(0.00001)
         if intMode==True and iList !=0:
             value = raw_input()
             if value=='q': break
@@ -104,6 +103,7 @@ def main(argv):
             print "%d / %d  Run %d  nCh %d  chan %d  trapENF %.1f" % (iList,nList,run,nChans,chan,energy)
 
             # fill the figure
+            if not warpMode: plt.pause(0.0001)
             p1.set_ydata(waveBLSub)
             p1.set_xdata(waveTS)
             p2.set_ydata(waveFilt)
@@ -113,10 +113,16 @@ def main(argv):
             a1.set_xlim([xmin,xmax])
             a1.set_ylim([ymin-abs(0.1*ymin),ymax+abs(0.1*ymax)])
             plt.title("Run %d  Channel %d  Entry %d  trapENFCal %.1f" % (run,chan,iList,energy))
-            # plt.title(title,loc='left')
-            # fig.canvas.draw()
 
-            if (printWaveforms):
+            if warpMode:
+                # faster, requires TkAgg backend, doesn't update axes
+                a1.draw_artist(a1.patch)
+                a1.draw_artist(p1)
+                # a1.draw_artist(a1.yaxis) # doesn't work
+                fig.canvas.blit(a1.bbox)
+                fig.canvas.flush_events()
+
+            if (printWF):
                 plt.savefig("./plots/wave-%d-%d-%d.pdf" % (run,iList,chan))
 
 if __name__ == "__main__":
